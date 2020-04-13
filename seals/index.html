@@ -1,0 +1,161 @@
+<html>
+<head>
+<title>Ontology Alignment Evaluation Initiative::2020</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<style type="text/css">
+span.important { color:red; }
+span.news { color:green; }
+</style>
+</head>
+<body>
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2020/">Ontology
+  Alignment Evaluation Initiative - SEALS evaluation for OAEI 2020
+  Campaign</a>
+<a href="http://oaei.ontologymatching.org/2020">
+  <img src="../oaeismall.jpg" style="float: right; margin-left: 10pt; margin-right: 10pt; margin-bottom: 10pt; border-style: none;" width="175px"></a>
+  <a href="http://oaei.ontologymatching.org/2020/seals/index.html">
+<img src="../seals-logo.jpg" style="clear: right; float: right; margin-right: 20pt; margin-left: 10pt; margin-bottom: 10pt; border-style: none;" width="150px"></a>
+</div>
+
+<h1>SEALS evaluation for OAEI 2020</h1>
+
+
+<!-- 
+<p>
+
+The SEALS project was
+dedicated to the evaluation of semantic web technologies. 
+To that extent, it created infrastructure for easing this evaluation,
+organizing evaluation campaigns, and building the community of tool
+providers and tool users around this evaluation activity.
+The SEALS infrastructure is now routingly used in ontology matching evaluation.
+</p>
+ -->
+
+<h2>Instructions for organisers</h2>
+
+<p>
+Creating a new track for SEALS is very simple. One only needs to create a metada file where the source and target ontologies are defined. 
+Additionally, if available, a reference alignment can be attached to each pair of sorice-target ontologies. The metadata file can also describe several
+matching tasks (i.e. several pairs of source-target ontologies). See example of the <a href="http://oaei.ontologymatching.org/2019/seals/oaei-2017-seals-hp-mp-bioportal.zip">HP-MP phenotype task</a> and the <a href="http://oaei.ontologymatching.org/2019/seals/seals-metadata-largebio.rdf">metadata file</a> of the largebio track. 
+</p>
+
+
+
+
+
+<h2>Instructions for participants</h2>
+
+<p>
+Participants have to follow this procedure:
+<ol>
+  <li><b>Register your matching tool.</b> Participants must register their intention to participate in the OAEI 2020  
+  by filling this <a href="http://tiny.cc/oaei20-participation">online form</a>.    	
+  </li>
+
+
+  <li><b>Wrap the current version of your matching tool.</b>
+	This step is described in detail in a tutorial (see <a href="#tutorial">Section below</a>). 
+	It requires to create a small java class that acts as a bridge. Further, you have to put the libraries used by your tool in a certain folder structure.
+
+  <li><b>Test your tool with the data sets available for each track.</b> Ids of data sets for testing your tool prior to the evaluation process are given in each 
+  track web page. Participants can test their tools with the <a href="#tutorial">SEALS client</a> on those data-sets.
+  It is convenient that participants (locally) test their wrapped tool way before the deadline. 
+	We can also give you support and perform a dry run in our machines. 
+	</li>
+
+
+  <li><b>Prepare, wrap and upload the final version of your matching tool.</b> Submit a zipped SEALS package (e.g., LogMap.zip) using <a href="http://tiny.cc/oaei20-systems">this form</a> (requires a google account and a valid email).
+	</li>
+	
+</ol>
+</p>
+
+<!-- 
+<p>
+Previously, some tracks had experienced problems for running all the the tools under 
+the same JDK version. 
+Some participants continue to use JDK 1.6.xx, 
+but new participants tend to use JDK 1.7. or even 1.8. 
+To facilitate the evaluation process please try to run your tool under this version (JDK 1.7). If it is not possible for you, please keep us informed.
+</p>
+ -->
+
+<p>
+Once these steps have been conducted, we run all systems on the SEALS infrastructure and generate the results. 
+<!--Each track organizer will decide whether the results will finally be presented via the SEALS portal or if 
+they will be presented via result pages (similar as in the years before), or both.-->
+</p>
+
+<a name="tutorial"/> 
+<h2>Tutorial on Tool Wrapping</h2>
+
+<p>We have prepared a comprehensive PDF-tutorial for wrapping an ontology matching tool and testing your tool. You can download it here:</p>
+
+<ul>
+	<li><a href="https://github.com/DanFaria/OAEI_SealsClient/blob/master/SealsClientTutorial.pdf">Download Tutorial (May 2017) </a> and 
+	<a href="../../2011/tutorial/MatcherBridge.java">MatcherBridge.java</a> presented in the appendix.
+	</li>	
+</ul>
+
+<p>In the tutorial there are mentioned several additional materials that are available here.<p>
+
+<ul>
+	<li><a href="../../2011/tutorial/linux/demomatcher-package.zip">Download demomatcher-package.zip</a> for LINUX (example of a tool correctly packaged)<br/>
+	or <a href="../../2011/tutorial/windows/demomatcher-package.zip">download demomatcher-package.zip</a> for WINDOWS <br/>&nbsp;</li>
+	<li><a href="../../2011/tutorial/seals-omt-validator.jar">Download seals-omt-validator.jar</a> (validates the structure and content of the zipped tool package)</li>
+	<li><a href="https://github.com/DanFaria/OAEI_SealsClient/releases">Download latest seals-omt-client.jar</a> (interfaces and client to execute the final tool package)</li>
+</ul>
+
+<p>LogMap system can also be used as reference <a href="http://oaei.ontologymatching.org/2019/seals/LogMap-seals-oaei-2017.zip">LogMap-seals-oaei-2017.zip</a></p>
+
+
+<p>We have also prepared a tutorial to communicate with the Oracle in the <a href="http://sws.ifi.uio.no/oaei/interactive/">interactive track:</a>
+
+<ul>
+	<li>The <a href="https://github.com/DanFaria/OAEI_SealsClient/blob/master/OracleTutorial.pdf">Oracle tutorial (May 2017)</a> include details about
+	 how matching systems can use the Oracle class for Interactive Matching.</li>
+</ul>
+
+<p>We detected some problems in the past when using libraries in conflict with the libraries used by the SEALS client. We encourage when possible 
+to use the same versions as the <a href="https://github.com/DanFaria/OAEI_SealsClient/releases">SEALS client</a>.
+Please check the <b><i>maven</i> dependencies of the SEALS client</b> <a href="https://github.com/DanFaria/OAEI_SealsClient/blob/master/SealsClientSource/pom.xml">here</a>.
+Note that <span class="important">you must not include the SEALS client jar file within your
+wrapped system</span>.</p>
+
+<p>We also encourage developers to use the <a href="http://alignapi.gforge.inria.fr/">Alignment API</a>. For developers using it, 
+the following ant package is available for packaging and validating the wrapped tools: <p>
+
+<ul>
+	<li><a href="../../2011/tutorial/package-template.zip">Download package-template.zip</a> Use 'ant pack' to generate the tool package.</li><br/>
+</ul>
+
+
+<p>
+Within the Tutorial we show how you can use your wrapped tool to run locally a full evaluation. 
+Thus, you can compute precision and recall for all of those testsuites listed in the track web pages at any time in your development process.</p>
+
+
+
+
+
+
+<h2>Contacts</h2>
+<p>
+Do not hesitate to contact Daniel Faria (daniel [.] faria [.] 81 [at] gmail [.] com) and Ernesto Jimenez-Ruiz (ernesto [.] jimenez [.] ruiz [at] gmail [.] com) for any question you may have.
+
+
+</p>
+
+<h3>Acknowledgement</h3>
+
+<p>While developing and improving the tutorial, we have been in contact with several matching tool developer to have some 'reference' matcher for testing our tutorial and the client that comes with it. Thanks go out to Hua Wei Khong Watson (Eff2match), Peigang Xu (Falcon-OA), Faycal Hamdi (Taxomap), Peng Wang (Lily), Zhichun Wang (RiMOM), and Cosmin Stroe (AgreementMaker).
+</p>
+
+
+<div class="address">
+<div class="footer">http://oaei.ontologymatching.org/2020/seals/index.html</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>Ontology Alignment Evaluation Initiative::2018</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<style type="text/css">
+span.important { color:red; }
+span.news { color:green; }
+</style>
+</head>
+<body>
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2020/">Ontology
+  Alignment Evaluation Initiative - HOBBIT evaluation for OAEI 2020
+  Campaign</a>
+<a href="http://oaei.ontologymatching.org/2020">
+  <img src="../oaeismall.jpg" style="float: right; margin-left: 10pt; margin-right: 10pt; margin-bottom: 10pt; border-style: none;" width="175px"></a>
+  <a href="https://project-hobbit.eu/">
+<img src="hobbit.png" style="clear: right; float: right; margin-right: 20pt; margin-left: 10pt; margin-bottom: 10pt; border-style: none;" width="150px"></a>
+</div>
+
+<h1>HOBBIT evaluation for OAEI 2020</h1>
+
+
+
+<h2>Instructions for organisers</h2>
+
+<p>
+OAEI track organisers should follow the 
+<a href="https://github.com/hobbit-project/platform/wiki/Develop-a-benchmark-component-in-Java">HOBBIT benchmark specification</a>.
+</p>
+
+<p>
+These benchmark definitions can be used as reference:
+
+<ul>
+
+<li>The <a href="https://gitlab.com/ernesto.jimenez.ruiz/largebio">Largebio Benchmark</a>.
+Contact: <b>Ernesto Jimenez Ruiz</b>: ernesto [dot] jimenez [dot] ruiz [at] gmail [dot] com</li>
+
+<li>The <a href="https://github.com/hobbit-project/SpatialBenchmark/tree/master/src/main/java/org/hobbit/spatialbenchmark/platformConnection">Spatial Benchmark</a>.
+Contact: <b>Nina Saveta</b>: jsaveta [at] ics [dot] forth [dot] gr</li>
+
+</ul>
+
+</p>
+
+
+
+
+
+<h2>Instructions for participants</h2>
+
+<p>
+System developers willing to participate in the HOBBIT tracks are required to follow different instructions with respect to the <a href="../seals/index.html">SEALS wrapping</a>.
+</p>
+
+
+<p>Check the following examples to submit a HOBBIT compliant system:
+
+<ul>
+<li><b>Ontology matching tasks</b>. See example of <a href="https://gitlab.com/ernesto.jimenez.ruiz/logmap-hobbit">LogMap wrapping for HOBBIT</a>. 
+So far implements the interfaces for Conference, Anatomy, Largebio and SPIMBENCH tracks.
+Contact: <b>Ernesto Jimenez Ruiz</b>: ernesto [dot] jimenez [dot] ruiz [at] gmail [dot] com</li>	
+
+<li>
+<b>Link discovery task</b>. See instructions 
+<a href="https://project-hobbit.eu/challenges/oaei2017-5/oaei2017-5-tasks/">here</a>. Main contact: <b>Nina Saveta</b>: jsaveta [at] gmail [dot] com
+</li> 
+</p>
+
+</ul>
+
+
+<p>In addition, <b>Sven Hertling</b> (sven [at] informatik [dot] uni-mannheim [dot] de) has implemented a framework to create SEALS and HOBBIT compliant matching systems. 
+Check details 
+ <a href="https://github.com/dwslab/melt">here</a> and/or get in touch with him. It also 
+ contains a small client which allows to evaluate the matcher locally (i.e., it downloads the benchmarks and computes the KPIs). 
+</p>
+
+
+<p>
+The standalone software library called the <a href="https://project-hobbit.eu/hobbit-java-sdk/">HOBBIT Java SDK</a> may also enable 
+an easier way to implement a benchmark or a system. It will also make possible to run local tests before submitting to the platform.
+</p>
+
+
+
+<p>
+Participants have to follow this procedure:
+<ol>
+  <li><b>Register your matching tool.</b> Participants must register their intention to participate in the OAEI 2020  
+  by filling this <a href="http://tiny.cc/oaei20-participation">online form</a>.    	
+  </li>
+
+  <li><b>Wrap the current version of your matching tool.</b>
+	Follow the instruction in the examples above and push the docker images to the HOBBIT platform (a personal access token is required). 
+
+  <li><b>Test your tool with the data sets available.</b>
+  Test your system (locally when possible) and remotely using <a href="https://master.project-hobbit.eu/home">HOBBIT's public instance</a>.  
+  More details in the <a href="https://github.com/hobbit-project/platform/wiki/Experiments">HOBBIT wiki pages</a>.   
+	</li>
+</ol>
+</p>
+
+
+
+
+
+<!-- 
+<h2>Contacts</h2>
+<p>
+
+
+</p>
+
+<h3>Acknowledgement</h3>
+
+<p>
+</p>
+
+ -->
+
+<div class="address">
+<div class="footer">http://oaei.ontologymatching.org/2020/hobbit/index.html</div>
+</div>
+</body>
+</html>
