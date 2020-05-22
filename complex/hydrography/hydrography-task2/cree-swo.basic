@@ -1,0 +1,606 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+         xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+         xmlns:xsd='http://www.w3.org/2001/XMLSchema#'
+         xmlns:alext='http://exmo.inrialpes.fr/align/ext/1.0/'
+         xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'>
+<Alignment>
+  <xml>yes</xml>
+  <level>0</level>
+  <type>**</type>
+  <onto1>
+    <Ontology rdf:about="http://www.owl-ontologies.com/Cree_hydro.owl#">
+      <location>http://www.owl-ontologies.com/Cree_hydro.owl</location>
+    </Ontology>
+  </onto1>
+  <onto2>
+    <Ontology rdf:about="http://cegis.usgs.gov/SWO#">
+      <location>http://cegis.usgs.gov/SWO</location>
+    </Ontology>
+  </onto2>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Upikimaau'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Upikimaau'/>
+      <entity2 rdf:resource='http://cree-swo/alignment/Channel'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Upikimaau'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Channel'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Upikimaau'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#contains'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Minishtik'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Minishtik'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#BayOrInlet'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Minishtik'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Minishtik'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedBy'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Pikutaauhkw'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Pikutaauhkw'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isConnectedTo'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Pikutaauhkw'/>
+      <entity2 rdf:resource='http://cree-swo/alignment/LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Shiipiish'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#EmptiesInto'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#partOf'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedBy'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Aa_uchihchich'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Aa_uchihchich'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Aa_uchihchich'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Aa_uchihchich'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedBy'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Shakaapishiish'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SpringOrSeep'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Waashaau'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#BayOrInlet'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Mischaakw'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SwampOrMarsh'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#FeedsFrom'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Aa_upaach'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Channel'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Aa_upaach'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedBy'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Aa_saachiiuch'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Aa_saachiiuch'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Aa_saachiiuch'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Aa_saachiiuch'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedBy'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#portagesAround'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#adjoins'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#ConnectedTo'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isConnectedTo'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Saakihiikin'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Contains'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#contains'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Yaatiwaakimii'/>
+      <entity2 rdf:resource='http://cree-swo/alignment/BayOrInlet'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Yaatiwaakimii'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#adjoins'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Yaatiwaakimii'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#ContainedBy'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedBy'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#HasPart'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#contains'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#isConstructedFrom'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasMaterial'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Paaushtikui'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Rapids'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Aa_aschipuutaakinuwich'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Reservoir'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Wiinipaakw'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#BayOrInlet'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Minishtikuchuun'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Minishtikuchuun'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Minishtikuchuun'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedBy'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Kapataakan'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Kapataakan'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Kapataakan'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Mischaakushtikw'/>
+      <entity2 rdf:resource='http://cree-swo/alignment/StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Mischaakushtikw'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedBy'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Mischaakushtikw'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SwampOrMarsh'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Shiipaashtikw'/>
+      <entity2 rdf:resource='http://cree-swo/alignment/Channel'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Shiipaashtikw'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Shiipaashtikw'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Shiipaashtikw'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Aamaataashtikwaayaach'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Aamaataashtikwaayaach'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Aamaataashtikwaayaach'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Naasipaatimihch'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Shore'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Mischaakusaakihiikin'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SwampOrMarsh'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Mischaakusaakihiikin'/>
+      <entity2 rdf:resource='http://cree-swo/alignment/LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Mischaakusaakihiikin'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedBy'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Muschiwinipaakw'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SpringOrSeep'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#UpstreamOf'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasDirection'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Shikaapishii'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Iihthuwikimaauh'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#contains'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Iihthuwikimaauh'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Iihthuwikimaauh'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#AggregateHydrographicFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#DownstreamOf'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasDirection'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Anatwaayach'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Rapids'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Anatwaayach'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedby'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Anatwaayach'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#adjoins'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Anatwaayach'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.owl-ontologies.com/Cree_hydro.owl#Siipii'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+</Alignment>
+</rdf:RDF>

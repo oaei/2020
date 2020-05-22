@@ -1,0 +1,401 @@
+-<http://gbo#hasDescription>
+<http://gmo#describedBy> 1.0
+<http://gmo#InformationObject> 1.0
+<http://gmo#hasDescription> 1.0
+-<http://gbo#hasTitle>
+<http://gmo#describedBy> 1.0
+<http://gmo#InformationObject> 1.0
+<http://gmo#hasCanonicalName> 1.0
+-<http://gbo#hasAbstract>
+<http://gmo#describedBy> 1.0
+<http://gmo#InformationObject> 1.0
+<http://gmo#hasDescription> 1.0
+-<http://gbo#Identifier>
+<http://gmo#Identifier> 1.0
+-<http://gbo#hasIdentifierScheme>
+<http://gmo#hasIdentifierScheme> 1.0
+-<http://gbo#hasIdentifierValue>
+<http://gmo#hasIdentifierValue> 1.0
+-<http://gbo#hasIdentifier>
+<http://gmo#describedBy> 1.0
+<http://gmo#InformationObject> 1.0
+<http://gmo#hasPrimaryIdentifier> 1.0
+-<http://gbo#isIdentifierOf>
+<http://gmo#describedBy> 1.0
+<http://gmo#InformationObject> 1.0
+<http://gmo#hasPrimaryIdentifier> 1.0
+-<http://gbo#Place>
+<http://gmo#Place> 1.0
+-<http://gbo#PlaceType>
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> 1.0
+<http://gmo#Place> 1.0
+-<http://gbo#hasPlaceType>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 1.0
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> 1.0
+<http://gmo#Place> 1.0
+-<http://gbo#isPlaceTypeOf>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 1.0
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> 1.0
+<http://gmo#Place> 1.0
+-<http://gbo#GeoFeature>
+<http://gmo#Place> 1.0
+-<http://gbo#GeoFeatureType>
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> 1.0
+<http://gmo#Place> 1.0
+-<http://gbo#hasGeoFeatureType>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 1.0
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> 1.0
+<http://gmo#Place> 1.0
+-<http://gbo#isGeoFeatureTypeOf>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 1.0
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> 1.0
+<http://gmo#Place> 1.0
+-<http://gbo#Award>
+<http://gmo#FundingAward> 1.0
+-<http://gbo#hasAward>
+<http://gmo#fundedBy> 1.0
+-<http://gbo#isAwardOf>
+<http://gmo#fundedBy> 1.0
+-<http://gbo#hasCoPrinceipalInvestigator>
+<http://gmo#FundingAward> 1.0
+<http://gmo#Program> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#CoPrincipalInvestigatorRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isCoPrincipalInvestigatorOf>
+<http://gmo#FundingAward> 1.0
+<http://gmo#Program> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#CoPrincipalInvestigatorRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasPrincipalInvestigator>
+<http://gmo#FundingAward> 1.0
+<http://gmo#Program> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#PrincipalInvestigatorRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isPrincipalInvestigatorOf>
+<http://gmo#FundingAward> 1.0
+<http://gmo#Program> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#PrincipalInvestigatorRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasProgramManager>
+<http://gmo#FundingAward> 1.0
+<http://gmo#Program> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#ProgramManagerRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isProgramManagerOf>
+<http://gmo#FundingAward> 1.0
+<http://gmo#Program> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#ProgramManagerRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasSponsor>
+<http://gmo#FundingAward> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#SponsorRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isSponsorOf>
+<http://gmo#FundingAward> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#SponsorRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasEndDate>
+<http://gmo#FundingAward> 1.0
+<http://gmo#Program> 1.0
+<http://gmo#endsOnDate> 1.0
+<http://www.w3.org/2006/time#Instant> 1.0
+<http://www.w3.org/2006/time#inXSDDate> 1.0
+-<http://gbo#hasStartDate>
+<http://gmo#FundingAward> 1.0
+<http://gmo#Program> 1.0
+<http://gmo#startsOnDate> 1.0
+<http://www.w3.org/2006/time#Instant> 1.0
+<http://www.w3.org/2006/time#inXSDDate> 1.0
+-<http://gbo#Program>
+<http://gmo#Program> 1.0
+-<http://gbo#hasProgram>
+<http://gmo#associatedWithProgram> 1.0
+-<http://gbo#isProgramOf>
+<http://gmo#associatedWithProgram> 1.0
+-<http://gbo#hasAcronym>
+<http://gmo#Program> 1.0
+<http://gmo#describedBy> 1.0
+<http://gmo#InformationObject> 1.0
+<http://gmo#alsoKnownAs> 1.0
+-<http://gbo#Organization>
+<http://gmo#Organization> 1.0
+-<http://gbo#fromCountry>
+<http://gmo#Organization> 1.0
+<http://gmo#hasSite> 1.0
+<http://gmo#Place> 1.0
+-<http://gbo#isCountryOf>
+<http://gmo#Organization> 1.0
+<http://gmo#hasSite> 1.0
+<http://gmo#Place> 1.0
+-<http://gbo#hasSubOrganization>
+<http://gmo#hasSubOrganization> 1.0
+-<http://gbo#isSubOrganizationOf>
+<http://gmo#hasSubOrganization> 1.0
+-<http://gbo#Person>
+<http://gmo#Person> 1.0
+-<http://gbo#hasAffiliation>
+<http://gmo#Organization> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AffiliationRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isAffiliationOf>
+<http://gmo#Person> 1.0
+-<http://gbo#hasAffiliation>
+<http://gmo#Organization> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AffiliationRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasFullName>
+<http://gmo#Person> 1.0
+<http://gmo#hasPersonalInfoItem> 1.0
+<http://gmo#PersonalInfoItem> 1.0
+<http://gmo#hasLiteralValue> 1.0
+<http://gmo#hasPersonName> 1.0
+<http://gmo#PersonName> 1.0
+<http://gmo#fullName> 1.0
+-<http://gbo#hasGivenName>
+<http://gmo#Person> 1.0
+<http://gmo#hasPersonalInfoItem> 1.0
+<http://gmo#PersonalInfoItem> 1.0
+<http://gmo#hasLiteralValue> 1.0
+<http://gmo#hasPersonName> 1.0
+<http://gmo#PersonName> 1.0
+<http://gmo#firstOrGivenName> 1.0
+-<http://gbo#hasFamilyName> 
+<http://gmo#hasPersonalInfoItem> 1.0
+<http://gmo#PersonalInfoItem> 1.0
+<http://gmo#hasLiteralValue> 1.0
+<http://gmo#hasPersonName> 1.0
+<http://gmo#PersonName> 1.0
+<http://gmo#familyOrSurname> 1.0
+-<http://gbo#Platform>
+<http://gmo#Platform> 1.0
+-<http://gbo#PlatformType>
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> 1.0
+<httP://gmo#Platform> 1.0
+-<http://gbo#hasPlatformType>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 1.0
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> 1.0
+<http://gmo#Platform> 1.0
+-<http://gbo#isPlatformTypeOf>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 1.0
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> 1.0
+<http://gmo#Platform> 1.0
+-<http://gbo#hasOwner>
+<http://gmo#Platform> 1.0
+<http://gmo#Vessel> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#VesselOwnerRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isOwnerOf>
+<http://gmo#Platform> 1.0
+<http://gmo#Vessel> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#VesselOwnerRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#Vessel>
+<http://gmo#Vessel> 1.0
+-<http://gbo#Cruise> 
+<http://gmo#Cruise> 1.0
+-<http://gbo#CruiseType>
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> 1.0
+<http://gmo#Cruise> 1.0
+-<http://gbo#hasCruiseType>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 1.0
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> 1.0
+<http://gmo#Cruise> 1.0
+-<http://gbo#isCruiseTypeOf>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 1.0
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> 1.0
+<http://gmo#Cruise> 1.0
+-<http://gbo#hasChiefScientist>
+<http://gmo#Cruise> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isChiefScientistOf>
+<http://gmo#Cruise> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasCoChiefScientist>
+<http://gmo#Cruise> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isCoChiefScientistOf>
+<http://gmo#Cruise> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasScientist>
+<http://gmo#Cruise> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isScientistOf>
+<http://gmo#Cruise> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasEducator>
+<http://gmo#Cruise> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isEducatorIn>
+<http://gmo#Cruise> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasStudent>
+<http://gmo#Cruise> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isStudentIn>
+<http://gmo#Cruise> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasObserver>
+<http://gmo#Cruise> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isObserverIn>
+<http://gmo#Cruise> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasScheduler>
+<http://gmo#Cruise> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isSchduelerOf>
+<http://gmo#Cruise> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasTechnician>
+<http://gmo#Cruise> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isTechnicianOf>
+<http://gmo#Cruise> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#PortCall>
+<http://gmo#Fix> 1.0
+-<http://gbo#atPort>
+<http://gmo#atPort> 1.0
+-<http://gbo#isPortOf>
+<http://gmo#atPort> 1.0
+-<http://gbo#PhysicalSample>
+<http://gmo#PhysicalSample> 1.0
+-<http://gbo#PhysicalSampleType>
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> 1.0
+<http://gmo#PhysicalSampleType> 1.0
+-<http://gbo#hasSampleType>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 1.0
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> 1.0
+<http://gmo#PhysicalSampleType> 1.0
+-<http://gbo#isSampleTypeOf>
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#type> 1.0
+<http://www.w3.org/2000/01/rdf-schema#subClassOf> 1.0
+<http://gmo#PhysicalSampleType> 1.0
+-<http://gbo#hasCollector>
+<http://gmo#PhysicalSampleType> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#AgentRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isCollectorOf>
+<http://gmo#PhysicalSampleType> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#CollectorRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasContact>
+<http://gmo#PhysicalSampleType> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#ContactRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isContactOf>
+<http://gmo#PhysicalSampleType> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#ContactRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasContributor>
+<http://gmo#PhysicalSampleType> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#ContributorRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isContributorOf>
+<http://gmo#PhysicalSampleType> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#ContributorRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasCurator>
+<http://gmo#PhysicalSampleType> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#CuratorRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isCuratorOf>
+<http://gmo#PhysicalSampleType> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#CuratorRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasEditor>
+<http://gmo#PhysicalSampleType> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#EditorRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isEditorOf>
+<http://gmo#PhysicalSampleType> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#EditorRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasRegistrant>
+<http://gmo#PhysicalSampleType> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#RegistrantRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isRegistrantOf>
+<http://gmo#PhysicalSampleType> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#RegistrantRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#hasRightsHolder>
+<http://gmo#PhysicalSampleType> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#RightsHolderRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#isRightsHolderOf>
+<http://gmo#PhysicalSampleType> 1.0
+<http://gmo#providesAgentRole> 1.0
+<http://gmo#RightsHolderRole> 1.0
+<http://gmo#performedBy> 1.0
+-<http://gbo#originatesFrom>
+<http://gmo#originatesFrom> 1.0
+<http://gmo#PhysicalSample> 1.0
+<http://gmo#derivedUsing> 1.0
+<http://gmo#SampingProcess> 1.0
+<http://gmo#hasInputFeature> 1.0
+-<http://gbo#isOriginOf>
+<http://gmo#originatesFrom> 1.0
+<http://gmo#PhysicalSample> 1.0
+<http://gmo#derivedUsing> 1.0
+<http://gmo#SampingProcess> 1.0
+<http://gmo#hasInputFeature> 1.0

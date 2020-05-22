@@ -1,0 +1,1654 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+         xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+         xmlns:xsd='http://www.w3.org/2001/XMLSchema#'
+         xmlns:alext='http://exmo.inrialpes.fr/align/ext/1.0/'
+         xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'>
+<Alignment>
+  <xml>yes</xml>
+  <level>0</level>
+  <type>**</type>
+  <onto1>
+    <Ontology rdf:about="http://geo.linkeddata.es/ontology/">
+      <location>http://geo.linkeddata.es/ontology</location>
+    </Ontology>
+  </onto1>
+  <onto2>
+    <Ontology rdf:about="http://cegis.usgs.gov/SWO#">
+      <location>http://cegis.usgs.gov/SWO</location>
+    </Ontology>
+  </onto2>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Oc%C3%A9ano'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SeaOrOcean'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Zona_Encharcable'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#InundationArea'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Ribera'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Shore'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aljibe'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#UndergroundFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Canal_de_Lago'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Canal_de_Lago'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Canal_de_Lago'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Canal_de_Lago'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Canal_de_Lago'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#CanalOrDitch'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/origen_del_agua'/>
+      <entity2 rdf:resource='http://www.w3.org/2002/07/owl#Thing'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/origen_del_agua'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Fuente_Vauclusiana'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasTemporality'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Marisma'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SwampOrMarsh'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/desagua_en'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Saladar'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SwampOrMarsh'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Saladar'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedBy'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Guadi'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasTemporality'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Guadi'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Afluente'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Afluente'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Afluente'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Barranco'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Channel'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Pozo'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Well'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Quietas_Naturales'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#ManmadeFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Tuber%C3%ADa'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Pipeline'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/sufre_descarga_de'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Gola'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Gola'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#CanalOrDitch'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Gola'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isConnectedTo'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/tiene_afluente'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Vado'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedBy'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Vado'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Toma'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Well'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Lago_Subterr%C3%A1no'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#UndergroundFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Lago_Subterr%C3%A1no'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.w3.org/2002/07/owl#Thing'/>
+      <entity2 rdf:resource='http://geo.linkeddata.es/ontology/es_transvasada'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.w3.org/2002/07/owl#Thing'/>
+      <entity2 rdf:resource='http://geo.linkeddata.es/ontology/es_distribuida'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.w3.org/2002/07/owl#Thing'/>
+      <entity2 rdf:resource='http://geo.linkeddata.es/ontology/transvasa'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.w3.org/2002/07/owl#Thing'/>
+      <entity2 rdf:resource='http://geo.linkeddata.es/ontology/distribuye'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://www.w3.org/2002/07/owl#Thing'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#TransportingFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Cascada'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterfall'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/es_distribuida'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#TransportingFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/es_distribuida'/>
+      <entity2 rdf:resource='http://www.w3.org/2002/07/owl#Thing'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Continentales'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SurfaceFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Continentales'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#UndergroundFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Continentales'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Rambla'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasTemporality'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Rambla'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Recinto'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Reservoir'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Mar_Territorial'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#adjacentTo'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Mar_Territorial'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedBy'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Mar_Territorial'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Coastline'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Mar_Territorial'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SeaOrOcean'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/origina'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Mar'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SeaOrOcean'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Quietas_Artificiales'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#ManmadeFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Fuente_Artesana'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Well'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Isla_Fluvial'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Reservoir'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Isla_Fluvial'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Isla_Fluvial'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Isla_Fluvial'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isConnectedTo'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Isla_Fluvial'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Lago'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/conecta_con'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isConnectedTo'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Venaje'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#AggregateHydrographicFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Venaje'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Venaje'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/situaci%C3%B3n'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SurfaceFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/situaci%C3%B3n'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#ElevatedFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/situaci%C3%B3n'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasTemporality'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/situaci%C3%B3n'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#UndergroundFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Fuente_Salada'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SpringOrSeep'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Superficiales'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SurfaceFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Superficiales'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Corrientes_Naturales'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Flow'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Corrientes_Naturales'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasFlow'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Corrientes_Naturales'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SurfaceFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Corrientes_Naturales'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Salina'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Evaporator'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Corrientes'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasFlow'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Corrientes'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Flow'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Corrientes'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SurfaceFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Corrientes'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/es_comunicada_por'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isConnectedTo'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Sumidero'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SinkOrRise'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Corriente_Subterr%C3%A1nea'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#UndergroundFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Corriente_Subterr%C3%A1nea'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Garganta'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Channel'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Humedal'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SwampOrMarsh'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aluvi%C3%B3n'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedBy'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aluvi%C3%B3n'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Corriente'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasFlow'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Corriente'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Flow'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Ojo'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Ojo'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/es_conectado_con'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isConnectedTo'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Conducto'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#CanalOrDitch'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Desag%C3%BCe'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#CanalOrDitch'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Desag%C3%BCe'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Desag%C3%BCe'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Desag%C3%BCe'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SeaOrOcean'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Desag%C3%BCe'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Desp%C3%B3sito'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#WaterStorage'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Torrente'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasTemporality'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Torrente'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Canal'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#CanalOrDitch'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/evac%C3%BAa_de'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/vierte_en'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/G%C3%A9iser'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasTemporality'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Corrientes_Artificiales'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SurfaceFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Corrientes_Artificiales'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasFlow'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Corrientes_Artificiales'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Flow'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Corrientes_Artificiales'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Zona_Econ%C3%B3mic_Exclusiva'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#adjacentTo'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Zona_Econ%C3%B3mic_Exclusiva'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Coastline'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Surgencia_Natural'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#ManmadeFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/R%C3%ADo'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Arroyo'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasTemporality'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Arroyo'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/transvasa'/>
+      <entity2 rdf:resource='http://www.w3.org/2002/07/owl#Thing'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/transvasa'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#TransportingFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Marinas'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SeaOrOcean'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Marinas'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedBy'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Chorrera'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterfall'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Acu%C3%ADfero'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#UndergroundFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Estanque'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#DecorativePool'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/origen_formaci%C3%B3n'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#ManmadeFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/origen_formaci%C3%B3n'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Glaciar'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/origen_formaci%C3%B3n'/>
+      <entity2 rdf:resource='http://www.w3.org/2002/07/owl#Thing'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/origen_formaci%C3%B3n'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Subterr%C3%A1neas'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#UndergroundFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Subterr%C3%A1neas'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_de_Transici%C3%B3n'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_de_Transici%C3%B3n'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_de_Transici%C3%B3n'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#adjoins'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_de_Transici%C3%B3n'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SeaOrOcean'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/es_originado_por'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Zona_Contigua'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#adjacentTo'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Zona_Contigua'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Coastline'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Delta'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Delta'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Delta'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#adjoins'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Acequia'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#CanalOrDitch'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/comunica_con'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isConnectedTo'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Quietas'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SurfaceFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Quietas'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/R%C3%A1pido'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Rapids'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/distribuye'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#TransportingFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/distribuye'/>
+      <entity2 rdf:resource='http://www.w3.org/2002/07/owl#Thing'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Masa_de_Agua_Artificial'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Masa_de_Agua_Artificial'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#ManmadeFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Acuitardo'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#UndergroundFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Surgencias'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SpringOrSeep'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Manantial_Salado'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SpringOrSeep'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/est%C3%A1_proxima_a'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#adjoins'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Estuario'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SeaOrOcean'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Estuario'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedby'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Estuario'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Brazo'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SeaOrOcean'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Brazo'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedby'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Brazo'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#CanalOrDitch'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Fen%C3%B3meno_hidrogr%C3%A1fic'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SurfaceFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Fen%C3%B3meno_hidrogr%C3%A1fic'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#HydrographicFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Nacimiento'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Nacimiento'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Efluente'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasFlow'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Efluente'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Efluente'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Flow'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Efluente'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Efluente'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Divergence'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Surgencia_Artificial'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#ManmadeFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Alta_Mar'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Coastline'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Alta_Mar'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#adjacentTo'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Desembocadura'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Desembocadura'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedby'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Canal_Aguas_Marinas'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SeaOrOcean'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Canal_Aguas_Marinas'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#CanalOrDitch'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Canal_Aguas_Marinas'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Canal_Aguas_Marinas'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Canal_Aguas_Marinas'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Albufera'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedBy'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Albufera'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#adjoins'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Albufera'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SpringOrSeep'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Albufera'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SwampOrMarsh'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Albufera'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Albufera'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#contains'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Albufera'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SeaOrOcean'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/es_almancenado_en'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Costera'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Coastline'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Aguas_Costera'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#adjacentTo'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Piscina'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SwimmingPool'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Glaciar'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#IceMass'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Laguna'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/es_transvasada'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#TransportingFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/es_transvasada'/>
+      <entity2 rdf:resource='http://www.w3.org/2002/07/owl#Thing'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Lago_Salado'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/almancena'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/permite'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#contains'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Poza'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterbody'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/estaEn'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isContainedBy'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Masa_de_Hielo'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#IceMass'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Charca'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Confluencia'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://geo.linkeddata.es/ontology/Confluencia'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+</Alignment>
+</rdf:RDF>
