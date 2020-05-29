@@ -28,7 +28,7 @@ For example, given two ontologies <i>o1</i> and <i>o2</i>:
 
 <p>With this track, we evaluate systems which can generate such correspondences.</p>
 
-<p>The complex track contains 5 datasets about 4 different domains: <a href="#conference">Conference</a> and <a href="#popconf">Populated Conference</a>, <a href="#hydrography">Hydrography</a>, <a href="#geolink">GeoLink</a> and <a href="#taxonomy">Taxon</a>. Each of the dataset and the evaluation methods are presented below.</p>
+<p>The complex track contains 7 datasets about 5 different domains: <a href="#conference">Conference</a> and <a href="#popconf">Populated Conference</a>, <a href="#hydrography">Hydrography</a>, <a href="#geolink">GeoLink</a>, <a href="#popgeolink">Populated GeoLink</a>,  <a href="#popenslaved">Populated Enslaved</a> and <a href="#taxonomy">Taxon</a>. Each of the datasets and corresponding evaluation methods are presented below.</p>
 
 <p>The participants of the track should output their (complex) correspondences in the <a href="http://alignapi.gforge.inria.fr/edoal.html">EDOAL</a> format. This format is supported by <a href="http://alignapi.gforge.inria.fr/edoal.html#sec:support">the Alignment API</a>. The evaluation will be supported by the SEALS platform. The participants have to wrap their tool against the SEALS client as described at <a href="http://oaei.ontologymatching.org/2018/seals.html">SEALS evaluation for OAEI 2018</a>. For executing the tasks in each dataset the parameters are listed in boxes below (repository, suite-id, version-id).</p>
 
@@ -69,6 +69,20 @@ For example, given two ontologies <i>o1</i> and <i>o2</i>:
     <td>19</td>
     <td>5</td>
     <td>43</td>
+  </tr>
+  <tr>
+    <td>Populated GeoLink</td>
+    <td>2</td>
+    <td>19</td>
+    <td>5</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td>Populated Enslaved</td>
+    <td>2</td>
+    <td>15</td>
+    <td>0</td>
+    <td>81</td>
   </tr>
   <tr>
     <td>Taxon</td>
@@ -204,7 +218,7 @@ The schedule is available at the <a href="../index.html#schedule">OAEI main page
 
 <a name="geolink"><h3>GeoLink dataset</h3></a>
 <h4>Ontologies and correspondences</h4>
-<p>This dataset is from the <a href="https://www.geolink.org/">GeoLink project</a>, which was funded under the U.S. National Science Foundation's EarthCube initiative. It is composed of two ontologies: the GeoLink Base Ontology (<a href="../complex/geolink/ontology/gbo.owl">GBO</a>) and the GeoLink Modular Ontology (<a href="../complex/geolink/ontology/gmo.owl">GMO</a>). The GeoLink project is a real-world use case of ontologies, and its instance data is available. The ontologies with the populated instance data can be also downloaded (<a href="../complex/geolink/ontology/GeoLinkWithInstance.zip">here</a>). The alignment between the two ontologies was developed in consultation with domain experts from several geoscience research institutions. This alignment is a slightly simplified version of the one discussed in [4]. The relations that involve punning have been removed due to a concern that many automated alignment systems would not consider these as potential mappings. More details can be found in [4]. </p>
+<p>This dataset is from the <a href="https://www.geolink.org/">GeoLink project</a>, which was funded under the U.S. National Science Foundation's EarthCube initiative. It is composed of two ontologies: the GeoLink Base Ontology (<a href="../complex/geolink/ontology/gbo.owl">GBO</a>) and the GeoLink Modular Ontology (<a href="../complex/geolink/ontology/gmo.owl">GMO</a>). The GeoLink project is a real-world use case of ontologies, and its instance data is available. The alignment between the two ontologies was developed in consultation with domain experts from several geoscience research institutions. This alignment is a slightly simplified version of the one discussed in [4]. The relations that involve punning have been removed due to a concern that many automated alignment systems would not consider these as potential mappings. More details can be found in [4]. </p>
 
 <p>
 <div class="testsuite">
@@ -223,6 +237,49 @@ The same three subtasks as described for the <a href="#hydrography">hydrography<
 <h4>Evaluation modalities</h4>
 The evaluation of the systems will be performed by computing relaxed precision and recall for three tasks. The reference alignment can be downloaded from <a href="../complex/geolink/gbo-gmo.edoal">here</a>.
 
+
+
+<a name="popgeolink"><h3>Populated Geolink dataset</h3></a>
+<h4>Ontologies and correspondences</h4>
+<p>In order to allow alignment systems that rely on the instance data to participate over the Geolink complex track, we also generate a populated version of the Geolink dataset. The instance data are from real-worlds and collected from seven data repositories in the Geolink project. The ontologies with the populated instance data can be also downloaded (<a href="../complex/geolink/ontology/GeoLinkWithInstance.zip">here</a>). More details of the populated geolink dataset can be found in [8]. </p>
+
+<p>
+<div class="testsuite">
+<span class="title">GeoLink</span></li>
+<ul>
+	<li>Repository: <span class="testsuiteid">http://repositories.seals-project.eu/tdrs/</span></li>
+	<li>Suite-ID: <span class="testsuiteid">popgeolink</span></li>
+	<li>Version-ID: <span class="testsuiteid">popgeolink-v1</span></li>
+</ul>
+</div>
+</p>
+
+<h4>Tasks</h4>
+The same three subtasks as described for the <a href="#hydrography">hydrography</a> dataset apply to this dataset also.
+
+<h4>Evaluation modalities</h4>
+The evaluation of the systems will be performed by computing relaxed precision and recall for three tasks. The reference alignment can be downloaded from <a href="../complex/geolink/gbo-gmo.edoal">here</a>.
+
+<a name="popenslaved"><h3>Populated Enslaved dataset</h3></a>
+<h4>Ontologies and correspondences</h4>
+<p>This dataset is from the <a href="http://enslaved.org/">Enslaved project</a>, which was funded under The Andrew w. Mellon Foundation. It is composed of two resources: the Enslaved Ontology (<a href="../complex/enslaved/ontology/enslavedOnto.owl">EnslavedOnto</a>) and the Enslaved Wikidata Knowledge Graph (<a href="../complex/enslaved/ontology/wikidataKG.owl">EnslavedWikidataKG</a>). The Enslaved project is a real-world use case of ontologies in pepple of historic slave trade domain, and its instance data is available and already incorporated into <a href="https://lod.enslaved.org/wiki/Meta:Main_Page">Wikidata repository</a>. The alignment between the two resources was developed in consultation with domain experts from several historian research institutions.</p>
+
+<p>
+<div class="testsuite">
+<span class="title">Populated Enslaved</span></li>
+<ul>
+	<li>Repository: <span class="testsuiteid">http://repositories.seals-project.eu/tdrs/</span></li>
+	<li>Suite-ID: <span class="testsuiteid">popenslaved</span></li>
+	<li>Version-ID: <span class="testsuiteid">popenslaved-v1</span></li>
+</ul>
+</div>
+</p>
+
+<h4>Tasks</h4>
+The same three subtasks as described for the <a href="#hydrography">hydrography</a> dataset apply to this dataset also.
+
+<h4>Evaluation modalities</h4>
+The evaluation of the systems will be performed by computing relaxed precision and recall for three tasks. The reference alignment can be downloaded from <a href="../complex/enslaved/enslaved-wikidata.edoal">here</a>.
 
 <a name="taxonomy"><h3>Taxon dataset</h3></a>
 <h4>Ontologies and correspondences</h4>
@@ -273,6 +330,8 @@ SPARQL endpoints
 <p>[6] Élodie Thiéblin. Do competency questions for alignment help fostering complex correspondences?. In EKAW Doctoral Consortium, 2018.</p>
 
 <p>[7] Élodie Thiéblin, Fabien Amarger, Ollivier Haemmerlé, Nathalie Hernandez, Cassia Trojahn. Rewriting SELECT SPARQL queries from 1:n complex correspondences. In: Ontology Matching, pp. 49-60, 2016.</p>
+
+<p>[8] Lu Zhou, Michelle Cheatham, Adila Krisnadhi, Pascal Hitzler. GeoLink DataSet: A Complex Alignment Benchmark from Real-world Ontology. In: Data Intellegence. MIT Press, Proceedings, 2019.</p>
 
 <div class="address">
 <div class="footer"><a href="http://oaei.ontologymatching.org/2020/complex/index.html">http://oaei.ontologymatching.org/2020/complex</a></div>
