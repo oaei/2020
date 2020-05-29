@@ -32,7 +32,10 @@
      xmlns:schema="http://schema.org/"
      xmlns:enslaved="https://enslaved.org/ontology/"
      xmlns:wikibase="http://wikiba.se/ontology#">
-    <owl:Ontology rdf:about="https://enslaved-wikidata-small"/>
+    <owl:Ontology rdf:about="https://enslaved-wikidata-small">
+        <rdfs:comment xml:lang="en">Creater: Lu Zhou</rdfs:comment>
+        <rdfs:comment xml:lang="en">enslaved data in wikidata for OAEI</rdfs:comment>
+    </owl:Ontology>
     
 
 
@@ -194350,8 +194353,8 @@
      -->
 
     <rdf:Description rdf:about="https://lod.enslaved.org/entity/P1">
-        <rdfs:label xml:lang="en">instance of</rdfs:label>
         <schema:description xml:lang="en">that class of which this subject is a particular example and member. (Subject typically an individual member with Proper Name label.) Different from P2 (subclass of)</schema:description>
+        <rdfs:label xml:lang="en">instance of</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://lod.enslaved.org/entity/P15">
         <rdfs:label xml:lang="en">hasLicenseInfo</rdfs:label>
@@ -194530,8 +194533,8 @@
         <rdfs:label xml:lang="en">hasEventType</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://lod.enslaved.org/prop/direct/P31">
-        <rdfs:label xml:lang="en">hasSex</rdfs:label>
         <schema:description xml:lang="en">property to obtain the sex record of a person</schema:description>
+        <rdfs:label xml:lang="en">hasSex</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://lod.enslaved.org/prop/direct/P32">
         <rdfs:label xml:lang="en">hasRaceorColor</rdfs:label>
@@ -194542,8 +194545,8 @@
         <schema:description xml:lang="en">property to obtain the person status of the agent</schema:description>
     </rdf:Description>
     <rdf:Description rdf:about="https://lod.enslaved.org/prop/direct/P39">
-        <rdfs:label xml:lang="en">hasInterAgentRelationshipTypeTo</rdfs:label>
         <schema:description xml:lang="en">property to obtain agent to agent relationship</schema:description>
+        <rdfs:label xml:lang="en">hasInterAgentRelationshipTypeTo</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://lod.enslaved.org/prop/direct/P40">
         <schema:description xml:lang="en">qualifier for hasInterAgentRelationship to point to agent</schema:description>
