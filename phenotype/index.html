@@ -1,0 +1,340 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<title>OAEI 2020::Disease and Phenotype Track</title>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head><body>
+
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2020/">Ontology
+  Alignment Evaluation Initiative - OAEI-2020 Campaign</a>
+  <a href="http://oaei.ontologymatching.org/">
+  <img src="../../oaeismall.jpg" style="float: right; margin-left: 10pt; margin-right: 10pt; margin-bottom: 10pt; border-style: none;" width="175px"></a>
+  <!--<a href="http://www.seals-project.eu/">
+<img src="Seals-logo-5.png" style="clear: right; float: right; margin-right: 20pt; margin-left: 10pt; margin-bottom: 10pt; border-style: none;" width="150px"></a>-->
+<a href="http://www.pistoiaalliance.org/projects/ontologies-mapping/">
+<img src="pistoia.png" style="clear: right; float: right; margin-right: 10pt; margin-left: 10pt; border-style: none;" width="150px"></a>
+</div>
+
+
+<p><b><a href="http://sws.ifi.uio.no/oaei/phenotype/">Disease and Phenotype Track</a></b></p>
+
+<h1>OAEI 2020::Disease and Phenotype Track <i>(phenotype)</i></h1>
+
+
+ 
+<p><b>NEWS:</b>
+<ul>
+	<li><b><a href="../results/phenotype/index.html">2020 results available now!</a></b></li>
+</ul>
+</p>
+</br>
+
+ 
+ <!--  
+ <p><b>NEWS:</b>
+<ul>
+	<li><b><a href="https://goo.gl/1k1nFv" target="_blank">Preliminary results available!</a></b></li>
+</ul>
+</p>
+</br />
+-->
+ 
+ 
+
+<h2><u>General description</u></h2>
+
+<p>The 2020 edition is composed by two tasks requiring the pairwise alignment of:</p>
+
+<ol>
+<li> <a href="http://www.obofoundry.org/ontology/hp.html">Human Phenotype Ontology (HP)</a> to 
+<a href="http://www.obofoundry.org/ontology/mp.html">Mammalian Phenotype Ontology (MP)</a>; </li>
+
+<li> <a href="http://www.obofoundry.org/ontology/doid.html">Human Disease Ontology (DOID)</a> to  
+the <a href="http://www.orphadata.org/cgi-bin/inc/ordo_orphanet.inc.php/">Orphanet Rare Disease Ontology (ORDO)</a>;</li>
+
+<!-- 
+<li> <a href="http://www.obofoundry.org/ontology/hp.html">Human Phenotype Ontology (HP)</a> to 
+<a href="https://bioportal.bioontology.org/ontologies/RH-MESH">Medical Subject Headings (MESH)</a>; and </li>
+
+<li> <a href="http://www.obofoundry.org/ontology/hp.html">Human Phenotype Ontology (HP)</a> to 
+<a href="https://bioportal.bioontology.org/ontologies/OMIM">Online Mendelian Inheritance in Man (OMIM)</a>.</li>
+ -->
+
+</ol>
+
+
+<p>
+Currently, mappings between these ontologies are mostly curated by bioinformatics and disease 
+experts who would benefit from automation of their workflows supported by implementation of ontology matching algorithms.
+</p>
+
+<table border="1">
+<caption>Table 1: Ontology versions and sources</caption>
+
+<tr>
+<th>Ontology
+</th>
+<th>Version
+</th>
+<th>Source
+</th>
+
+</tr>
+
+<tr>
+
+<td>
+HP
+</td>
+
+<td>
+2017-06-30
+</td>
+
+<td>
+OBO Foundry
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+MP
+</td>
+
+<td>
+2017-06-29
+</td>
+
+<td>
+OBO Foundry
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+DOID
+</td>
+
+<td>
+2017-06-13
+</td>
+
+<td>
+OBO Foundry
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+ORDO
+</td>
+
+<td>
+v2.4
+</td>
+
+<td>
+ORPHADATA
+</td>
+
+</tr>
+
+<!-- 
+<tr>
+
+<td>
+MESH
+</td>
+
+<td>
+Hoehndorf's version (2014)
+</td>
+
+<td>
+BioPortal
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+OMIM
+</td>
+
+<td>
+UMLS 2016AB
+</td>
+
+<td>
+BioPortal
+</td>
+
+</tr>
+ -->
+
+</table>
+
+
+<p>
+Table 1 summarizes the ontology versions and sources of the ontologies used in the OAEI 2020 (same as 2017-2019). <b>Note that the version and source of HP, MP, DOID and ORDO are different from the ones used in 2016</b>.
+</p>
+
+<p>We have extracted "baseline" reference alignments based on the available <a href="https://bioportal.bioontology.org/">BioPortal</a> mappings (July 8, 2017). 
+Most of the BioPortal mappings are generated automatically by the  <a href="http://www.bioontology.org/wiki/index.php/BioPortal_Mappings">LOOM system</a>;
+which should only be considered as a baseline since it is incomplete or may contain erroneous mappings.</p>
+
+<p>The ontologies and baseline mappings for the OAEI 2020 campaign can be downloaded as zip files:  <a href="http://oaei.ontologymatching.org/2019/phenotype/Phenotype2019_Ontologies.zip">Ontologies</a> [25Mb] and 
+<a href="http://oaei.ontologymatching.org/2019/phenotype/Phenotype2019_BaselineMappingsBioPortal.zip">BioPortal mappings</a> [0.6Mb].
+The OAEI 2020 campaign datasets can also be accessed via the SEALS platform (see <a href="#seals">dataset identifiers</a> below).</p>
+
+<!--
+<p><b>The Pistoia Alliance will sponsor a prize of $7,500 for the winner of this track as an incentive for participation</b>.</p>
+-->
+
+
+<br>
+
+<h2><u>Evaluation process</u></h2>
+
+Systems will be evaluated and ranked according to the following criteria:
+
+<ul>
+<li>Precision and Recall with respect to a <i>voted</i> reference alignment that will be automatically built by merging/voting 
+the outputs of the participating systems. We will use vote=2 and vote=3.</li>
+<!--li>Recall with respect to manually generated mappings.</li> <!--for three areas (carbohydrate, obesity and breast cancer)-->
+<!--li>Manual assessment of a subset of the generated mappings, specially the ones that are not suggested by other systems.</li-->
+<!--<li>Performance in other tracks will also be taken into account (especially in the <a href="../interactive">Interactive track</a> wrt the Phenotype-Disease dataset).</li>-->
+</ul>
+
+<!--p>
+Additionally, systems are also welcome to provide all pair of entities with some similarity. These pairs do not necessary need to represent equivalence or a narrower/broader 
+correspondences between the entities, but entities that have some degree of similarity. System developers can submit these correspondences directly to ernesto [.] jimenez [.] ruiz [at] gmail [.] com (in OAEI-RDF Alignment format)
+or create a configuration flag in the SEALS package, e.g. flag "all_corresponences=true" outputs all pairs of entities with some similarity, while "all_corresponences=false"
+outputs only the correspondences to evaluate Precision and Recall against the reference alignment.
+</p-->
+
+<!--
+<p>
+Additionally, systems able to discover complex mappings beyond equivalence and subsumption are also welcome. 
+The evaluation of these mappings will be in parallel to the evaluation of standard equivalence and subsumption mappings as described above.
+Complex mappings should be provided in OWL 2 format.
+</p>
+-->
+
+
+<br />
+
+<h2><u>SEALS support</u></h2>
+
+<p>
+The evaluation of the Disease and Phenotype Track will be run with support of the <a href="http://oaei.ontologymatching.org/2020/seals/index.html">SEALS infrastructure</a>. 
+This requires that you wrap your matching system in a way that allows us to execute it using the 
+SEALS client (see <a href="http://oaei.ontologymatching.org/2020/seals/index.html">OAEI 2020 evaluation details</a>).
+</p>
+
+<a name="seals">
+<p>Required input for the SEALS OMT client (<FONT COLOR="red">note the change of Repository Id with respect to previous years</FONT>):</p></a>
+
+<p>
+<div class="testsuite">
+<ul>
+<li><b>Repository:</b>  <span class="testsuiteid">http://oaei.webdatacommons.org/tdrs/</span></li>
+<li><b>Suite-ID:</b>  <span class="testsuiteid">phenotype</span></li>
+<li><b>Version-ID:</b>  <span class="testsuiteid"><i>see specific task</i></span></li>
+</ul>
+</div>
+</p>
+
+<br>
+
+<h4>HP-MP matching problem</h4>
+
+<p>
+This task consists of matching the HP (31,034 classes) and MP (30,273 entities) ontologies. The BioPortal-based alignment contains 696 mappings. 
+</p>
+
+<p>
+<div class="testsuite">
+<ul>
+<li><b>Version-ID:</b> <span class="testsuiteid">phenotype-hp-mp-2017-bioportal</span></li>
+</ul>
+</div>
+</p>
+
+
+<h4>DOID-ORDO matching problem</h4>
+
+<p>
+This task consists of matching the DOID (38,240 classes) and ORDO (13,504) ontologies. The BioPortal-based alignment contains 1,237 mappings.
+</p>
+
+<p>
+<div class="testsuite">
+<ul>
+<li><b>Version-ID:</b> <span class="testsuiteid">phenotype-doid-ordo-2017-bioportal</span></li>
+</ul>
+</div>
+</p>
+
+<!-- 
+
+<h4>HP-MESH matching problem</h4>
+
+<p>
+This task consists of matching the HP (31,034 classes) and MESH (305,349) ontologies. The BioPortal-based alignment contains 2,466 mappings.
+</p>
+
+<p>
+<div class="testsuite">
+<ul>
+<li><b>Version-ID:</b> <span class="testsuiteid">phenotype-hp-mesh-2017-bioportal</span></li>
+</ul>
+</div>
+</p>
+
+
+<h4>HP-MESH matching problem</h4>
+
+<p>
+This task consists of matching the HP (31,034 classes) and OMIM (93,048) ontologies. The BioPortal-based alignment contains 3,768 mappings.
+</p>
+
+<p>
+<div class="testsuite">
+<ul>
+<li><b>Version-ID:</b> <span class="testsuiteid">phenotype-hp-omim-2017-bioportal</span></li>
+</ul>
+</div>
+</p>
+
+ -->
+
+<br/>
+
+
+<!--
+<h2><u>Acknowledgements</u></h2>
+
+<p>
+The track is currently supported by the 
+<a href="http://www.pistoiaalliance.org/projects/ontologies-mapping/">Pistoia Alliance Ontologies Mapping project</a>, 
+the <a href="http://sirius-labs.no/">SIRIUS Centre for Research-driven Innovation</a>, 
+and the BigMed project (Research Council of Norway).
+</p>
+-->
+
+<br/>
