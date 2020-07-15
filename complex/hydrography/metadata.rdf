@@ -1,0 +1,122 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:seals="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#"
+    xmlns:dc="http://purl.org/dc/terms/" > 
+    
+
+	<!-- MATCHING PROBLEMS -->
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/HydrographySuiteTest">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#Suite"/>
+		<seals:hasSuiteItem rdf:resource="http://www.seals-project.eu/alignment/HydrographySuiteTest#hydro3-swo"/>
+		<seals:hasSuiteItem rdf:resource="http://www.seals-project.eu/alignment/HydrographySuiteTest#hydrOntology_native-swo"/>	
+		<seals:hasSuiteItem rdf:resource="http://www.seals-project.eu/alignment/HydrographySuiteTest#hydrOntology_translated-swo"/>		
+		<seals:hasSuiteItem rdf:resource="http://www.seals-project.eu/alignment/HydrographySuiteTest#cree-swo"/>
+	</rdf:Description>
+
+	<!-- hydro3 and swo -->
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/HydrographySuiteTest#hydro3-swo">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#SuiteItem"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/HydrographySuiteTest#hydro3"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/HydrographySuiteTest#swo"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/HydrographySuiteTest#hydro3-swo-baseline"/>
+		<dc:identifier>hydro3-swo</dc:identifier>
+	</rdf:Description>
+
+	<!-- hydrOntology_native and swo -->
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/HydrographySuiteTest#hydroOntology_native-swo">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#SuiteItem"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/HydrographySuiteTest#hydrOntology_native"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/HydrographySuiteTest#swo"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/HydrographySuiteTest#hydrOntology-swo-baseline"/>
+		<dc:identifier>hydrOntology_native-swo</dc:identifier>
+	</rdf:Description>
+
+	<!-- hydrOntology_translated and swo -->
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/HydrographySuiteTest#hydrOntology_translated-swo">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#SuiteItem"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/HydrographySuiteTest#hydrOntology_translated"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/HydrographySuiteTest#swo"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/HydrographySuiteTest#hydrOntology-swo-baseline"/>
+		<dc:identifier>hydrOntology_translated-swo</dc:identifier>
+	</rdf:Description>
+
+	<!-- cree and swo -->
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/HydrographySuiteTest#cree-swo">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#SuiteItem"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/HydrographySuiteTest#cree"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/HydrographySuiteTest#swo"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/HydrographySuiteTest#cree-swo-baseline"/>
+		<dc:identifier>cree-swo</dc:identifier>
+	</rdf:Description>
+
+
+	<!-- ONTOLOGIES -->
+
+	<!-- hydro3 ontology -->
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/HydrographySuiteTest#hydro3">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>source</seals:hasComponentType>
+		<seals:isLocatedAt>./ont/hydro3.owl</seals:isLocatedAt>
+		<dc:identifier>hydro3</dc:identifier>
+	</rdf:Description>
+
+	<!-- hydrOntology_native ontology -->
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/HydrographySuiteTest#hydrOntology_native">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>target</seals:hasComponentType>
+		<seals:isLocatedAt>./ont/hydrOntology_native.owl</seals:isLocatedAt>
+		<dc:identifier>hydrOntology_native</dc:identifier>
+	</rdf:Description>
+
+	<!-- hydrOntology_translated ontology -->
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/HydrographySuiteTest#hydrOntology_translated">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>target</seals:hasComponentType>
+		<seals:isLocatedAt>./ont/hydrOntology_translated.owl</seals:isLocatedAt>
+		<dc:identifier>hydrOntology_translated</dc:identifier>
+	</rdf:Description>
+
+	<!-- cree ontology -->
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/HydrographySuiteTest#cree">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>target</seals:hasComponentType>
+		<seals:isLocatedAt>./ont/cree.owl</seals:isLocatedAt>
+		<dc:identifier>cree</dc:identifier>
+	</rdf:Description>
+
+	<!-- swo ontology -->
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/HydrographySuiteTest#swo">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>target</seals:hasComponentType>
+		<seals:isLocatedAt>./ont/swo.owl</seals:isLocatedAt>
+		<dc:identifier>swo</dc:identifier>
+	</rdf:Description>
+	
+	<!-- Baseline reference -->	
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/HydrographySuiteTest#hydro3-swo-baseline">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>reference</seals:hasComponentType>
+		<seals:isLocatedAt>./ref/hydro3-swo.edoal</seals:isLocatedAt>
+		<dc:identifier>hydro3-swo-baseline</dc:identifier>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/HydrographySuiteTest#hydrOntology-swo-baseline">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>reference</seals:hasComponentType>
+		<seals:isLocatedAt>./ref/hydrOntology-swo.edoal</seals:isLocatedAt>
+		<dc:identifier>hydrOntology-swo-baseline</dc:identifier>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/HydrographySuiteTest#cree-swo-baseline">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>reference</seals:hasComponentType>
+		<seals:isLocatedAt>./ref/cree-swo.edoal</seals:isLocatedAt>
+		<dc:identifier>cree-swo-baseline</dc:identifier>
+	</rdf:Description>
+
+</rdf:RDF>

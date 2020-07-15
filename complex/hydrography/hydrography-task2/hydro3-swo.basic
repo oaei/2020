@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='utf-8' standalone='no'?>
+<rdf:RDF xmlns='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'
+         xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+         xmlns:xsd='http://www.w3.org/2001/XMLSchema#'
+         xmlns:alext='http://exmo.inrialpes.fr/align/ext/1.0/'
+         xmlns:align='http://knowledgeweb.semanticweb.org/heterogeneity/alignment#'>
+<Alignment>
+  <xml>yes</xml>
+  <level>0</level>
+  <type>11</type>
+  		<onto1>
+			<Ontology rdf:about="http://spatial.maine.edu/semgaz/HydroOntology#">
+                <location>http://spatial.maine.edu/semgaz/HydroOntology</location>
+			</Ontology>
+		</onto1>
+		<onto2>
+			<Ontology rdf:about="http://cegis.usgs.gov/SWO#">
+                <location>http://cegis.usgs.gov/SWO</location>
+			</Ontology>
+		</onto2>
+   <map>
+     <Cell>
+       <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Coastline'/>
+       <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Coastline'/>
+       <relation>=</relation>
+       <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+     </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Reservoir'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Reservoir'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#flowsthrough'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasFlow'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#hasDam'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#adjoins'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#hasMouth'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Hydrographic_Structure'/>
+      <entity2 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Hydrographic_Feature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Hydrographic_Structure'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#HydrographicFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Hydrographic_Structure'/>
+      <entity2 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Boundary'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Wetlands'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SwampOrMarsh'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#hasTributary'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Spring'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SpringOrSeep'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Watershed'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SwampOrMarsh'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Watershed'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Falls'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Waterfall'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Rapids'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Rapids'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Boundary'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#HydrographicFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Boundary'/>
+      <entity2 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Hydrographic_Feature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Boundary'/>
+      <entity2 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Hydrographic_Structure'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Ocean'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#SeaOrOcean'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#hasPart'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#contains'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#isDamOf'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#adjoins'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#hasHydrographicPart'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#contains'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#isHydrologicallyConnectedTo'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#isConnectedTo'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#DamWeir'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Weir'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#DamWeir'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Dam'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#flowsinto'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#endsAt'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#FreshwaterBay'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#BayOrInlet'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#SaltWaterBay'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#BayOrInlet'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Hydrographic_Feature'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#HydrographicFeature'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Hydrographic_Feature'/>
+      <entity2 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Boundary'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Hydrographic_Feature'/>
+      <entity2 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Hydrographic_Structure'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#isUpstreamOf'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasDirection'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#flowsfrom'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#isDownstreamTo'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#hasDirection'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Lake'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#LakeOrPond'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#River'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#StreamOrRiver'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#hasSource'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#startsFrom'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+  <map>
+    <Cell>
+      <entity1 rdf:resource='http://spatial.maine.edu/semgaz/HydroOntology#Levee'/>
+      <entity2 rdf:resource='http://cegis.usgs.gov/SWO#Levee'/>
+      <relation>=</relation>
+      <measure rdf:datatype='http://www.w3.org/2001/XMLSchema#float'>1.0</measure>
+    </Cell>
+  </map>
+</Alignment>
+</rdf:RDF>

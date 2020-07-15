@@ -1,0 +1,53 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:seals="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#"
+    xmlns:dc="http://purl.org/dc/terms/">
+
+
+
+    <!-- MATCHING PROBLEM -->
+	
+	<!-- enslaved and wikidata -->
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/EnslavedSuiteTest">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#Suite"/>
+		<seals:hasSuiteItem rdf:resource="http://www.seals-project.eu/alignment/EnslavedSuiteTest#enslaved-wikidata"/>		
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/EnslavedSuiteTest#enslaved-wikidata">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#SuiteItem"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/EnslavedSuiteTest#enslaved"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/EnslavedSuiteTest#wikidata"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/EnslavedSuiteTest#enslaved-wikidata-baseline"/>
+		<dc:identifier>enslaved-wikidata</dc:identifier>
+	</rdf:Description>
+
+
+	<!-- ONTOLOGIES -->
+
+	<!-- enslaved ontology -->
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/EnslavedSuiteTest#enslaved">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>source</seals:hasComponentType>
+		<seals:isLocatedAt>./ont/enslavedOnto.owl</seals:isLocatedAt>
+		<dc:identifier>enslaved</dc:identifier>
+	</rdf:Description>
+
+	<!-- enslaved wikidata knowledge graph -->
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/EnslavedSuiteTest#wikidata">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>target</seals:hasComponentType>
+		<seals:isLocatedAt>./ont/wikidataKG.owl</seals:isLocatedAt>
+		<dc:identifier>wikidata</dc:identifier>
+	</rdf:Description>
+	
+	<!-- Baseline reference -->
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/EnslavedSuiteTest#enslaved-wikidata-baseline">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>reference</seals:hasComponentType>
+		<seals:isLocatedAt>./ref/enslaved-wikidata.edoal</seals:isLocatedAt>
+		<dc:identifier>enslaved-wikidata-baseline</dc:identifier>
+	</rdf:Description> 	
+
+
+</rdf:RDF>

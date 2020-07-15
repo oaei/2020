@@ -1,0 +1,5 @@
+-hydrOntology_translated:Aguas_Corrientes
+swo:SurfaceFeature
+swo:Waterbody
+swo:hasFlow
+swo:Flow
