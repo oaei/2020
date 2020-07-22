@@ -1,0 +1,112 @@
+<html><head><title>Ontology Alignment Evaluation Initiative::GeoLink Cruise Instance Matching Track</title>
+
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../style.css"></head><body>
+
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2020/">Ontology
+  Alignment Evaluation Initiative - OAEI-2020 Campaign</a>
+  <a href="http://oaei.ontologymatching.org/"><img src="../../oaeismall.jpg" alt="OAEI" style="border-style: none; float: right; margin-left: 5pt;"></a>
+  <a href="http://www.seals-project.eu/">
+  <img  width="200px" src="../../seals-logo.jpg" alt="OAEI" style="clear:right;float:right; margin-left: 5pt; border-style:none;"/></a>
+</div>
+
+<h1>GeoLink Cruise Instance Matching Track</h1>
+
+<h2>General Description</h2>
+
+<p>The GeoLink Cruise Instance Matching Track contains different ontologies along with the populated instance data collected from two different data sources in <a href="https://www.geolink.org/">the GeoLink project</a>. The goal of the track is to find the instances from different ontologies that describe the same cruise in the real-world. The ontologies and alignments were generated and evaluated together by ontologists and domain experts from different organizations to ensure the high quality. The evaluation process of the GeoLink Cruise Instance Matching Track will be supported by SEALS platform and MELT Framework.</p>
+
+<a name="datasets"><h2>Data set</h2></a>
+
+<p>The GeoLink Cruise instance matching track contains 4 ontologies. You can either download them <a href="../instance/geolink/GeoLinkIM.zip">here</a> for local analysis and processing, or you can directly use the SEALS platform. For executing the task, the parameters are listed below (repository, suite-id, version-id).</p>
+
+<p>
+<div class="testsuite">
+<span class="title">GeoLink Cruise Testsuite</span></li>
+<ul>
+  <li>Repository: <span class="testsuiteid">http://oaei.webdatacommons.org/tdrs/</span></li>
+  <li>Suite-ID: <span class="testsuiteid">geolinkcruise</span></li>
+  <li>Version-ID: <span class="testsuiteid">geolinkcruise-v1</span></li>
+</ul>
+</div>
+</p>
+
+<p>In GeoLink dataset, there are two ontologies which are GeoLink Base Ontology (gbo) and GeoLink Modular Ontology (gmo). The data providers from different organizations populate their own data into these two ontologies. In this track, we utilize instances from two different data providers, <a href="http://www.bco-dmo.org">Biological and Chemical Oceanography Data Managment Office (bco-dmo)</a> and <a href="http://www.rvdata.us">Rolling Deck to Repository (r2r)</a> and populate all the triples related to Cruise into two ontologies. There are 491 Cruise pairs between these two datasets that are labeled by domain experts as equivalence. Four tasks are designed in this track. </p>
+
+<h3>Tasks</h3>
+<h4>Task One</h4>
+<p>The instance data from bco-dmo and r2r are populated into the gbo ontology independently. The instance matching systems are asked to find the matching cruises between two gbo ontologies. </p>
+
+<h4>Task Two</h4>
+<p>Similar to Task one, the instance data from bco-dmo and r2r are populated into the gmo ontology independently. The instance matching systems are asked to find the matches between two gmo ontologies. </p>
+
+<h4>Task Three</h4>
+<p>Previous two tasks aim to find the instance matching under the same schema. In Task three, the instance data from bco-dmo and r2r are populated into the gbo and gmo ontology respectively. The instance matching systems are required to find the matches between gbo and gmo ontologies.</p>
+
+<h4>Task Four</h4>
+<p>Similar to Task three, in Task four, the instance data from bco-dmo and r2r are populated into the gmo and gbo ontology respectively. The instance matching systems are required to find the matches between gmo and gbo ontologies. </p>
+
+<p>Some statistic information of the ontologies are listed in the table below.</p>
+
+<table border="1" cellspacing="0">
+  <tr>
+    <th>Ontology</th>
+    <th>#Class</th>
+    <th>#Object Property</th>
+    <th>#Data Property</th>
+    <th>#Individual</th>
+    <th>#Triple</th>
+  </tr>
+  <tr>
+    <td>gbo_bco-dmo</td>
+    <td>40</td>
+    <td>149</td>
+    <td>49</td>
+    <td>1061</td>
+    <td>13055</td>
+  </tr>
+  <tr>
+    <td>gbo_r2r</td>
+    <td>40</td>
+    <td>149</td>
+    <td>49</td>
+    <td>5320</td>
+    <td>27992</td>
+  </tr>
+  <tr>
+    <td>gmo_bco-dmo</td>
+    <td>79</td>
+    <td>79</td>
+    <td>37</td>
+    <td>1052</td>
+    <td>16303</td>
+  </tr>
+  <tr>
+    <td>gmo_r2r</td>
+    <td>79</td>
+    <td>79</td>
+    <td>37</td>
+    <td>2025</td>
+    <td>24798</td>
+  </tr>
+</table>
+
+<a name="modalities"><h2>Evaluation modalities</h2></a>
+<p>The alignments will be evaluated based on Precision, Recall and F-Measure with running time.</p>
+
+<a name="schedule"><h2>Schedule</h2></a>
+The schedule is available at the <a href="../index.html#schedule">OAEI main page</a>.
+
+<h2>Organizers</h2>
+<ul>
+<li>Lu Zhou (Kansas State University, USA), kbzhoulu [at] gmail [dot] com</li>
+<li>Reihaneh Amini (Kansas State University, USA), amini [dot] reihaneh [at] gmail [dot] com</li>
+<li>Pascal Hitzler (Kansas State University, USA), hitzler [at] ksu [dot] edu </li>
+</ul>
+
+<div class="address">
+<div class="footer"><a href="http://oaei.ontologymatching.org/2020/complex/index.html">http://oaei.ontologymatching.org/2020/complex</a></div>
+<!--$Id$-->
+</div>
+</body></html>

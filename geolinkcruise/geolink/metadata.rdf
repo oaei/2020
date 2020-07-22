@@ -1,0 +1,121 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:seals="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#"
+    xmlns:dc="http://purl.org/dc/terms/" > 
+    
+
+	<!-- MATCHING PROBLEMS -->
+	
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#Suite"/>
+		<seals:hasSuiteItem rdf:resource="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gbobcodmo-gbor2r"/>		
+		<seals:hasSuiteItem rdf:resource="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gmobcodmo-gmor2r"/>
+		<seals:hasSuiteItem rdf:resource="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gbobcodmo-gmor2r"/>
+		<seals:hasSuiteItem rdf:resource="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gmobcodmo-gbor2r"/>
+	</rdf:Description>
+
+	<!-- gbobcodmo and gbor2r -->
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gbobcodmo-gbor2r">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#SuiteItem"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gbobcodmo"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gbor2r"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gbobcodmo-gbor2r-reference"/>
+		<dc:identifier>gbobcodmo-gbor2r</dc:identifier>
+	</rdf:Description>
+
+	<!-- gmobcodmo and gmor2r -->
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gmobcodmo-gmor2r">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#SuiteItem"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gmobcodmo"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gmor2r"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gmobcodmo-gmor2r-reference"/>
+		<dc:identifier>gmobcodmo-gmor2r</dc:identifier>
+	</rdf:Description>
+
+	<!-- gbobcodmo and gmor2r -->
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gbobcodmo-gmor2r">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#SuiteItem"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gbobcodmo"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gmor2r"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gbobcodmo-gmor2r-reference"/>
+		<dc:identifier>gbobcodmo-gmor2r</dc:identifier>
+	</rdf:Description>
+
+	<!-- gmobcodmo and gbor2r -->
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gmobcodmo-gbor2r">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#SuiteItem"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gmobcodmo"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gbor2r"/>
+		<seals:hasDataItem rdf:resource="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gmobcodmo-gbor2r-reference"/>
+		<dc:identifier>gmobcodmo-gbor2r</dc:identifier>
+	</rdf:Description>
+
+	<!-- ONTOLOGIES -->
+
+	<!-- gbobcodmo -->
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gbobcodmo">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>source</seals:hasComponentType>
+		<seals:isLocatedAt>gbobcodmo.owl</seals:isLocatedAt>
+		<dc:identifier>gbobcodmo</dc:identifier>
+	</rdf:Description>
+
+	<!-- gbor2r -->
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gbor2r">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>target</seals:hasComponentType>
+		<seals:isLocatedAt>gbor2r.owl</seals:isLocatedAt>
+		<dc:identifier>gbor2r</dc:identifier>
+	</rdf:Description>
+
+	<!-- gmobcodmo -->
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gmobcodmo">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>source</seals:hasComponentType>
+		<seals:isLocatedAt>gmobcodmo.owl</seals:isLocatedAt>
+		<dc:identifier>gmobcodmo</dc:identifier>
+	</rdf:Description>
+
+	<!-- gmor2r -->
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gmor2r">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>target</seals:hasComponentType>
+		<seals:isLocatedAt>gmor2r.owl</seals:isLocatedAt>
+		<dc:identifier>gmor2r</dc:identifier>
+	</rdf:Description>
+
+	
+	<!-- Baseline reference -->	
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gbobcodmo-gbor2r-reference">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>reference</seals:hasComponentType>
+		<seals:isLocatedAt>gbobcodmo-gbor2r-refalign.rdf</seals:isLocatedAt>
+		<dc:identifier>gbobcodmo-gbor2r-reference</dc:identifier>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gmobcodmo-gmor2r-reference">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>reference</seals:hasComponentType>
+		<seals:isLocatedAt>gmobcodmo-gmor2r-refalign.rdf</seals:isLocatedAt>
+		<dc:identifier>gmobcodmo-gmor2r-reference</dc:identifier>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gbobcodmo-gmor2r-reference">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>reference</seals:hasComponentType>
+		<seals:isLocatedAt>gbobcodmo-gmor2r-refalign.rdf</seals:isLocatedAt>
+		<dc:identifier>gbobcodmo-gmor2r-reference</dc:identifier>
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://www.seals-project.eu/alignment/GeoLinkInstanceMatchingSuiteTest#gmobcodmo-gbor2r-reference">
+		<rdf:type rdf:resource="http://www.seals-project.eu/ontologies/SEALSMetadata.owl#DataItem"/>
+		<seals:hasComponentType>reference</seals:hasComponentType>
+		<seals:isLocatedAt>gmobcodmo-gbor2r-refalign.rdf</seals:isLocatedAt>
+		<dc:identifier>gmobcodmo-gbor2r-reference</dc:identifier>
+	</rdf:Description>
+
+</rdf:RDF>
