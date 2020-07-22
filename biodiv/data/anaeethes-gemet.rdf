@@ -1,0 +1,3367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns="http://knowledgeweb.semanticweb.org/heterogeneity/alignment"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<Alignment>
+<xml>yes</xml>
+<level>0</level>
+<type>??</type>
+<onto1>https://bioportal.bioontology.org/ontologies/ANAEETHES</onto1>
+<onto2>https://bioportal.bioontology.org/ontologies/GEMET</onto2>
+<uri1>https://bioportal.bioontology.org/ontologies/ANAEETHES</uri1>
+<uri2>https://bioportal.bioontology.org/ontologies/GEMET</uri2>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2612"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3733"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_9178f420"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5325"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_209a90ec"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5759"/>
+		<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0 </measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403018084508"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4321"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438958489878"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5219"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405669284328"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7565"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401973548673"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/397"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_ad30a6aa"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1649"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_229"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3312"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_222"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6282"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_223"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6247"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://ecoinformatics.org/oboe/oboe.1.0/oboe-standards.owl#Pound"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/959"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_220"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8976"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403182268869"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/511"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2848"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2006"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_384"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2653"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2605"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6962"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2603"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6081"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_383"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2573"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401956339736"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4088"/>
+		<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0 </measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405598233675"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/47"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2840"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2182"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401958979777"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5327"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438938873885"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3063"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_237"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6392"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_119"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/14937"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_11150e0e"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8922"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_234"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5377"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_114"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2525"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_236"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6115"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2545"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4116"/>
+		<measure rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0 </measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438959032248"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1348"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403017594408"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5228"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1406290190057"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5555"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_378"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/121"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_209"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3529"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_204"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7124"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2909"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11212"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_205"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4871"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_206"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/775"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405703632767"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11118"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_201"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4982"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405935790766"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8687"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437656475910"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7244"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2717"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3748"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405669194972"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/10148"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438958753775"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7842"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438956487143"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/899"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_215"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4799"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_217"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/698"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_218"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6759"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_211"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/733"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_212"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5465"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_455"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7529"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438940932444"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4548"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437640614045"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7616"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401958585397"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/420"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438959137584"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/621"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_147"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8918"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401958625930"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4805"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401958625930"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/881"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405699171283"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7930"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2804"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6831"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438958278082"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5758"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401956299094"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2518"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_159"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7312"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_154"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3350"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_154"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4730"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_4247c731"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/15133"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2809"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7045"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437060335699"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3019"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2707"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1673"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2708"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6593"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1402038921919"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2519"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2827"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2319"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_2a2eb2d6"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2852"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_249"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7683"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1406132242730"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3087"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_244"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3162"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401973021389"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3050"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_245"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3729"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_125"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2850"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_246"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/15285"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_247"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3729"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_126"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5763"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_120"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/14936"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405699933094"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8185"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_242"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3721"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_122"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/10140"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1402037804013"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/10539"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_79be456f"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/9107"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438958922643"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7849"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405704613421"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7769"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438244392955"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/9149"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403017158781"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5498"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2939"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3498"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405700803986"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3207"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401958271616"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/10128"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438961017921"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1474"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_d3b61ca4"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/406"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_133"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/10548"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_250"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8664"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438940527163"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/15074"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2579"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/10691"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2699"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3849"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2333"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3633"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437027440597"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6094"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2573"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4505"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438958688165"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/14894"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_bfc04615"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/883"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2451"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11788"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405702188458"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11130"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1436971712008"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7845"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_3017"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3530"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_3016"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3933"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_186"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1794"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_187"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1889"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_183"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/571"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_184"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4358"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2289"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3162"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_180"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4475"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_3012"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11209"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438871833773"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/12063"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2442"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5607"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_6216c48e"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5913"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_196"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/387"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_197"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7373"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_198"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/912"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_199"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3252"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2273"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/421"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_192"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5339"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2394"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6935"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_193"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3600"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_194"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5565"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_195"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8946"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_4f874438"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/15138"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2397"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/68"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_3001"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8675"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.anaee-france.fr/ontology/anaee-france_ontology#Atmosphere"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/617"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401959271081"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5350"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2556"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/13291"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2434"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1164"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2433"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/833"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438955932968"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/14897"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403017690634"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/901"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405704313193"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11714"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_167"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2956"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_169"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6758"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_572e0db0"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7858"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_164"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5371"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401956910410"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8388"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_166"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7861"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437641133824"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/15334"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401870919713"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/15051"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438955650760"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4908"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403180947463"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1471"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2660"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/9373"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1402042815900"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2712"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_174"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/301"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_175"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2168"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_177"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/450"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_177"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3138"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401958034247"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2530"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_3026"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/10633"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_3023"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6316"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437639701636"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3805"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437639701636"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1692"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437639701636"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/13976"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401959090767"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6520"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://www.anaee-france.fr/ontology/anaee-france_ontology#Decibel"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11889"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_fbcc9110"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3808"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438850358339"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3425"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2770"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1400"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_46992aa0"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3763"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1406133138185"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5230"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2408"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6247"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://ecoinformatics.org/oboe/oboe.1.0/oboe-standards.owl#Dekameter"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1955"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2766"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11701"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401973219326"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/579"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2520"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/15082"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_47a728a5"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/976"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2761"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8606"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401973170123"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1473"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403018120212"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4311"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2636"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/429"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2636"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/994"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2757"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/15291"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2511"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/15333"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2630"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6507"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403017782223"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4648"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437639299422"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8686"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405594757359"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5892"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2628"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4594"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2505"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6211"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2747"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11702"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2626"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3406"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2500"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5598"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2621"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11153"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401973575044"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11798"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403182065227"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/617"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401957995939"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2470"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1406132749304"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3029"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_6d94f23a"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2803"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2688"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/454"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2325"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1373"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2446"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/245"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401958079328"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2474"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2686"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1224"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2323"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6196"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2324"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8198"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2324"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8192"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2445"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/10193"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2328"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1111"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438273000397"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4359"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2680"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1168"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403014714913"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4302"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2560"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4186"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_454a0b2b"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3890"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438244096461"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/15086"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2321"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/353"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403181233546"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3494"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2685"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4493"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2322"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7694"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2440"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1023"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2682"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11227"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_1230"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3460"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401956207670"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7472"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438871958817"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2084"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2677"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11779"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2314"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1160"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2557"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6033"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2678"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5199"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2315"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5605"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2312"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/781"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2796"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1336"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2675"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2259"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2313"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/965"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2316"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5982"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_3378"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/10511"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2317"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3334"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2790"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6650"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1402043357416"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7465"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438941588254"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3169"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2393"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/827"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2589"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7698"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401973641066"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2520"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2587"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1449"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2346"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8144"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2588"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7413"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401958929612"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1979"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438941750641"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/15296"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_3369"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/505"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2460"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1462"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2461"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/281"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2343"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1007"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2586"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7898"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2341"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/567"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2342"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7590"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2463"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/639"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403019364184"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8068"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2336"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5589"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2699"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/9286"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403019009022"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3026"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2337"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1792"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2334"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4498"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2698"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8366"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2335"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1532"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437640473665"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/15091"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2338"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/9412"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2691"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1366"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_1361"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2944"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438953936268"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7586"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2690"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5184"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1406131609604"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7176"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2332"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1401"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2574"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7874"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2693"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6395"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2330"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8495"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2331"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8893"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2694"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6140"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438873666416"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3007"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1406134044264"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8037"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405941805281"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4998"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437639757678"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/411"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2361"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4483"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_1152"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/9290"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405700120685"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/596"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438873596178"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7880"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_1155"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4823"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2487"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/9327"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2363"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1103"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2364"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/719"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438271312071"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5122"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438955856438"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2853"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2363"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6299"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2362"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/9280"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2358"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8490"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2356"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1100"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403019606141"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1774"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403017838476"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4678"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403017838476"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4633"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2591"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1322"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2355"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7699"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2473"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7912"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2390"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4723"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2357"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4810"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2115"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1391"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2598"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1899"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401956358319"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/504"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2355"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6138"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405594595387"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2264"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1402411130982"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8607"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405700640946"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4857"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2389"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8428"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438939148227"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/626"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2262"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/13556"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1436972580233"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7882"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2388"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5154"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2386"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6338"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405944179588"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5403"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2589"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6755"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2588"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4838"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403182826501"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3439"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401959068491"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8910"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403018881756"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5327"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_2581"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1875"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2258"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2387"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437026779187"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4855"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2493"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4937"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401958445302"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5353"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437640237054"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7324"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437049245652"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/14919"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401958384374"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2882"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2963"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/121"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403016973246"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6510"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://ecoinformatics.org/oboe/oboe.1.0/oboe-standards.owl#Radian"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4577"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438848217835"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/10918"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403016736840"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11198"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438850028250"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/13922"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438850028250"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5316"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1436973334562"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/9327"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2716"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5332"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1404127179012"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3663"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2959"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8487"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2831"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7340"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403017042069"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6298"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2715"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6884"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2833"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8630"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2834"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3022"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405698296323"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/15119"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405700771858"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2014"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2509"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5418"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438873193144"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5774"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2629"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6492"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2502"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1469"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401959300895"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5348"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_2bf7d88e"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2380"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2505"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/9269"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2506"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11116"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2987"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7715"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438940821131"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8554"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401959375773"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2922"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_abd778f5"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11807"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405593211908"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1162"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_c6a3b627"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2963"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2618"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/12220"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403019127844"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2795"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405943173069"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8361"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1406295830937"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1262"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437651747209"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2408"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_488636ed"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/15033"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1436972337890"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7866"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_354"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7929"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401956447377"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5218"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437639244292"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3416"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_0482923d"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6947"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405705450213"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7102"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437411456907"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6240"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2402"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6346"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2645"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8190"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403016410754"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7702"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2400"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/8791"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2527"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7843"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2882"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3780"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2882"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/518"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2760"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6646"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401958363004"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5346"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_764395a1"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/15041"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c3_344"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2945"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403181392341"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11672"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437739951785"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/15069"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1442246774772"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7895"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1402385500610"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5412"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405943282232"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/10695"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2755"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/9349"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2876"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2071"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2879"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6152"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2309"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4103"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_4ff6164e"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11152"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2787"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1114"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1437026950671"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/4124"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2788"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7407"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2543"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7899"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438088697672"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/7902"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438933384943"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/265"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2308"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2643"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2669"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5593"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2782"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/13088"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1406558382563"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2992"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405697502964"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1298"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1405702907587"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/1625"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1438940097259"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/2713"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2777"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/6120"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1401958480594"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3491"/>
+		<measure rdf:datatype="xsd:float">1.0</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2659"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11788"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403018256974"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3494"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403018256974"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/3485"/>
+		<measure rdf:datatype="xsd:float">0.85</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c2_2657"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/5982"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+<map>
+	<Cell>
+		<entity1 rdf:resource="http://opendata.inra.fr/anaeeThes/c_1403181364921"/>
+		<entity2 rdf:resource="http://www.eionet.europa.eu/gemet/concept/11672"/>
+		<measure rdf:datatype="xsd:float">0.7</measure>
+		<relation>=</relation>
+	</Cell>
+</map>
+</Alignment>
+</rdf:RDF>
