@@ -54,7 +54,7 @@ Web page content
 
 <h2><a name="participants">Participants</a></h2><a name="participants">
 <p>
-This year, there were 9 participants (ALIN, ALOD2Vec, AML, ATBox, DESKMatcher, Lily, LogMap, LogMapLt and Wiktionary) that managed to generate meaningful output. These are the matchers that were submitted with the ability to run the Conference Track. We also provide comparison with tools that participated in previous years of OAEI in terms of the highest average F1-measure.
+This year, there were 10 participants (ALIN, ALOD2Vec, AML, ATBox, DESKMatcher, Lily, LogMap, LogMapLt, VeeAlign and Wiktionary) that managed to generate meaningful output. These are the matchers that were submitted with the ability to run the Conference Track. We also provide comparison with tools that participated in previous years of OAEI in terms of the highest average F1-measure.
 </p>
 
 </a><h2><a name="participants"></a><a name="data">Data</a></h2>
@@ -112,7 +112,7 @@ In order to provide some context for understanding matchers performance, we incl
 </p>
 
 <p>
-In the tables below, there are results of all 9 tools with regard to all combinations of evaluation variants with crisp reference alignments. There are precision, recall, F1-measure, F2-measure and F0.5-measure computed for the threshold that provides the highest average F1-measure computed for each matcher. F1-measure is the harmonic mean of precision and recall. F2-measure (for beta=2) weights recall higher than precision and F0.5-measure (for beta=0.5) weights precision higher than recall.
+In the tables below, there are results of all 10 tools with regard to all combinations of evaluation variants with crisp reference alignments. There are precision, recall, F1-measure, F2-measure and F0.5-measure computed for the threshold that provides the highest average F1-measure computed for each matcher. F1-measure is the harmonic mean of precision and recall. F2-measure (for beta=2) weights recall higher than precision and F0.5-measure (for beta=0.5) weights precision higher than recall.
 </p>
 
 <!-- <p>Tools are ordered according to their highest average F1-measure. According to matcher's position with regard to two baselines it can be in one of three basic groups:</p> -->
@@ -179,7 +179,7 @@ All tools are visualized in terms of their performance regarding an average F1-m
 
 <h4><a name="discussion">Discussion for Evaluation Based on Crisp Reference Alignments</a></h4>
 <p>
-With regard to two baselines we can group tools according to matcher's position (above best edna baseline, above StringEquiv baseline, below StringEquiv baseline). Regarding tools position, there are slight differences between ra1-M3, rar2-M3 and ra2-M3. These differences concern only ALIN, ALOD2Vec and LogMapLt and their 5th, 6th or 7th position. However, all of these three systems performed very closely or equality compared to each other, and remaind "above best edna baseline" the whole time. In ra1-M3, ra2-M3 and rar2-M3, there are seven matchers above edna baseline (ALIN, AML, ALOD2Vec, ATBox, LogMap, LogMapLt and Wiktionary) and two matchers below StringEquiv baseline (DESKMatcher, Lily). Since rar2 is not only consistency violation free (as ra2) but also conservativity violation free, we consider the rar2 as main reference alignment for this year. It will also be used within the synthesis paper. 
+With regard to two baselines we can group tools according to matcher's position (above best edna baseline, above StringEquiv baseline, below StringEquiv baseline). Regarding tools position, there are slight differences between ra1-M3, rar2-M3 and ra2-M3. These differences concern 1) VeeAlign which moved from the 2nd position in ra1-M3 and ra2-M3 to the 1st position ahead of AML in rar-M3, and 2) ALIN, ALOD2Vec and LogMapLt and their 5th, 6th or 7th position. However, all of these systems (within 1 and 2) performed very closely or equaly compared to each other, and remaind "above best edna baseline" the whole time. In ra1-M3, ra2-M3 and rar2-M3, there are eight matchers above edna baseline (ALIN, AML, ALOD2Vec, ATBox, LogMap, LogMapLt, VeeAlign and Wiktionary) and two matchers below StringEquiv baseline (DESKMatcher, Lily). Since rar2 is not only consistency violation free (as ra2) but also conservativity violation free, we consider the rar2 as main reference alignment for this year. It will also be used within the synthesis paper. 
 </p>
 <p>
 Based on the evaluation variants M1 and M2, two matchers (ALIN and Lily) do not match properties at all.
@@ -187,7 +187,6 @@ Naturally, this has a negative effect on overall tools performance within the M3
 </p>
 
 <h4><a name="false-positives">False Positives</h4>
-
 
 <h3><a name="uncertain-ra">Evaluation Based on the Uncertain Version of the Reference Alignment</a></h3>
 <h4><a name="uncsetting">Evaluation Setting</a></h4>
