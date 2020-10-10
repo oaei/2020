@@ -48,6 +48,7 @@ Web page content
 </li><li><a href="#uncdiscussion">Discussion for Evaluation Based on the Uncertain Reference Alignments</a>
 </li></ul>
 </li><li><a href="#logical">Evaluation Based on Logical Reasoning</a>
+</li><li><a href="#dbpedia">Experiment and Evaluation of DBpedia to OntoFarm Ontologies Matching</a>
 </li><li><a href="#organizers">Organizers</a>
 </li><li><a href="#references">References</a>
 </li></ul>
@@ -223,10 +224,238 @@ Why was an alignment discovered:
 <h4><a name="uncresults">Results</a></h4>
 
 <h4><a name="uncdiscussion">Discussion for Evaluation Based on the Uncertain Reference Alignments</a></h4>
+<p>The confidence values of all matches in the standard (sharp) reference alignments for the conference track are all 1.0. For the uncertain version of this
+track, the confidence value of a match has been set equal to the percentage of a group of people who agreed with the match in question (this uncertain version
+is based on reference alignment labeled ra1). One key thing to note is that the group was only asked to validate matches that were already present in the existing 
+reference alignments - so some matches had their confidence value reduced from 1.0 to a number near 0, but no new matches were added.</p>
 
+<p>There are two ways that we can evaluate alignment systems according to these ‘uncertain’ reference alignments, which we refer to as discrete and continuous. 
+The discrete evaluation considers any match in the reference alignment with a confidence value of 0.5 or greater to be fully correct and those with a confidence 
+less than 0.5 to be fully incorrect. Similarly, an alignment system’s match is considered a ‘yes’ if the confidence value is greater than or equal to
+the system’s threshold and a ‘no’ otherwise. In essence, this is the same as the ‘sharp’ evaluation approach, except that some matches have been removed
+because less than half of the crowdsourcing group agreed with them. The continuous evaluation strategy penalizes an alignment system more if it misses a
+match on which most people agree than if it misses a more controversial match. For instance, if A = B with a confidence of 0.85 in the reference alignment
+and an alignment algorithm gives that match a confidence of 0.40, then that is counted as 0.85 * 0.40 = 0.34 of a true positive and 0.85 – 0.40 = 0.45 of a false
+negative.
+</p>
+
+<h4><a name="uncresults">Results</a></h4>
+<p>Below is a graph showing the F-measure, precision, and recall of the different alignment systems when evaluated using the sharp (s), discrete uncertain (d)
+and continuous uncertain (c) metrics, along with a table containing the same information. The results from this year show that more systems are assigning
+nuanced confidence values to the matches they produce.</p>
+<img src="eval_data/uncertainGraph.png" alt="graph for uncertain reference alignment based evalation">
+<img src="eval_data/uncra1-M3.png" alt="results for uncertain reference alignment based evalation">
+
+<p>This year, out of the 10 alignment systems, three (ALIN, DESKMatcher, LogMapLt) use 1.0 as the confidence value for all matches they identify. The remaining 7 systems 
+(ALOD2Vec, AML, ATBOX, Lily, LogMap, VeeAlign, Wiktionary) have a wide variation of confidence values.
+</p>
+
+<h4><a name="uncdiscussion">Discussion for Evaluation Based on the Uncertain Reference Alignments</a></h4>
+<p>
+When comparing the performance of the systems on the uncertain reference alignments versus that on the sharp version, we see that in the discrete case
+all systems except Lily performed the same or better in terms of F-measure (Lily’s F-measure dropped almost to 0). Changes in F-measure of discrete cases
+ranged from -1 to 15 percent over the sharp reference alignment. This was predominantly driven by increased recall, which is a result of the presence of
+fewer ’controversial’ matches in the uncertain version of the reference alignment.
+</p>
+
+<p>
+The performance of the systems with confidence values always 1.0 is very similar regardless of whether a discrete or continuous evaluation methodology is
+used, because many of the matches they find are the ones that the experts had high agreement about, while the ones they missed were the more controversial
+matches. AML produces a fairly wide range of confidence values and has the highest F-measure under both the continuous and discrete evaluation methodologies, 
+indicating that this system’s confidence evaluation does a good job of reflecting cohesion among experts on this task. Of the remaining systems, three
+(ALOD2Vec, AML, LogMap) have relatively small drops in F-measure when moving from discrete to continuous evaluation. Lily’s performance drops drastically under 
+the discrete and continuous evaluation methodologies. This is because the matcher assigns low confidence values to some matches in which the labels are equivalent 
+strings, which many crowdsourcers agreed with unless there was a compelling technical reason not to. This hurts recall significantly.
+</p>
+
+<p>
+Six systems from this year also participated last year, and thus we are again able to make some comparisons over time. The F-measures of these six systems
+essentially held almost constant when evaluated against the uncertain reference alignments. The exception was Lily, whose performance in discrete case decreased dramatically. 
+ALOD2Vec, ATBOX, DESKMacther, VeeAlign are four new systems participating in this year. ALOD2Vec’s performance increases 14 percent in discrete case and 11 percent in continuous case 
+in terms of F-measure over the sharp reference alignment from 0.59 to 0.67 and 0.65 respectively, which it is mainly driven by increased recall. It is also interesting that 
+the precision of ALOD2Vec increases 17 percent in discrete case over the sharp version. It is because ALOD2Vec assigns low confidence values to those pairs that don’t have
+identical labels, which might help to remove some false positives in discrete case. ATBOX perform slightly better in both discrete and continuous cases compared
+to sharp case in term of F-measure, which increases from 0.60 to 0.64 and 0.66 respectively. This is also mostly driven by increased recall. From the results, DESKMacther output 
+low precision among three different versions of reference alignment in general because it assigns all matches with 1.0 confidence value even the labels of two entities have low string similarity. Reasonably, it achieves slightly better recall from sharp to discrete and continuous cases, while the precision and F-measure remain constant. VeeAlign’s performance stays mostly
+constant from sharp to discrete and continuous in term of F-measure.
+</p>
 
 <h3><a name="logical">Evaluation Based on Logical Reasoning</a></h3>
+<p>
+For evaluation based on logical reasoning we applied detection of conservativity and consistency principles violations [2, 3]. While consistency principle proposes that correspondences should not lead to unsatisfiable classes in the merged ontology, conservativity principle proposes that correspondences should not introduce new semantic relationships between concepts from one of input ontologies [2].
+</p>
+<p>
+Table below summarizes statistics per matcher. There are number of alignments (#Incoh.Align.) that cause unsatisfiable TBox after ontologies merge, total number of all conservativity principle violations within all alignments (#TotConser.Viol.) and its average per one alignment (#AvgConser.Viol.), total number of all consistency principle violations (#TotConsist.Viol.) and its average per one alignment (#AvgConsist.Viol.).
+</p>
+<p>
+As last year only three tools (ALIN, AML and LogMap) have no consistency principle violation while seven tools have some consistency principle violations. 
+Conservativity principle violations are made by all tools where five tools have low numbers, i.e. ALIN, AML, LogMap, LogMapLt and VeeAlign (less than 100).
+However, we should note that these conservativity principle violations can be "false positives" since the entailment in the aligned ontology can be correct although it was not derivable in the single input ontologies.
+</p>
 
+<table id="tab" class="display" cellspacing="0" width="100%">
+  <thead>
+   <tr>
+    <th>Matcher</th>
+    <th>#Incoh.Align.</th>
+    <th>#TotConser.Viol.</th>
+    <th>#AvgConser.Viol.</th>
+    <th>#TotConsist.Viol.</th>
+    <th>#AvgConsist.Viol.</th>
+   </tr>
+  </thead>
+  <tbody>
+   <tr>
+    <td>ALIN</td>
+    <td>0</td>
+    <td>2</td>
+    <td>0.1</td>
+    <td>0</td>
+    <td>0</td>
+   </tr>
+   <tr>
+    <td>ALOD2Vec</td>
+    <td>10</td>
+    <td>427</td>
+    <td>20.33</td>
+    <td>229</td>
+    <td>10.9</td>
+   </tr>
+   <tr>
+    <td>AML</td>
+    <td>0</td>
+    <td>39</td>
+    <td>1.86</td>
+    <td>0</td>
+    <td>0</td>
+   </tr>
+   <tr>
+    <td>ATBox</td>
+    <td>10</td>
+    <td>192</td>
+    <td>9.6</td>
+    <td>52</td>
+    <td>2.6</td>
+   </tr>
+   <tr>
+    <td>DESKMatcher</td>
+    <td>13</td>
+    <td>895</td>
+    <td>74.58</td>
+    <td>391</td>
+    <td>32.58</td>
+   </tr>
+   <tr>
+    <td>Lily</td>
+    <td>5</td>
+    <td>100</td>
+    <td>6.67</td>
+    <td>43</td>
+    <td>2.87</td>
+   </tr>
+   <tr>
+    <td>LogMap</td>
+    <td>0</td>
+    <td>25</td>
+    <td>1.19</td>
+    <td>0</td>
+    <td>0</td>
+   </tr>
+   <tr>
+    <td>LogMapLt</td>
+    <td>5</td>
+    <td>96</td>
+    <td>4.57</td>
+    <td>25</td>
+    <td>1.19</td>
+   </tr>
+   <tr>
+    <td>VeeAlign</td>
+    <td>9</td>
+    <td>76</td>
+    <td>3.62</td>
+    <td>83</td>
+    <td>3.95</td>
+   </tr>
+   <tr>
+    <td>Wiktionary</td>
+    <td>7</td>
+    <td>133</td>
+    <td>6.65</td>
+    <td>27</td>
+    <td>1.35</td>
+   </tr>
+  </tbody>
+</table>
+
+<h4>Statistics of Consistency and Conservativity Principle Violations</h4>
+
+<p>Here we list ten most frequent unsatisfiable classes appeared after ontologies merge by any tool. Seven tools generated incoherent alignments.</p>
+
+<pre>
+ekaw#Industrial_Session - 7
+ekaw#Contributed_Talk - 7
+ekaw#Conference_Session - 7
+ekaw#Camera_Ready_Paper - 7
+edas#TwoLevelConference - 7
+edas#SingleLevelConference - 7
+edas#Conference - 7
+cmt#Conference - 7
+sigkdd#Conference - 6
+sigkdd#ACM_SIGKDD - 6
+</pre>
+
+<!--<p>Here we list ten most frequent unsatisfiable classes appeared after ontologies merge by ontology pairs. These unsatisfiable classes were appeared in all ontology pairs for given ontology:</p>
+
+<pre>
+ekaw#Contributed_Talk - 4
+edas#Reviewer - 4
+ekaw#Rejected_Paper - 3
+ekaw#Invited_Speaker - 3
+ekaw#Evaluated_Paper - 3
+ekaw#Camera_Ready_Paper - 3
+ekaw#Accepted_Paper - 3
+conference#Invited_speaker - 3
+cmt#PaperAbstract - 3
+sigkdd#Author_of_paper_student - 2
+</pre>-->
+
+<p>Here we list ten most frequent caused new semantic relationships between concepts within input ontologies by any tool:</p>
+
+<pre>
+iasted#Record_of_attendance, iasted#City - 7
+	edas-iasted
+conference#Invited_speaker, conference#Conference_participant - 7
+	conference-sigkdd
+	conference-ekaw
+iasted#Video_presentation, iasted#Item - 6
+	iasted-sigkdd
+	conference-iasted
+iasted#Sponzorship, iasted#Registration_fee - 6
+	iasted-sigkdd
+iasted#Sponzorship, iasted#Fee - 6
+	iasted-sigkdd
+iasted#Session_chair, iasted#Speaker - 6
+	ekaw-iasted
+	iasted-sigkdd
+iasted#Presentation, iasted#Item - 6
+	iasted-sigkdd
+	conference-iasted
+iasted#PowerPoint_presentation, iasted#Item - 6
+	iasted-sigkdd
+	conference-iasted
+iasted#Hotel_fee, iasted#Registration_fee - 6
+	iasted-sigkdd
+iasted#Fee_for_extra_trip, iasted#Registration_fee - 6
+	iasted-sigkdd
+</pre>
+
+<h3><a name="dbpedia">Experiment and Evaluation of DBpedia to OntoFarm Ontologies Matching</a></h3>
+<p>This year we conducted experiment of matching cross-domain ontologie DBpedia to OntoFarm ontologies. In order to evaluate resulted alignments we prepared reference alignment of DBpedia to three OntoFarm ontologies (ekaw, sigkdd and confOf) as explained in [5].</p>
+<p>This was not announced beforehand and systems did not specifically prepare for this. Out of 10 systems five managed to match dbpedia to OntoFarm ontologies (there were different problems dealing with dbpedia ontology): AML, DESKMacther, LogMap, LogMapLt, Wiktionary.</p>
+<p>We evaluated alignments from the systems and the results are in the table below. Additionally, we added two baselines: StringEquiv is a string matcher based on string equality applied on local names of entities which were lowercased and edna (string editing distance matcher).</p>
+<img src="eval_data/ra-dbpedia.png" alt="dbpedia evaluation results">
+<p>We can see the systems performs almost the same as two baselines except AML which dominates with 0.56 of F1-measure. Low scores of measures show that the corresponding test cases are difficult for traditional ontology matching systems since they mainly focus on matching of domain ontologies.</p>
 
 <h2><a name="organizers">Organizers</a></h2>
 <ul>
@@ -253,6 +482,8 @@ Directions Workshop 2014 (OWLED 2014). 13-24.
 <p>[4] Ondřej Zamazal, Vojtěch Svátek. The Ten-Year OntoFarm and its 
 Fertilization within the Onto-Sphere. Web Semantics: Science, Services 
 and Agents on the World Wide Web, 43, 46-53. 2018.
+<p>[5] Martin Šatra, Ondřej Zamazal. Towards Matching of Domain Ontologies to
+Cross-Domain Ontology: Evaluation Perspective. Ontology Matching 2020.</p>
 </p>
 
 <div class="address">
