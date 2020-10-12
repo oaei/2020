@@ -219,11 +219,9 @@ Why was an alignment discovered:
 
 
 <h3><a name="uncertain-ra">Evaluation Based on the Uncertain Version of the Reference Alignment</a></h3>
+
 <h4><a name="uncsetting">Evaluation Setting</a></h4>
 
-<h4><a name="uncresults">Results</a></h4>
-
-<h4><a name="uncdiscussion">Discussion for Evaluation Based on the Uncertain Reference Alignments</a></h4>
 <p>The confidence values of all matches in the standard (sharp) reference alignments for the conference track are all 1.0. For the uncertain version of this
 track, the confidence value of a match has been set equal to the percentage of a group of people who agreed with the match in question (this uncertain version
 is based on reference alignment labeled ra1). One key thing to note is that the group was only asked to validate matches that were already present in the existing 
@@ -451,7 +449,7 @@ iasted#Fee_for_extra_trip, iasted#Registration_fee - 6
 </pre>
 
 <h3><a name="dbpedia">Experiment and Evaluation of DBpedia to OntoFarm Ontologies Matching</a></h3>
-<p>This year we conducted experiment of matching cross-domain ontologie DBpedia to OntoFarm ontologies. In order to evaluate resulted alignments we prepared reference alignment of DBpedia to three OntoFarm ontologies (ekaw, sigkdd and confOf) as explained in [5].</p>
+<p>This year we conducted experiment of matching cross-domain DBpedia ontology to OntoFarm ontologies. In order to evaluate resulted alignments we prepared reference alignment of DBpedia to three OntoFarm ontologies (ekaw, sigkdd and confOf) as explained in [5].</p>
 <p>This was not announced beforehand and systems did not specifically prepare for this. Out of 10 systems five managed to match dbpedia to OntoFarm ontologies (there were different problems dealing with dbpedia ontology): AML, DESKMacther, LogMap, LogMapLt, Wiktionary.</p>
 <p>We evaluated alignments from the systems and the results are in the table below. Additionally, we added two baselines: StringEquiv is a string matcher based on string equality applied on local names of entities which were lowercased and edna (string editing distance matcher).</p>
 <img src="eval_data/ra-dbpedia.png" alt="dbpedia evaluation results">
