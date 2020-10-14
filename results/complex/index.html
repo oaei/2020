@@ -1,0 +1,556 @@
+<style type="text/css">
+  .tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  .tg td {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: black;
+  }
+  .tg th {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    word-break: normal;
+    border-color: black;
+  }
+  .tg .tg-0lax {
+    text-align: left;
+    vertical-align: top;
+  }
+</style>
+
+<html>
+  <head>
+    <title>Ontology Alignment Evaluation Initiative::Complex track</title>
+
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <a
+        style="color: grey; line-height: 5mm"
+        href="http://oaei.ontologymatching.org/2019/"
+        >Ontology Alignment Evaluation Initiative - OAEI-2019 Campaign</a
+      ><a href="http://oaei.ontologymatching.org/"
+        ><img
+          src="../../../oaeismall.jpg"
+          alt="OAEI"
+          style="border-style: none; float: right; margin-left: 5pt"
+      /></a>
+      <a href="http://www.seals-project.eu/">
+        <img
+          width="200px"
+          src="../../../seals-logo.jpg"
+          alt="OAEI"
+          style="
+            clear: right;
+            float: right;
+            margin-left: 5pt;
+            border-style: none;
+          "
+      /></a>
+    </div>
+
+    <h1>Complex track - Evaluation</h1>
+
+    <h2>General description</h2>
+
+    <p>
+      The complex track aims at evaluating the systems which can generate both
+      simple and complex correspondences.
+    </p>
+
+    <p>
+      This track contains 5 datasets from 4 different domains:
+      <a href="#conference">Conference</a>,
+      <a href="#popconf">Populated Conference</a>,
+      <a href="#hydrography">Hydrography</a>, <a href="#geolink">GeoLink</a> and
+      <a href="#taxonomy">Taxon</a>.
+    </p>
+
+    <p>
+      The detailed description of each dataset can be found at the
+      <a href="../../complex/index.html">OAEI Complex track page</a>
+    </p>
+
+    <p>
+      Table below presents the results for the 4 datasets. Only AMLC, AROA, and
+      CANARD were able to generate complex correspondences. The results for the
+      other systems are reported in terms of simple alignments.
+    </p>
+
+    <style type="text/css">
+      .tg {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+      .tg td {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        padding: 10px 5px;
+        border-style: solid;
+        border-width: 1px;
+        overflow: hidden;
+        word-break: normal;
+        border-color: black;
+      }
+      .tg th {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 10px 5px;
+        border-style: solid;
+        border-width: 1px;
+        overflow: hidden;
+        word-break: normal;
+        border-color: black;
+      }
+      .tg .tg-46ru {
+        background-color: #96fffb;
+        border-color: inherit;
+        text-align: left;
+        vertical-align: top;
+      }
+      .tg .tg-0pky {
+        border-color: inherit;
+        text-align: left;
+        vertical-align: top;
+      }
+      .tg .tg-bolj {
+        background-color: #ffccc9;
+        border-color: inherit;
+        text-align: center;
+        vertical-align: top;
+      }
+      .tg .tg-mfhl {
+        background-color: #ffffc7;
+        border-color: inherit;
+        text-align: center;
+        vertical-align: top;
+      }
+      .tg .tg-py60 {
+        font-weight: bold;
+        background-color: #ffffc7;
+        border-color: inherit;
+        text-align: center;
+        vertical-align: top;
+      }
+      .tg .tg-f79y {
+        font-weight: bold;
+        background-color: #ffccc9;
+        border-color: inherit;
+        text-align: center;
+        vertical-align: top;
+      }
+      .tg .tg-jw0j {
+        font-weight: bold;
+        background-color: #96fffb;
+        border-color: inherit;
+        text-align: center;
+        vertical-align: top;
+      }
+      .tg .tg-gdc4 {
+        background-color: #96fffb;
+        border-color: inherit;
+        text-align: center;
+        vertical-align: top;
+      }
+    </style>
+    <table class="tg">
+      <tr>
+        <th class="tg-0pky" rowspan="2">Matcher</th>
+        <th class="tg-bolj" colspan="3">Conference</th>
+        <th class="tg-mfhl" colspan="2">Populated Conference</th>
+        <th class="tg-bolj" colspan="3">Hydrography</th>
+        <th class="tg-mfhl" colspan="3">GeoLink</th>
+        <th class="tg-bolj" colspan="2">Taxon</th>
+      </tr>
+      <tr>
+        <td class="tg-bolj">Precision</td>
+        <td class="tg-bolj">F-measure</td>
+        <td class="tg-bolj">Recall</td>
+        <td class="tg-mfhl">Precision <br />(classical - not disjoint)</td>
+        <td class="tg-mfhl">Coverage<br />(classical - query Fmeas.)</td>
+        <td class="tg-bolj">relaxed Precision</td>
+        <td class="tg-bolj">relaxed F-measure</td>
+        <td class="tg-bolj">relaxed Recall</td>
+        <td class="tg-mfhl">relaxed Precision</td>
+        <td class="tg-mfhl">relaxed F-measure</td>
+        <td class="tg-mfhl">relaxed Recall</td>
+        <td class="tg-bolj">Precision<br />(classical - overlap)</td>
+        <td class="tg-bolj">Coverage<br />(classical - overlap)</td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">ALIN</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">0.68-0.98</td>
+        <td class="tg-mfhl">0.20-0.28</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">ALOD2Vec</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">0.39-0.78</td>
+        <td class="tg-mfhl">0.24-0.33</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">AML</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">0.59-0.93</td>
+        <td class="tg-mfhl">0.31-0.37</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+      </tr>
+      <tr>
+        <td class="tg-46ru">AMLC</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">0.23-0.51</td>
+        <td class="tg-mfhl">0.26-0.31</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+      </tr>
+      <tr>
+        <td class="tg-46ru">AROA</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">ATBox</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">0.39-0.81</td>
+        <td class="tg-mfhl">0.27-0.36</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+      </tr>
+      <tr>
+        <td class="tg-46ru">CANARD</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">0.25-0.88</td>
+        <td class="tg-mfhl">0.40-0.50</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">LogMap</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">0.56-0.96</td>
+        <td class="tg-mfhl">0.26-0.33</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">LogMapBio</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">LogMapKG</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">0.56-0.96</td>
+        <td class="tg-mfhl">0.26-0.33</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">LogMapLt</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">0.50-0.87</td>
+        <td class="tg-mfhl">0.23-0.31</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">Wiktionary</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">0.49-0.88</td>
+        <td class="tg-mfhl">0.26-0.35</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+      </tr>
+    </table>
+
+    <a name="datasets"><h2>Results per dataset</h2></a>
+
+    <a name="conference"><h3>Conference dataset</h3></a>
+
+    <p>
+      The complex correspondences generated by the systems were manually
+      compared to the ones of the provided consensus alignment.
+    </p>
+    <p>
+      For this evaluation, only <i>equivalence</i> correspondences were
+      considered and the confidence of the correspondence were not be taken into
+      account.
+    </p>
+
+    <p>
+      The detailed results for this track are accessible in
+      <a href="conference/index.html">Conference results</a>
+    </p>
+
+    <a name="popconf"><h3>Populated Conference dataset</h3></a>
+
+    <p>
+      In this subtrack, the alignments are automatically evaluated over a
+      populated version of the Conference dataset.
+    </p>
+    <p>
+      The dataset as well as the evaluation systems are available at
+      <a href="https://framagit.org/IRIT_UT2J/conference-dataset-population"
+        >https://framagit.org/IRIT_UT2J/conference-dataset-population</a
+      >.
+    </p>
+    <p>Two metrics are computed: a Coverage score and a Precision score.</p>
+
+    <p>The systems were run:</p>
+    <ul>
+      <li>on the Original dataset conference</li>
+      <li>
+        on a small Populated version of the dataset conference (with only common
+        instances)
+      </li>
+      <li>
+        on a big Populated version of the dataset conference (with only common
+        instances)
+      </li>
+    </ul>
+
+    <p>
+      Then the best set of alignments output by each systems gives the final
+      score for this track. For example, AML performed better on the Original
+      Conference dataset than on the Populated version so the first sets of
+      alignments are kept.
+    </p>
+
+    <p>
+      The detailed results for this track are accessible in
+      <a href="popconf/index.html">Populated Conference results</a>
+    </p>
+
+    <a name="hydrography"><h3>Hydrography dataset</h3></a>
+
+    <p>
+      In this subtack, in order to explain the performance of alignment systems,
+      we break the evaluation down into three subtasks: Entity Identification,
+      Relationship Identification, and Full Complex alignment Identification.
+      The alignments generated for the final results have been evaluated using
+      relaxed precision and recall.
+    </p>
+    <p>
+      The detailed results for this track are accessible in
+      <a href="hydrography/index.html">Hydrography results</a>
+    </p>
+
+    <a name="geolink"><h3>GeoLink dataset</h3></a>
+
+    <p>
+      The evaluation of GeoLink benchmark applies the same methods of evaluating
+      Hydrography benchmark. The evaluation of the systems are performed by
+      computing relaxed precision and recall for final results.
+    </p>
+    <p>
+      The detailed results for this track are accessible in
+      <a href="geolink/index.html">GeoLink results</a>
+    </p>
+
+    <a name="taxonomy"><h3>Taxon dataset</h3></a>
+
+    <p>
+      Even though the ontologies of the Taxon dataset have a common scope (plant
+      taxonomy), they are unevenly populated. For this reason, the automatic
+      evaluation system can not be applied to this dataset.
+    </p>
+
+    <p>
+      First the alignments have been filtered to remove the correspondences
+      which align the same URIs and the correspondences which align instances.
+      The filtered correspondences have then been manually classified as
+      equivalent, more general, more specific, overlapping or disjoint.
+    </p>
+    <p>6 reference SPARQL queries are used to compute the Coverage.</p>
+    <p>
+      The detailed results for this track are accessible in
+      <a href="taxon/index.html">Taxon results</a>
+    </p>
+
+    <h2>Organizers</h2>
+    <!--p>TODO: give main contacts for each dataset ? add your email if you wish</p-->
+    <ul>
+      <li>
+        Elodie Thiéblin (IRIT, Toulouse, France), elodie [.] thieblin [at] irit
+        [.] fr
+      </li>
+      <li>
+        Cassia Trojahn (IRIT, Toulouse, France), cassia [.] trojahn [at] irit
+        [.] fr
+      </li>
+      <li>
+        Ondřej Zamazal (University of Economics, Prague), ondrej [.] zamazal
+        [at] vse [.] cz
+      </li>
+      <li>
+        Lu Zhou (Kansas State University, USA), kbzhoulu [at] gmail [.] com
+      </li>
+    </ul>
+
+    <h2>References</h2>
+
+    <p>
+      [1] Ondřej Zamazal, Vojtěch Svátek. The Ten-Year OntoFarm and its
+      Fertilization within the Onto-Sphere. Web Semantics: Science, Services and
+      Agents on the World Wide Web, 43, 46-53. 2017.
+    </p>
+
+    <p>
+      [2] Élodie Thiéblin, Ollivier Haemmerlé, Nathalie Hernandez, Cassia
+      Trojahn. Task-Oriented Complex Ontology Alignment: Two Alignment
+      Evaluation Sets. In : European Semantic Web Conference. Springer, Cham,
+      655-670, 2019.
+    </p>
+
+    <p>
+      [3] Élodie Thiéblin, Fabien Amarger, Nathalie Hernandez, Catherine
+      Roussey, Cassia Trojahn. Cross-querying LOD datasets using complex
+      alignments: an application to agronomic taxa. In: Research Conference on
+      Metadata and Semantics Research. Springer, Cham, 25-37, 2017.
+    </p>
+
+    <p>
+      [4] Lu Zhou, Michelle Cheatham, Adila Krisnadhi, Pascal Hitzler. A Complex
+      Alignment Benchamark: GeoLink Dataset. In: International Semantic Web
+      Conference. Springer, 2019.
+    </p>
+
+    <p>
+      [5] Marc Ehrig, and Jérôme Euzenat. "Relaxed precision and recall for
+      ontology matching." K-CAP 2005 Workshop on Integrating Ontologies, Banff,
+      Canada, 2005.
+    </p>
+
+    <div class="address">
+      <div class="footer">
+        <a href="http://oaei.ontologymatching.org/2019/complex/index.html"
+          >http://oaei.ontologymatching.org/2019/complex</a
+        >
+      </div>
+      <!--$Id$-->
+    </div>
+  </body>
+</html>

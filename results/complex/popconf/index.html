@@ -1,0 +1,794 @@
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<html><head><title>Ontology Alignment Evaluation Initiative::Complex track</title>
+
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../style.css"></head><body>
+
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2020/">Ontology
+  Alignment Evaluation Initiative - OAEI-2020
+  Campaign</a><a href="http://oaei.ontologymatching.org/"><img src="../../../oaeismall.jpg" alt="OAEI" style="border-style: none; float: right; margin-left: 5pt;"></a>
+  <a href="http://www.seals-project.eu/">
+  <img  width="200px" src="../../../seals-logo.jpg" alt="OAEI" style="clear:right;float:right; margin-left: 5pt; border-style:none;"/></a>
+</div>
+
+<h1>Complex track - Populated Conference subtrack - Evaluation</h1>
+
+<p>We also evaluated all systems with a SEALS API versions: ALIN, ALOD2Vec, AML, AMLC, ATBox, CANARD, DESKMatcher, Lily, LogMap, LogMapKG, LogMapLt, Wiktionary.</p>
+<p>The systems were run on the Original Conference dataset and on two versions of the Populated version of the Conference dataset. Their output alignments were evaluated as described below.</p>
+<p>A timeout was set to 40 minutes for each pair of ontologies.</p>
+
+<p>The output alignments as well as the detailed results of the systems are downloadable <a href="./results_conference.zip">here</a>.</p>
+
+<p>The system were evaluated on 3 datasets (available  <a href="https://framagit.org/IRIT_UT2J/conference-dataset-population">here</a>): </p>
+<ul>
+<li>the <b>original</b> conference dataset with no instances</li>
+<li>a <b>small</b> dataset with common instances (called "eswc" in the repository). The larger file of this dataset is 4.6 Mo.</li>
+<li>a <b>large</b> dataset with common instances (called "v100" in the repository). The larger file of this dataset is 32 Mo.</li>
+</ul>
+
+
+<h2>Evaluation measures</h2>
+
+<p>In this subtrack, the alignments are automatically evaluated over a populated version of the Conference dataset. The dataset as well as the evaluation systems are available at <a href="https://framagit.org/IRIT_UT2J/conference-dataset-population">https://framagit.org/IRIT_UT2J/conference-dataset-population</a>.
+Two metrics are computed: a Coverage score and a Precision score.</p>
+
+<p>The Coverage and Precision are based on a set of scoring functions between two instance sets Iref and Ieval</p>
+<ul>
+<li>classical(Iref,Ieval) = 1 if Ieval=Iref, 0 otherwise.</li>
+<!--<li>recall-oriented(Iref,Ieval) = 1 if Ieval &supe; Iref, 0.5 if Ieval &sube; Iref,  0 otherwise.</li>
+<li>precision-oriented(Iref,Ieval) = 1 if Ieval &sube; Iref, 0.5 if Ieval &supe; Iref,  0 otherwise.</li>
+<li>overlap(Iref,Ieval) = 1 if Ieval &cap; Iref &ne; &empty;, 0 otherwise.</li>-->
+<li>not disjoint(Iref,Ieval) = 1 if Ieval &cap; Iref &ne; &empty; OR if Ieval=Iref=&empty;, 0 otherwise.</li>
+<li>query Fmeasure(Iref,Ieval) = 2 * QR*QP/(QR+QP) with QR=|Iref &cap; Ieval|/|Iref| and QP=|Iref &cap; Ieval|/|Ieval|</li>
+</ul>
+
+<h3>Coverage</h3>
+
+<p>For the Coverage score calculation, the reference is a set of pairs of equivalent SPARQL queries (Competency Questions for Alignment (CQAs)), one over the source ontology, one over the target ontology. The source reference CQA is rewritten using the evaluated alignment and its instances are compared to those of the target reference CQA.</p>
+
+<p>Different Coverage scores are output depending on the comparison between the instance sets presented above. As in the following equation where SKB is the source knowledge base, TKB the target knowledge base, cqa_pairs the set of pairs of correspondences, f a scoring function in {classical, query Fmeasure} and A the evaluated alignment.</p>
+<div align="center">
+<img src="eq_cov.png">
+</div>
+
+
+<h3>Precision</h3>
+
+<p>The Precision score is calculated by comparing the instances represented by the source member with the instances represented by the target member of each correspondence. The following equation shows how the Precision is calculated. SKB is the source knowledge base, TKB the target knowledge base, f a scoring function in {classical, query Fmeasure, not disjoint} and A the evaluated alignment.</p>
+
+<div align="center">
+<img src="eq_prec.png">
+</div>
+
+
+<p>As a set of instances from the source knowledge base are compared to a set of instances from the target knowledge base, this score is not absolute, even though the knowledge bases are populated with similar instances (because the ontologies' scopes are not always exactly equivalent). The percentage of correct correspondences is somewhere between the Precision with a classical scoring function and the not disjoint scoring function.</p>
+
+
+<a name="execution"><h2>System execution on the datasets</h2></a>
+<p>The systems have been executed on a Ubuntu 16.04 machine configured with 16GB of RAM running under a i7-4790K CPU 4.00GHz x 8 processors. All measurements are based on a single run.</p>
+<p>CANARD is an oriented system ; its runtime is on the 20 oriented pairs of ontologies. The other system's runtime is that of 10 pairs.</p>
+
+<ul>
+  <li>ALIN encountered a <i>ava.lang.ArrayIndexOutOfBoundsException: 10000</i> on the large dataset.</li>
+<li>ALOD2Vec encountered an error with the populated datasets: <i>ExternalMatcher (OUT):  INFO [main] (Matcher.java:101) - Instances detected. Running Instance Matcher.
+  ExternalMatcher (ERR): ToolBridgeException: Tool exception</i></li>
+  <li>AML hit the timeout on the large dataset</li>
+  <li> The output of AMLC raises parsing errors on the EDOAL file using the Alignment API (4.9):
+    <ul>
+    <li> in the prefixes: "xmlns:edoal='http://ns.inria.org/edoal/1.0/#'" must end with a #</li>
+    <li>the *type* tag must not be null: &lt;type&gt;**&lt;/type&gt; </li> 
+    <li>formalism: name and uri must be preceded by "align:" &lt;Formalism align:name="owl" align:uri="http://www.w3.org/TR/owl-guide/"/>
+    </li>
+  </ul>
+  </li>
+<li> CANARD could not be run on the original dataset as it needs instances. It hit the timeout on the large dataset for several pairs.</li>
+<li> DESKMatcher faced an exception on all datasets: <i>de.uni_mannheim.informatik.dws.melt.matching_ml.python.PythonServer - Server is not yet running</i></li>
+<li> Lily encountered a <i>java.lang.IllegalArgumentException</i> on all datasets</li>
+
+
+<li>Wiktionary found an error while run on the datasets with instances: <i> INFO [main] (OrchestratingMatcher.java:82) - Instances detected. Running Instance Matcher.
+  Tool Exception: Tool exception
+  Unable to execute matching task</i></li>
+</ul>
+</p>
+
+
+<div align="center">
+<p>Execution results on the three datasets. (X means an error occured in the run).</p>
+
+<style type="text/css">
+  .tg  {border-collapse:collapse;border-spacing:0;}
+  .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    overflow:hidden;padding:10px 5px;word-break:normal;}
+  .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+  .tg .tg-34fe{background-color:#c0c0c0;border-color:inherit;text-align:center;vertical-align:top}
+  .tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+  .tg .tg-bolj{background-color:#ffccc9;border-color:inherit;text-align:center;vertical-align:top}
+  .tg .tg-hafo{background-color:#fffc9e;border-color:inherit;text-align:center;vertical-align:top}
+  .tg .tg-ut5e{background-color:#c0c0c0;border-color:inherit;color:#333333;text-align:center;vertical-align:top}
+  </style>
+  <table class="tg">
+  <thead>
+    <tr>
+      <th class="tg-c3ow">tool</th>
+      <th class="tg-bolj" colspan="2">original</th>
+      <th class="tg-hafo" colspan="2">small</th>
+      <th class="tg-bolj" colspan="2">large</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="tg-c3ow"></td>
+      <td class="tg-bolj">nb corr.</td>
+      <td class="tg-bolj">time(s)</td>
+      <td class="tg-hafo">nb corr.</td>
+      <td class="tg-hafo">time(s)</td>
+      <td class="tg-bolj">nb corr.</td>
+      <td class="tg-bolj">time(s)</td>
+    </tr>
+    <tr>
+      <td class="tg-c3ow">ALIN</td>
+      <td class="tg-bolj">166</td>
+      <td class="tg-bolj">129</td>
+      <td class="tg-hafo">118</td>
+      <td class="tg-hafo">134</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+    </tr>
+    <tr>
+      <td class="tg-c3ow">ALOD2Vec</td>
+      <td class="tg-bolj">346</td>
+      <td class="tg-bolj">116</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+    </tr>
+    <tr>
+      <td class="tg-c3ow">AML</td>
+      <td class="tg-bolj">274</td>
+      <td class="tg-bolj">56</td>
+      <td class="tg-hafo">1385016</td>
+      <td class="tg-hafo">1596</td>
+      <td class="tg-ut5e">X</td>
+      <td class="tg-ut5e">X</td>
+    </tr>
+    <tr>
+      <td class="tg-c3ow">AMLC</td>
+      <td class="tg-bolj">917</td>
+      <td class="tg-bolj">41</td>
+      <td class="tg-hafo">915</td>
+      <td class="tg-hafo">52</td>
+      <td class="tg-bolj">860</td>
+      <td class="tg-bolj">2263</td>
+    </tr>
+    <tr>
+      <td class="tg-c3ow">ATBox</td>
+      <td class="tg-bolj">342</td>
+      <td class="tg-bolj">57</td>
+      <td class="tg-hafo">32314</td>
+      <td class="tg-hafo">92</td>
+      <td class="tg-bolj">241068</td>
+      <td class="tg-bolj">300</td>
+    </tr>
+    <tr>
+      <td class="tg-c3ow">CANARD</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-hafo">1302</td>
+      <td class="tg-hafo">5310</td>
+      <td class="tg-bolj">780</td>
+      <td class="tg-bolj">43541</td>
+    </tr>
+    <tr>
+      <td class="tg-c3ow">DESKMatcher</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+    </tr>
+    <tr>
+      <td class="tg-c3ow">Lily</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+    </tr>
+    <tr>
+      <td class="tg-c3ow">LogMap</td>
+      <td class="tg-bolj">248</td>
+      <td class="tg-bolj">40</td>
+      <td class="tg-hafo">7288</td>
+      <td class="tg-hafo">61</td>
+      <td class="tg-bolj">92650</td>
+      <td class="tg-bolj">2699</td>
+    </tr>
+    <tr>
+      <td class="tg-c3ow">LogMapKG</td>
+      <td class="tg-bolj">248</td>
+      <td class="tg-bolj">42</td>
+      <td class="tg-hafo">7288</td>
+      <td class="tg-hafo">61</td>
+      <td class="tg-bolj">92650</td>
+      <td class="tg-bolj">2669</td>
+    </tr>
+    <tr>
+      <td class="tg-c3ow">LogMapLt</td>
+      <td class="tg-bolj">244</td>
+      <td class="tg-bolj">32</td>
+      <td class="tg-hafo">36962</td>
+      <td class="tg-hafo">43</td>
+      <td class="tg-bolj">801992</td>
+      <td class="tg-bolj">182</td>
+    </tr>
+    <tr>
+      <td class="tg-c3ow">Wiktionary</td>
+      <td class="tg-bolj">276</td>
+      <td class="tg-bolj">2645</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+      <td class="tg-34fe">X</td>
+    </tr>
+  </tbody>
+  </table>
+</div>
+
+
+<div align="center">
+  <p>Detail of the output correspondences on the datasets. Empty cells are 0 (they were removed for visibility)</p>
+  <style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-cmwg{background-color:#ffccc9;text-align:center;vertical-align:top}
+    .tg .tg-baqh{text-align:center;vertical-align:top}
+    .tg .tg-dm3v{background-color:#ffccc9;color:#2E3436;text-align:center;vertical-align:middle}
+    .tg .tg-8xib{background-color:#fffc9e;text-align:center;vertical-align:top}
+    .tg .tg-dxem{color:#2E3436;text-align:center;vertical-align:middle}
+    .tg .tg-uvj6{background-color:#fffc9e;color:#2E3436;text-align:center;vertical-align:middle}
+    </style>
+    <table class="tg">
+    <thead>
+      <tr>
+        <th class="tg-baqh"></th>
+        <th class="tg-cmwg" colspan="6">orig</th>
+        <th class="tg-8xib" colspan="6">small</th>
+        <th class="tg-cmwg" colspan="6">large</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tg-baqh"></td>
+        <td class="tg-cmwg">(1:1)</td>
+        <td class="tg-cmwg">(1:n)</td>
+        <td class="tg-cmwg">(m:1)</td>
+        <td class="tg-cmwg">(m:n)</td>
+        <td class="tg-cmwg">identical</td>
+        <td class="tg-cmwg">instance</td>
+        <td class="tg-8xib">(1:1)</td>
+        <td class="tg-8xib">(1:n)</td>
+        <td class="tg-8xib">(m:1)</td>
+        <td class="tg-8xib">(m:n)</td>
+        <td class="tg-8xib">identical</td>
+        <td class="tg-8xib">instance</td>
+        <td class="tg-cmwg">(1:1)</td>
+        <td class="tg-cmwg">(1:n)</td>
+        <td class="tg-cmwg">(m:1)</td>
+        <td class="tg-cmwg">(m:n)</td>
+        <td class="tg-cmwg">identical</td>
+        <td class="tg-cmwg">instance</td>
+      </tr>
+      <tr>
+        <td class="tg-dxem">ALIN</td>
+        <td class="tg-dm3v">166</td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-uvj6">118</td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+      </tr>
+      <tr>
+        <td class="tg-dxem">ALOD2Vec</td>
+        <td class="tg-dm3v">346</td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+      </tr>
+      <tr>
+        <td class="tg-dxem">AML</td>
+        <td class="tg-dm3v">274</td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-uvj6">242</td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6">1,384,774</td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+      </tr>
+      <tr>
+        <td class="tg-dxem">AMLC</td>
+        <td class="tg-dm3v">290</td>
+        <td class="tg-dm3v">316</td>
+        <td class="tg-dm3v">311</td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-uvj6">288</td>
+        <td class="tg-uvj6">316</td>
+        <td class="tg-uvj6">311</td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-dm3v">282</td>
+        <td class="tg-dm3v">294</td>
+        <td class="tg-dm3v">284</td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+      </tr>
+      <tr>
+        <td class="tg-dxem">ATBox</td>
+        <td class="tg-dm3v">342</td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-uvj6">342</td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6">31,972</td>
+        <td class="tg-dm3v">316</td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v">240,752</td>
+      </tr>
+      <tr>
+        <td class="tg-dxem">CANARD</td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-uvj6">377</td>
+        <td class="tg-uvj6">871</td>
+        <td class="tg-uvj6">7</td>
+        <td class="tg-uvj6">47</td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-dm3v">208</td>
+        <td class="tg-dm3v">249</td>
+        <td class="tg-dm3v">249</td>
+        <td class="tg-dm3v">74</td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+      </tr>
+      <tr>
+        <td class="tg-dxem">LogMap</td>
+        <td class="tg-dm3v">248</td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-uvj6">252</td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6">7,036</td>
+        <td class="tg-dm3v">248</td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v">92402</td>
+      </tr>
+      <tr>
+        <td class="tg-dxem">LogMapKG</td>
+        <td class="tg-dm3v">248</td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-uvj6">252</td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6">7,036</td>
+        <td class="tg-dm3v">248</td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v">92,402</td>
+      </tr>
+      <tr>
+        <td class="tg-dxem">LogMapLt</td>
+        <td class="tg-dm3v">244</td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-uvj6">244</td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6">36,718</td>
+        <td class="tg-dm3v">244</td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v">144,798</td>
+        <td class="tg-dm3v">656,950</td>
+      </tr>
+      <tr>
+        <td class="tg-dxem">Wiktionary</td>
+        <td class="tg-dm3v">276</td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-uvj6"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+        <td class="tg-dm3v"></td>
+      </tr>
+    </tbody>
+    </table>
+</div>
+
+
+
+<div align="center">
+  <p>Results over the 3 datasets</p>
+  
+  <style type="text/css">
+    .tg  {border-collapse:collapse;border-spacing:0;}
+    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+    .tg .tg-bolj{background-color:#ffccc9;border-color:inherit;text-align:center;vertical-align:top}
+    .tg .tg-mfhl{background-color:#ffffc7;border-color:inherit;text-align:center;vertical-align:top}
+    .tg .tg-508r{background-color:#fea5a0;border-color:inherit;text-align:center;vertical-align:top}
+    .tg .tg-hafo{background-color:#fffc9e;border-color:inherit;text-align:center;vertical-align:top}
+    .tg .tg-f79y{background-color:#ffccc9;border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+    .tg .tg-8ix6{background-color:#fea5a0;border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+    .tg .tg-kt43{background-color:#fffc9e;border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+    .tg .tg-py60{background-color:#ffffc7;border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+   .tg .tg-yj5y{background-color:#efefef;border-color:inherit;text-align:center;vertical-align:top}
+    </style>
+    <table class="tg">
+    <thead>
+      <tr>
+        <th class="tg-0pky"></th>
+        <th class="tg-bolj" colspan="5">Original</th>
+        <th class="tg-mfhl" colspan="5">Small</th>
+        <th class="tg-bolj" colspan="5">Large</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="tg-0pky"></td>
+        <td class="tg-bolj" colspan="3">Precision</td>
+        <td class="tg-508r" colspan="2">Coverage</td>
+        <td class="tg-mfhl" colspan="3">Precision</td>
+        <td class="tg-hafo" colspan="2">Coverage</td>
+        <td class="tg-bolj" colspan="3">Precision</td>
+        <td class="tg-508r" colspan="2">Coverage</td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">tool</td>
+        <td class="tg-bolj">equiv</td>
+        <td class="tg-bolj">query Fmeasure</td>
+        <td class="tg-bolj">not disjoint</td>
+        <td class="tg-508r">equiv</td>
+        <td class="tg-508r">query Fmeasure</td>
+        <td class="tg-mfhl">equiv</td>
+        <td class="tg-mfhl">query Fmeasure</td>
+        <td class="tg-mfhl">not disjoint</td>
+        <td class="tg-hafo">equiv</td>
+        <td class="tg-hafo">query Fmeasure</td>
+        <td class="tg-bolj">equiv</td>
+        <td class="tg-bolj">query Fmeasure</td>
+        <td class="tg-bolj">not disjoint</td>
+        <td class="tg-508r">equiv</td>
+        <td class="tg-508r">query Fmeasure</td>
+      </tr>
+      <tr>
+          <td class="tg-yj5y">ra1</td>
+    <td class="tg-yj5y">0.56</td>
+    <td class="tg-yj5y">0.82</td>
+    <td class="tg-yj5y">0.97</td>
+    <td class="tg-yj5y">0.37</td>
+    <td class="tg-yj5y">0.41</td>
+        <td class="tg-yj5y">0.56</td>
+    <td class="tg-yj5y">0.82</td>
+    <td class="tg-yj5y">0.97</td>
+    <td class="tg-yj5y">0.37</td>
+    <td class="tg-yj5y">0.41</td>
+        <td class="tg-yj5y">0.56</td>
+    <td class="tg-yj5y">0.82</td>
+    <td class="tg-yj5y">0.97</td>
+    <td class="tg-yj5y">0.37</td>
+    <td class="tg-yj5y">0.41</td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">ALIN</td>
+        <td class="tg-f79y">0.68</td>
+        <td class="tg-f79y">0.85</td>
+        <td class="tg-f79y">0.98</td>
+        <td class="tg-508r">0.20</td>
+        <td class="tg-508r">0.28</td>
+        <td class="tg-mfhl"></td>
+        <td class="tg-mfhl"></td>
+        <td class="tg-mfhl"></td>
+        <td class="tg-hafo"></td>
+        <td class="tg-hafo"></td>
+        <td class="tg-bolj"></td>
+        <td class="tg-bolj"></td>
+        <td class="tg-bolj"></td>
+        <td class="tg-508r"></td>
+        <td class="tg-508r"></td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">ALOD2Vec</td>
+        <td class="tg-bolj">0.39</td>
+        <td class="tg-bolj">0.57</td>
+        <td class="tg-bolj">0.78</td>
+        <td class="tg-508r">0.24</td>
+        <td class="tg-508r">0.33</td>
+        <td class="tg-mfhl"></td>
+        <td class="tg-mfhl"></td>
+        <td class="tg-mfhl"></td>
+        <td class="tg-hafo"></td>
+        <td class="tg-hafo"></td>
+        <td class="tg-bolj"></td>
+        <td class="tg-bolj"></td>
+        <td class="tg-bolj"></td>
+        <td class="tg-508r"></td>
+        <td class="tg-508r"></td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">AML</td>
+        <td class="tg-bolj">0.59</td>
+        <td class="tg-bolj">0.81</td>
+        <td class="tg-bolj">0.93</td>
+        <td class="tg-508r">0.31</td>
+        <td class="tg-8ix6">0.37</td>
+        <td class="tg-mfhl">0.37</td>
+        <td class="tg-mfhl">0.58</td>
+        <td class="tg-mfhl">0.77</td>
+        <td class="tg-hafo">0.21</td>
+        <td class="tg-hafo">0.25</td>
+        <td class="tg-bolj"></td>
+        <td class="tg-bolj"></td>
+        <td class="tg-bolj"></td>
+        <td class="tg-508r"></td>
+        <td class="tg-508r"></td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">AMLC</td>
+        <td class="tg-bolj">0.23</td>
+        <td class="tg-bolj">0.35</td>
+        <td class="tg-bolj">0.51</td>
+        <td class="tg-508r">0.26</td>
+        <td class="tg-508r">0.31</td>
+        <td class="tg-mfhl">0.23</td>
+        <td class="tg-mfhl">0.35</td>
+        <td class="tg-mfhl">0.51</td>
+        <td class="tg-hafo">0.26</td>
+        <td class="tg-hafo">0.31</td>
+        <td class="tg-bolj">0.25</td>
+        <td class="tg-bolj">0.36</td>
+        <td class="tg-bolj">0.51</td>
+        <td class="tg-8ix6">0.26</td>
+        <td class="tg-508r">0.30</td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">ATBox</td>
+        <td class="tg-bolj">0.39</td>
+        <td class="tg-bolj">0.60</td>
+        <td class="tg-bolj">0.81</td>
+        <td class="tg-8ix6">0.27</td>
+        <td class="tg-508r">0.36</td>
+        <td class="tg-mfhl">0.39</td>
+        <td class="tg-mfhl">0.60</td>
+        <td class="tg-mfhl">0.81</td>
+        <td class="tg-hafo">0.27</td>
+        <td class="tg-hafo">0.37</td>
+        <td class="tg-bolj">0.41</td>
+        <td class="tg-bolj">0.61</td>
+        <td class="tg-bolj">0.81</td>
+        <td class="tg-8ix6">0.26</td>
+        <td class="tg-8ix6">0.35</td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">CANARD</td>
+        <td class="tg-bolj"></td>
+        <td class="tg-bolj"></td>
+        <td class="tg-bolj"></td>
+        <td class="tg-508r"></td>
+        <td class="tg-508r"></td>
+        <td class="tg-mfhl">0.25</td>
+        <td class="tg-mfhl">0.57</td>
+        <td class="tg-mfhl">0.88</td>
+        <td class="tg-kt43">0.40</td>
+        <td class="tg-kt43">0.50</td>
+        <td class="tg-bolj">0.28</td>
+        <td class="tg-bolj">0.61</td>
+        <td class="tg-f79y">0.99</td>
+        <td class="tg-508r">0.17</td>
+        <td class="tg-508r">0.22</td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">LogMap</td>
+        <td class="tg-bolj">0.56</td>
+        <td class="tg-bolj">0.79</td>
+        <td class="tg-bolj">0.96</td>
+        <td class="tg-508r">0.25</td>
+        <td class="tg-508r">0.32</td>
+        <td class="tg-py60">0.56</td>
+        <td class="tg-py60">0.78</td>
+        <td class="tg-py60">0.95</td>
+        <td class="tg-hafo">0.25</td>
+        <td class="tg-hafo">0.32</td>
+        <td class="tg-f79y">0.56</td>
+        <td class="tg-f79y">0.79</td>
+        <td class="tg-bolj">0.96</td>
+        <td class="tg-8ix6">0.26</td>
+        <td class="tg-508r">0.33</td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">LogMapKG</td>
+        <td class="tg-bolj">0.56</td>
+        <td class="tg-bolj">0.79</td>
+        <td class="tg-bolj">0.96</td>
+        <td class="tg-508r">0.25</td>
+        <td class="tg-508r">0.32</td>
+        <td class="tg-py60">0.56</td>
+        <td class="tg-py60">0.78</td>
+        <td class="tg-py60">0.95</td>
+        <td class="tg-hafo">0.25</td>
+        <td class="tg-hafo">0.32</td>
+        <td class="tg-f79y">0.56</td>
+        <td class="tg-f79y">0.79</td>
+        <td class="tg-bolj">0.96</td>
+        <td class="tg-8ix6">0.26</td>
+        <td class="tg-508r">0.33</td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">LogMapLt</td>
+        <td class="tg-bolj">0.50</td>
+        <td class="tg-bolj">0.68</td>
+        <td class="tg-bolj">0.87</td>
+        <td class="tg-508r">0.23</td>
+        <td class="tg-508r">0.31</td>
+        <td class="tg-mfhl">0.50</td>
+        <td class="tg-mfhl">0.68</td>
+        <td class="tg-mfhl">0.87</td>
+        <td class="tg-hafo">0.23</td>
+        <td class="tg-hafo">0.31</td>
+        <td class="tg-bolj">0.50</td>
+        <td class="tg-bolj">0.68</td>
+        <td class="tg-bolj">0.87</td>
+        <td class="tg-508r">0.23</td>
+        <td class="tg-508r">0.31</td>
+      </tr>
+      <tr>
+        <td class="tg-0pky">Wiktionary</td>
+        <td class="tg-bolj">0.49</td>
+        <td class="tg-bolj">0.68</td>
+        <td class="tg-bolj">0.88</td>
+        <td class="tg-508r">0.26</td>
+        <td class="tg-508r">0.35</td>
+        <td class="tg-mfhl"></td>
+        <td class="tg-mfhl"></td>
+        <td class="tg-mfhl"></td>
+        <td class="tg-hafo"></td>
+        <td class="tg-hafo"></td>
+        <td class="tg-bolj"></td>
+        <td class="tg-bolj"></td>
+        <td class="tg-bolj"></td>
+        <td class="tg-508r"></td>
+        <td class="tg-508r"></td>
+      </tr>
+    </tbody>
+    </table>
+</div>
+
+
+
+<div align="center">
+<p>Graphics of the best precision and coverage for each tool</p>
+   <img src="merge_prec.png"> <img src="merge_cov.png">
+</div>
+
+<p>The bigger the dataset, the longer the system runtime. Most systems could not handle the large  dataset or met the timeout set to 40 minutes per pair.</p>
+
+<p>Only AMLC and CANARD were able to output complex correspondences.</p>
+
+<p>On the large dataset, CANARD timed out on several pair, lowering its CQA Coverage results.</p>
+<p>AMLC was efficient on all 3 datasets.</p>
+
+<p>As last year, the complex matchers obtain the best CQA coverage scores overall. However, AMLC now outputs its own simple alignments instead of relying on an input one. As a consequence, AMLC CQA Coverage score is lower than last year (last year: 0.46-0.50, this year: 0.26-31).</p>
+
+<p>The precision of CANARD is slightly better than last year's (last year: 0.21 - 0.52 - 0.88, this year: 0.25 - 0.57 - 0.88).</p>
+
+<p>The results of the following tools are exactly identical to last year's: ALIN, AML, LogMap, LogMapKG, LogMapLt, Wiktionary.</p>
+
+<p>The CQA Coverage scores are overall still low, so there is room for improvement on this track :)</p>
+
+</body></html>
+
