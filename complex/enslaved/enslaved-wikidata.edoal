@@ -58,7 +58,7 @@
 		<map>
 			<Cell>
 				<entity1>
-					<edoal:Class rdf:about="&enslaved;Preson" />
+					<edoal:Class rdf:about="&enslaved;Person" />
 				</entity1>
 				<entity2>
 					<edoal:Class rdf:about="&ed;Q410" />
