@@ -39,7 +39,7 @@ These alignments are the raw results that the following report is based on.
 We conducted experiments by executing each system in its standard 
 settings and we calculated precision, recall and f-measure. Systems have been ordered in terms of f-measure. This year, we did consider the whole process pipeline for the calculation of execution times, starting from ontologies upload and environment preparation. 
 </p><p>
-We have run the evaluation in on Windows 10 (64-bit) desktop with an Intel Core i7-4770 CPU @ 3.40GHz x 4 and allocating 16GB of RAM.
+We have run the evaluation on Windows 10 (64-bit) desktop with an Intel Core i7-4770 CPU @ 3.40GHz x 4 and allocating 16GB of RAM.
 </p>
 
 
@@ -50,9 +50,9 @@ We have run the evaluation in on Windows 10 (64-bit) desktop with an Intel Core 
 <h3><p>1. Results for the FLOPO-PTO matching task</p></h3>
 
 <p>
-Table shows that all participating systems could achieve this task with an acceptable f-measure. ALOD2Vec and Wiktionary generated a similar huge set of non meaningful mappings with a very low measure.
+Table 1 shows that all participating systems could achieve this task with an acceptable f-measure. ALOD2Vec and Wiktionary generated a similar, huge set of non meaningful mappings with a very low measure.
 AML generated a large number of mappings (significantly bigger than the size of the reference alignment), those alignments were mostly subsumption ones. In order to evaluate the precision in a more significant manner, we had to
-calculate an approximation by manually assessing a subset of around 100 mappings, that were not present in the reference alignment. LogmapLt and ATBox achieved a high precision but the lowest recall.
+calculate an approximation by manually assessing a subset of around 100 mappings, that were not present in the reference alignment. LogMapLt and ATBox achieved a high precision but the lowest recall.
 </p>
 
 <table cellpadding="4" cellspacing="0">
@@ -124,7 +124,7 @@ calculate an approximation by manually assessing a subset of around 100 mappings
 
 </p><h3><p>2. Results for the ENVO-SWEET matching task</p></h3>
 
-<p>AML, the LogMap family systems and ATBox could handle this task. Again the systems with the highest precision (LogMap and LogMapBio) achieve the lowest recall. AML generates a bigger set with a high number of subsumption mappings, it still achieved the best F-Measure for the task. It is worth nothing that due the specific structure of the SWEET ontology, a lot of the false positives come from homonyms.</p>
+<p>AML, the LogMap family systems and ATBox could handle this task. Again the systems with the highest precision (LogMap and LogMapBio) achieve the lowest recall. AML generates a bigger set with a high number of subsumption mappings, it still achieved the best f-Measure for the task. It is worth nothing that due the specific structure of the SWEET ontology, a lot of the false positives come from homonyms.</p>
 
 <table cellpadding="4" cellspacing="0">
 
@@ -182,7 +182,7 @@ calculate an approximation by manually assessing a subset of around 100 mappings
 </p><h3><p>3. Results for the ANAEETHES-GEMET matching task</p></h3>
 
 <p></p>
-This task and the next one have been introduced to the track this year, with the particularity of being developped in SKOS. Only AML could handle the files in their original format. LogMap and its variants could generate mappings based on the files after being transformed into OWL.
+This task and the next one have been introduced to the track this year, with the particularity of being developed in SKOS. Only AML could handle the files in their original format. LogMap and its variants could generate mappings based on the files after being transformed into OWL.
 LogMap and LogMapBio achieve the best results with LogMap processing the task in a shorter time. LogMapBio took a much longer time due to downloading 10 mediating ontologies from BioPortal, still the gain is not significant in terms of performance.
 <p> 
 
