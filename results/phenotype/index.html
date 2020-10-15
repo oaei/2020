@@ -1,0 +1,488 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+<title>OAEI 2020::Disease and Phenotype Track</title>
+<link rel="stylesheet" type="text/css" href="../../style.css">
+</head><body>
+
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2016/">Ontology
+  Alignment Evaluation Initiative - OAEI-2020 Campaign</a>
+  <a href="http://oaei.ontologymatching.org/">
+  <img src="../../../oaeismall.jpg" style="float: right; margin-left: 10pt; margin-right: 10pt; margin-bottom: 10pt; border-style: none;" width="175px"></a>
+  <!--<a href="http://www.seals-project.eu/">
+<img src="Seals-logo-5.png" style="clear: right; float: right; margin-right: 20pt; margin-left: 10pt; margin-bottom: 10pt; border-style: none;" width="150px"></a>-->
+<a href="http://www.pistoiaalliance.org/projects/ontologies-mapping/">
+<img src="../../phenotype/pistoia.png" style="clear: right; float: right; margin-right: 10pt; margin-left: 10pt; border-style: none;" width="150px"></a>
+</div>
+
+
+<p><b><a href="http://sws.ifi.uio.no/oaei/phenotype/">Disease and Phenotype Track</a></b></p>
+
+
+<h1>Results OAEI 2020::Disease and Phenotype Track</h1>
+
+
+<h4><u>Contact</u></h4>
+
+If you have any question/suggestion related to the results of this track or if you notice any kind of error 
+(wrong numbers, incorrect information on a matching system, etc.), feel free to write an email to ernesto [.] jimenez [.] ruiz [at] gmail [.] com or
+ianharrowconsulting [at] gmail [dot] com</p>
+
+
+
+<h4><u>Evaluation setting</u></h4>
+<p>
+We have run the evaluation in a Ubuntu 18 Laptop with an Intel Core i5-6300HQ CPU @ 2.30GHz × 4 and allocating 15Gb of RAM.</p>
+
+
+Systems have been evaluated according to the following criteria:
+<ul>
+<li>Precision and Recall with respect to a <i>voted</i> reference alignment or <a href="https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-017-0162-9"><i>consensus alignment</i></a> that has been automatically built by merging/voting 
+the outputs of the participating systems in 2016-2020. We have used vote=3.</li>
+<!-- li>Semantic recall with respect to manually generated mappings for six areas (carbohydrate, obesity, breast cancer, urinary incontinence, 
+abnormal heart and Charcot-Marie Tooth disease).</li>
+<li>Manual assessment of a subset unique mappings (i.e., mappings that are not suggested by other systems).</li-->
+</ul>
+
+<!--
+
+We also plan to perform a manual evaluation of the generated mappings, 
+specially the ones that are not suggested by other systems (i.e. unique mappings).
+
+
+
+<li>Manual assessment of a subset of the generated mappings, specially the ones that are not suggested by other systems (i.e. unique mappings).</li>
+</ul>
+-->
+
+<!-- 
+We have used the OWL 2 reasoner <a href="http://www.hermit-reasoner.com/">HermiT</a> to calculate the semantic recall. For example, 
+a positive hit will mean that a mapping in the reference has been (explicitly) included in the output mappings or it can be inferred using reasoning 
+with the input ontologies and the output mappings.
+-->
+<!--p>
+We have used the OWL 2 reasoner <a href="http://www.hermit-reasoner.com/">HermiT</a> 
+to compute the number of unsatisfiable classes.
+</p-->
+
+<p>
+We have used the OWL 2 EL reasoner <a href="http://code.google.com/p/elk-reasoner/">ELK</a> to compute an approximate number of unsatisfiable classes.
+</p>
+
+
+<!--p>
+We have used the OWL 2 reasoner <a href="http://www.hermit-reasoner.com/">HermiT</a> 
+to compute the number of unsatisfiable classes. For the cases in which HermiT 
+could not cope with the input ontologies and the mappings (in less than 2 hours) 
+we have provided a lower  bound on the number of unsatisfiable classes (indicated by &ge;) using 
+the OWL 2 EL reasoner <a href="http://code.google.com/p/elk-reasoner/">ELK</a>.
+</p-->
+
+<p>
+Check out the supporting scripts to reproduce the evaluation: <a href="https://github.com/ernestojimenezruiz/oaei-evaluation">https://github.com/ernestojimenezruiz/oaei-evaluation</a>
+</p>
+ 
+
+
+
+
+</p>
+
+<h4><u>Participation and success</u></h4>
+
+<p>
+In the OAEI 2020 phenotype track 7 participating OAEI 2020 systems have been able to complete at least 
+one of the tasks with a 8 hours timeout (see Table 1). DESKMatcher finished with an "OutOfMemoryException" in both tasks.
+</p>
+
+
+<table cellpadding="4" cellspacing="0">
+<tr class="header">
+<td  class="header" rowspan="1"  colspan="1"> System </td>
+<td  class="header" colspan="1"> HP-MP </td>
+<td  class="header" colspan="1"> DOID-ORDO </td>
+<td  class="header" rowspan="1"  colspan="1"> Average </td>
+<td  class="header" rowspan="1"  colspan="1"> # Tasks </td>
+</tr>
+
+
+<tr class="odd">
+<td class="text">LogMapLt</td>
+<td>7 </td>
+<td>8 </td>
+<td class="header"> 8 </td>
+<td class="header">2</td>
+</tr>
+
+
+<tr class="even">
+<td class="text">ATBox</td>
+<td>16 </td>
+<td>21 </td>
+<td class="header"> 19 </td>
+<td class="header">2</td>
+</tr>
+
+
+<tr class="odd">
+<td class="text">LogMap</td>
+<td>32 </td>
+<td>25 </td>
+<td class="header"> 29 </td>
+<td class="header">2</td>
+</tr>
+
+
+<tr class="even">
+<td class="text">AML</td>
+<td>102 </td>
+<td>200 </td>
+<td class="header"> 151 </td>
+<td class="header">2</td>
+</tr>
+
+
+<tr class="odd">
+<td class="text">Wiktionary</td>
+<td>854 </td>
+<td>858 </td>
+<td class="header"> 856 </td>
+<td class="header">2</td>
+</tr>
+
+
+<tr class="even">
+<td class="text">LogMapBio</td>
+<td>1,355 </td>
+<td>2,034 </td>
+<td class="header"> 1,695 </td>
+<td class="header">2</td>
+</tr>
+
+
+<tr class="odd">
+<td class="text">ALOD2Vec</td>
+<td>2,384 </td>
+<td>2,809 </td>
+<td class="header"> 2,597 </td>
+<td class="header">2</td>
+</tr>
+
+
+<tr class="base">
+<td class="header"> # Systems </td> 
+<td class="header">7 </td>
+<td class="header">7 </td>
+<td class="header"> 765 </td>
+<td class="header">14</td>
+</tr>
+
+
+<caption><b>Table 1:</b> System runtimes (s) and task completion.</caption>
+</table>
+
+
+
+
+
+<a name="variants"><h4><u>Use of background knowledge</u></h4></a>
+
+<p>
+LogMapBio uses <a href="https://bioportal.bioontology.org/">BioPortal</a> as mediating ontology provider, that is, it retrieves from BioPortal the most suitable top-10 ontologies for the matching task.
+</p>
+
+<p>
+LogMap uses normalisations and spelling variants from the general (biomedical) purpose <a href="http://www.nlm.nih.gov/pubs/factsheets/umlslex.html">SPECIALIST Lexicon</a>.
+</p>
+
+<p>AML has three sources of background knowledge  which  can  be  used  as  mediators  between  the  input  ontologies:  the  Uber
+Anatomy Ontology (<a href="http://uberon.github.io/">Uberon</a>), the Human Disease Ontology (<a href="http://disease-ontology.org/">DOID</a>) and the Medical Subject Headings (<a href="https://www.nlm.nih.gov/mesh/">MeSH</a>).
+</p>
+
+
+
+<p>&nbsp;</p>
+
+
+<h3><p>Results against the consensus alignments with vote 3</p></h3>
+
+
+<p>
+Tables 2 and 3 show the results achieved by each of the participating systems against the consensus alignment with vote=3. Note that systems participating with different variants only 
+contributed once in the voting, that is, the voting was done by family of systems/variants rather than by individual systems.
+</p>
+
+<p>
+Since the consensus alignments only allow us to assess how systems perform in comparison with 
+one another the proposed ranking is only a reference. Note that, on one hand, some of the mappings in the consensus alignment may be erroneous (false positives),
+as all it takes for that is that 3 systems agree on part of the erroneous mappings they find. 
+On the other hand, the consensus alignments are not complete, as there will likely be correct mappings 
+that no system is able to find, and there are a number of
+ mappings found by only one system (and therefore not in the consensus alignments) which may be correct. 
+ </p>
+ 
+ <p>
+ Nevertheless, the results with respect to the consensus alignments do provide some insights into the 
+ performance of the systems. For example, LogMap is the system that provides the closest set of mappings to the consensus with vote=3 (not necessarily the best system), while AML
+ outputs a large set of <i>unique</i> mappings, that is, mappings that are not proposed by any other system. LogMap has a small set of unique mappings as most of its mappings are also suggested by its 
+ variant LogMapBio and viceversa.
+</p>
+
+<h4><p>HP-MP task</p></h4>
+
+
+
+
+
+<table cellpadding="4" cellspacing="0">
+
+<tr class="header">
+<td  class="header" rowspan="2"> System </td>
+<td  class="header" rowspan="2" colspan="1"> Time (s) </td>
+<td  class="header" rowspan="2" colspan="1"> # Mappings </td> </td>
+<td  class="header" rowspan="2" colspan="1"> # Unique </td> </td>
+<td  class="header" colspan="3"> Scores </td>
+<td  class="header" colspan="2"> Incoherence Analysis</td>
+</tr>
+<tr class="header">
+<td  class="header"> Precision </td><td  class="header"> &nbsp;Recall&nbsp; </td> <td  class="header"> F-measure </td>
+<td  class="header"> Unsat.</td> <td  class="header"> Degree </td>
+</tr>
+
+<tr class="odd">
+<td class="text">LogMap</td>
+<td> 1,355 </td><td> 2,128 </td>
+<td> 9 </td>
+<td> 0.903 </td> <td> 0.768 </td> <td class="bold"> 0.830 </td>
+<td> &ge;0 </td><td class="right"> &ge;0&#37</td></tr>
+
+
+<tr class="even">
+<td class="text">LogMapBio</td>
+<td> 1,355 </td><td> 2,198 </td>
+<td> 62 </td>
+<td> 0.884 </td> <td> 0.777 </td> <td class="bold"> 0.827 </td>
+<td> &ge;0 </td><td class="right"> &ge;0&#37</td></tr>
+
+
+<tr class="odd">
+<td class="text">AML</td>
+<td> 102 </td><td> 2,029 </td>
+<td> 358 </td>
+<td> 0.910 </td> <td> 0.739 </td> <td class="bold"> 0.816 </td>
+<td> &ge;0 </td><td class="right"> &ge;0&#37</td></tr>
+
+
+<tr class="even">
+<td class="text">LogMapLt</td>
+<td> 7 </td><td> 1,370 </td>
+<td> 0 </td>
+<td> 0.997 </td> <td> 0.546 </td> <td class="bold"> 0.706 </td>
+<td> &ge;0 </td><td class="right"> &ge;0&#37</td></tr>
+
+
+<tr class="odd">
+<td class="text">ATBox</td>
+<td> 16 </td><td> 759 </td>
+<td> 10 </td>
+<td> 0.982 </td> <td> 0.298 </td> <td class="bold"> 0.457 </td>
+<td> &ge;0 </td><td class="right"> &ge;0&#37</td></tr>
+
+
+<tr class="even">
+<td class="text">ALOD2Vec</td>
+<td> 2,384 </td><td> 67,943 </td>
+<td> 469 </td>
+<td> 0.024 </td> <td> 0.641 </td> <td class="bold"> 0.046 </td>
+<td> &ge;0 </td><td class="right"> &ge;0&#37</td></tr>
+
+
+<tr class="odd">
+<td class="text">Wiktionary</td>
+<td> 854 </td><td> 67,455 </td>
+<td> 4 </td>
+<td> 0.023 </td> <td> 0.625 </td> <td class="bold"> 0.044 </td>
+<td> &ge;0 </td><td class="right"> &ge;0&#37</td></tr>
+
+
+
+
+
+
+
+
+<caption><b>Table 2:</b> Results for the HP-MP.</caption>
+</table>
+
+</br>
+
+
+<h4><p>DOID-ORDO task</p></h4>
+
+
+
+
+<table cellpadding="4" cellspacing="0">
+
+<tr class="header">
+<td  class="header" rowspan="2"> System </td>
+<td  class="header" rowspan="2" colspan="1"> Time (s) </td>
+<td  class="header" rowspan="2" colspan="1"> # Mappings </td> </td>
+<td  class="header" rowspan="2" colspan="1"> # Unique </td> </td>
+<td  class="header" colspan="3"> Scores </td>
+<td  class="header" colspan="2"> Incoherence Analysis</td>
+</tr>
+<tr class="header">
+<td  class="header"> Precision </td><td  class="header"> &nbsp;Recall&nbsp; </td> <td  class="header"> F-measure </td>
+<td  class="header"> Unsat.</td> <td  class="header"> Degree </td>
+</tr>
+
+<tr class="odd">
+<td class="text">LogMapBio</td>
+<td> 2,034 </td><td> 2,584 </td>
+<td> 147 </td>
+<td> 0.945 </td> <td> 0.625 </td> <td class="bold"> 0.752 </td>
+<td> &ge;0 </td><td class="right"> &ge;0&#37</td></tr>
+
+
+<tr class="even">
+<td class="text">AML</td>
+<td> 200 </td><td> 4,781 </td>
+<td> 195 </td>
+<td> 0.682 </td> <td> 0.834 </td> <td class="bold"> 0.750 </td>
+<td> &ge;0 </td><td class="right"> &ge;0&#37</td></tr>
+
+
+<tr class="odd">
+<td class="text">LogMap</td>
+<td> 25 </td><td> 2,330 </td>
+<td> 0 </td>
+<td> 0.985 </td> <td> 0.587 </td> <td class="bold"> 0.736 </td>
+<td> &ge;0 </td><td class="right"> &ge;0&#37</td></tr>
+
+
+<tr class="even">
+<td class="text">Wiktionary</td>
+<td> 858 </td><td> 7,336 </td>
+<td> 5 </td>
+<td> 0.479 </td> <td> 0.899 </td> <td class="bold"> 0.625 </td>
+<td> &ge;3,288 </td><td class="right"> &ge;24.1&#37</td></tr>
+
+
+<tr class="odd">
+<td class="text">LogMapLt</td>
+<td> 8 </td><td> 1,747 </td>
+<td> 10 </td>
+<td> 0.993 </td> <td> 0.444 </td> <td class="bold"> 0.614 </td>
+<td> &ge;0 </td><td class="right"> &ge;0&#37</td></tr>
+
+
+<tr class="even">
+<td class="text">ALOD2Vec</td>
+<td> 2,809 </td><td> 7,805 </td>
+<td> 457 </td>
+<td> 0.454 </td> <td> 0.907 </td> <td class="bold"> 0.605 </td>
+<td> &ge;12,787 </td><td class="right"> &ge;93.6&#37</td></tr>
+
+
+<tr class="odd">
+<td class="text">ATBox</td>
+<td> 21 </td><td> 1,318 </td>
+<td> 17 </td>
+<td> 0.986 </td> <td> 0.333 </td> <td class="bold"> 0.498 </td>
+<td> &ge;0 </td><td class="right"> &ge;0&#37</td></tr>
+
+
+
+<caption><b>Table 3:</b> Results for the DOID-ORDO task.</caption>
+</table>
+
+
+
+
+
+
+
+</br>
+
+
+<!-- 
+
+<h3><p>2. Results against manually created mappings</p></h3>
+ 
+ <p>
+The manually generated mappings for six areas (carbohydrate, obesity and breast cancer, 
+urinary incontinence, abnormal heart and Charcot-Marie Tooth disease) include 86 mappings 
+between HP and MP and 175 mappings between DOID and ORDO. Most of them represent subsumption relationships. 
+Tables 4 and 5 shows the results in terms of recall and semantic recall for each of the system. 
+LogMapBio and LogMap obtained the best results in terms of semantic recall in the HP-MP task, 
+while AML obtained the best results in the DOID-ORDO task. The results in both tasks are far from optimal since a large fragment of the manually created 
+mappings have not been (explicitly) identified by the systems or can be derived via reasoning.
+ </p>
+ 
+ 
+<figure>
+  <img src="hp-mp-manual.png" alt="Results against manually created mappings" width="27%" height="23%">
+  <figcaption><b>Table 4.</b> Recall against manually created mappings: HP-MP task.</figcaption>
+</figure> 
+
+
+<figure>
+  <img src="doid-ordo-manual.png" alt="Results against manually created mappings" width="27%" height="23%">
+  <figcaption><b>Table 5.</b> Recall against manually created mappings: DOID-ORDO task.</figcaption>
+</figure> 
+
+
+</br>
+
+<h3><p>3. Manual assessment of unique mappings</p></h3>
+
+<p>Tables 6 and 7 show the results of the manual 
+assessment to estimate the precision of the unique mappings 
+generated by the participating systems. 
+Unique mappings are correspondences that no other system (explicitly) provided in the output. 
+We manually evaluated up to 30 mappings and we focused the assessment on unique equivalence mappings.
+</p>
+
+<p>
+For example LogMap's output contains 189 unique mappings in the HP-MP task. 
+The manual assessment revealed an (estimated) precision of 0.9333. 
+In order to also take into account the number of unique mappings that a system is able to discover, 
+Tables 6 and 7 also include the estimation of the positive and negative contribution of the unique 
+mappings with respect to the total unique mappings discovered by all participating systems.
+</p>
+
+
+
+<figure>
+  <img src="unique_hp-mp.png" alt="Unique mappings in the HP-MP task." width="30%" height="30%">
+  <figcaption><b>Table 6.</b> Unique mappings in the HP-MP task.</figcaption>
+</figure>
+
+
+<figure>
+  <img src="unique_doid-ordo.png" alt="Unique mappings in the DOID-ORDO task." width="30%" height="30%">
+  <figcaption><b>Table 7.</b> Unique mappings in the DOID-ORDO task.</figcaption>
+</figure>
+
+
+ -->
+
+
+
+
+
+
+<br />
+<br />
+
+
+
+<div class="address">
+<div class="footer">
+<a href="http://oaei.ontologymatching.org/2020/phenotype/">http://oaei.ontologymatching.org/2020/phenotype/</a></div>
+<!--$Id$-->
+</div>
+</body></html>
+
