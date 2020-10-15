@@ -41,8 +41,8 @@
     <div class="header">
       <a
         style="color: grey; line-height: 5mm"
-        href="http://oaei.ontologymatching.org/2019/"
-        >Ontology Alignment Evaluation Initiative - OAEI-2019 Campaign</a
+        href="http://oaei.ontologymatching.org/2020/"
+        >Ontology Alignment Evaluation Initiative - OAEI-2020 Campaign</a
       ><a href="http://oaei.ontologymatching.org/"
         ><img
           src="../../../oaeismall.jpg"
@@ -73,10 +73,13 @@
     </p>
 
     <p>
-      This track contains 5 datasets from 4 different domains:
+      This track contains 7 datasets from 5 different domains:
       <a href="#conference">Conference</a>,
       <a href="#popconf">Populated Conference</a>,
-      <a href="#hydrography">Hydrography</a>, <a href="#geolink">GeoLink</a> and
+      <a href="#hydrography">Hydrography</a>, 
+      <a href="#geolink">GeoLink</a>,
+      <a href="#popgeolink">Populated GeoLink</a>, 
+      <a href="#popenslaved">Populated Enslaved</a> and
       <a href="#taxonomy">Taxon</a>.
     </p>
 
@@ -86,7 +89,7 @@
     </p>
 
     <p>
-      Table below presents the results for the 4 datasets. Only AMLC, AROA, and
+      Table below presents the results for the 7 datasets. Only AMLC, AROA, and
       CANARD were able to generate complex correspondences. The results for the
       other systems are reported in terms of simple alignments.
     </p>
@@ -175,6 +178,8 @@
         <th class="tg-mfhl" colspan="2">Populated Conference</th>
         <th class="tg-bolj" colspan="3">Hydrography</th>
         <th class="tg-mfhl" colspan="3">GeoLink</th>
+        <th class="tg-bolj" colspan="3">Populated GeoLink</th>
+        <th class="tg-mfhl" colspan="3">Populated Enslaved</th>
         <th class="tg-bolj" colspan="2">Taxon</th>
       </tr>
       <tr>
@@ -183,6 +188,12 @@
         <td class="tg-bolj">Recall</td>
         <td class="tg-mfhl">Precision <br />(classical - not disjoint)</td>
         <td class="tg-mfhl">Coverage<br />(classical - query Fmeas.)</td>
+        <td class="tg-bolj">relaxed Precision</td>
+        <td class="tg-bolj">relaxed F-measure</td>
+        <td class="tg-bolj">relaxed Recall</td>
+        <td class="tg-mfhl">relaxed Precision</td>
+        <td class="tg-mfhl">relaxed F-measure</td>
+        <td class="tg-mfhl">relaxed Recall</td>
         <td class="tg-bolj">relaxed Precision</td>
         <td class="tg-bolj">relaxed F-measure</td>
         <td class="tg-bolj">relaxed Recall</td>
@@ -207,6 +218,12 @@
         <td class="tg-mfhl">-</td>
         <td class="tg-bolj">-</td>
         <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
       </tr>
       <tr>
         <td class="tg-0pky">ALOD2Vec</td>
@@ -215,6 +232,12 @@
         <td class="tg-bolj">-</td>
         <td class="tg-mfhl">0.39-0.78</td>
         <td class="tg-mfhl">0.24-0.33</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
         <td class="tg-bolj">-</td>
         <td class="tg-bolj">-</td>
         <td class="tg-bolj">-</td>
@@ -239,6 +262,12 @@
         <td class="tg-mfhl">-</td>
         <td class="tg-bolj">-</td>
         <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
       </tr>
       <tr>
         <td class="tg-46ru">AMLC</td>
@@ -247,12 +276,18 @@
         <td class="tg-bolj">-</td>
         <td class="tg-mfhl">0.23-0.51</td>
         <td class="tg-mfhl">0.26-0.31</td>
-        <td class="tg-bolj">-</td>
-        <td class="tg-bolj">-</td>
-        <td class="tg-bolj">-</td>
-        <td class="tg-mfhl">-</td>
-        <td class="tg-mfhl">-</td>
-        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">0.45</td>
+        <td class="tg-bolj">0.10</td>
+        <td class="tg-bolj">0.05</td>
+        <td class="tg-mfhl">0.50</td>
+        <td class="tg-mfhl">0.32</td>
+        <td class="tg-mfhl">0.23</td>
+        <td class="tg-bolj">0.50</td>
+        <td class="tg-bolj">0.32</td>
+        <td class="tg-bolj">0.23</td>
+        <td class="tg-mfhl">0.73</td>
+        <td class="tg-mfhl">0.40</td>
+        <td class="tg-mfhl">0.28</td>
         <td class="tg-bolj">-</td>
         <td class="tg-bolj">-</td>
       </tr>
@@ -269,6 +304,12 @@
         <td class="tg-mfhl">-</td>
         <td class="tg-mfhl">-</td>
         <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">0.89</td>
+        <td class="tg-bolj">0.54</td>
+        <td class="tg-bolj">0.39</td>
+        <td class="tg-mfhl">0.80</td>
+        <td class="tg-mfhl">0.51</td>
+        <td class="tg-mfhl">0.38</td>
         <td class="tg-bolj">-</td>
         <td class="tg-bolj">-</td>
       </tr>
@@ -279,6 +320,12 @@
         <td class="tg-bolj">-</td>
         <td class="tg-mfhl">0.39-0.81</td>
         <td class="tg-mfhl">0.27-0.36</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
         <td class="tg-bolj">-</td>
         <td class="tg-bolj">-</td>
         <td class="tg-bolj">-</td>
@@ -301,6 +348,12 @@
         <td class="tg-mfhl">-</td>
         <td class="tg-mfhl">-</td>
         <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">0.89</td>
+        <td class="tg-bolj">0.54</td>
+        <td class="tg-bolj">0.39</td>
+        <td class="tg-mfhl">0.42</td>
+        <td class="tg-mfhl">0.19</td>
+        <td class="tg-mfhl">0.13</td>
         <td class="tg-bolj">-</td>
         <td class="tg-bolj">-</td>
       </tr>
@@ -311,9 +364,15 @@
         <td class="tg-bolj">-</td>
         <td class="tg-mfhl">0.56-0.96</td>
         <td class="tg-mfhl">0.26-0.33</td>
-        <td class="tg-bolj">-</td>
-        <td class="tg-bolj">-</td>
-        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">0.67</td>
+        <td class="tg-bolj">0.10</td>
+        <td class="tg-bolj">0.05</td>
+        <td class="tg-mfhl">0.85</td>
+        <td class="tg-mfhl">0.29</td>
+        <td class="tg-mfhl">0.18</td>
+        <td class="tg-bolj">0.85</td>
+        <td class="tg-bolj">0.29</td>
+        <td class="tg-bolj">0.18</td>
         <td class="tg-mfhl">-</td>
         <td class="tg-mfhl">-</td>
         <td class="tg-mfhl">-</td>
@@ -325,6 +384,12 @@
         <td class="tg-bolj">-</td>
         <td class="tg-bolj">-</td>
         <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-bolj">0.70</td>
+        <td class="tg-bolj">0.10</td>
+        <td class="tg-bolj">0.05</td>
+        <td class="tg-mfhl">-</td>
         <td class="tg-mfhl">-</td>
         <td class="tg-mfhl">-</td>
         <td class="tg-bolj">-</td>
@@ -343,9 +408,15 @@
         <td class="tg-bolj">-</td>
         <td class="tg-mfhl">0.56-0.96</td>
         <td class="tg-mfhl">0.26-0.33</td>
-        <td class="tg-bolj">-</td>
-        <td class="tg-bolj">-</td>
-        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">0.67</td>
+        <td class="tg-bolj">0.10</td>
+        <td class="tg-bolj">0.05</td>
+        <td class="tg-mfhl">0.85</td>
+        <td class="tg-mfhl">0.29</td>
+        <td class="tg-mfhl">0.18</td>
+        <td class="tg-bolj">0.85</td>
+        <td class="tg-bolj">0.29</td>
+        <td class="tg-bolj">0.18</td>
         <td class="tg-mfhl">-</td>
         <td class="tg-mfhl">-</td>
         <td class="tg-mfhl">-</td>
@@ -359,9 +430,15 @@
         <td class="tg-bolj">-</td>
         <td class="tg-mfhl">0.50-0.87</td>
         <td class="tg-mfhl">0.23-0.31</td>
-        <td class="tg-bolj">-</td>
-        <td class="tg-bolj">-</td>
-        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">0.66</td>
+        <td class="tg-bolj">0.10</td>
+        <td class="tg-bolj">0.06</td>
+        <td class="tg-mfhl">0.69</td>
+        <td class="tg-mfhl">0.36</td>
+        <td class="tg-mfhl">0.25</td>
+        <td class="tg-bolj">0.69</td>
+        <td class="tg-bolj">0.36</td>
+        <td class="tg-bolj">0.25</td>
         <td class="tg-mfhl">-</td>
         <td class="tg-mfhl">-</td>
         <td class="tg-mfhl">-</td>
@@ -375,6 +452,12 @@
         <td class="tg-bolj">-</td>
         <td class="tg-mfhl">0.49-0.88</td>
         <td class="tg-mfhl">0.26-0.35</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-bolj">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
+        <td class="tg-mfhl">-</td>
         <td class="tg-bolj">-</td>
         <td class="tg-bolj">-</td>
         <td class="tg-bolj">-</td>
@@ -470,6 +553,29 @@
       <a href="geolink/index.html">GeoLink results</a>
     </p>
 
+    <a name="popgeolink"><h3>Populated GeoLink dataset</h3></a>
+
+    <p>
+      The evaluation of Populated GeoLink benchmark applies the same methods of evaluating
+      Hydrography benchmark. The evaluation of the systems are performed by
+      computing relaxed precision and recall for final results.
+    </p>
+    <p>
+      The detailed results for this track are accessible in
+      <a href="popgeolink/index.html">Populated GeoLink results</a>
+    </p>
+
+    <a name="popenslaved"><h3>Populated Enslaved dataset</h3></a>
+    <p>
+      The evaluation of Populated Enslaved benchmark applies the same methods of evaluating
+      Hydrography benchmark. The evaluation of the systems are performed by
+      computing relaxed precision and recall for final results.
+    </p>
+    <p>
+      The detailed results for this track are accessible in
+      <a href="popenslaved/index.html">Populated Enslaved results</a>
+    </p>
+
     <a name="taxonomy"><h3>Taxon dataset</h3></a>
 
     <p>
@@ -544,10 +650,19 @@
       Canada, 2005.
     </p>
 
+    <p>
+      [6] Lu Zhou, Michelle Cheatham, Adila Krisnadhi, Pascal Hitzler. GeoLink DataSet: A Complex Alignment Benchmark from Real-world Ontology. In: Data Intellegence. Volume 2, Issue 3, Pages 353-378, MIT Press, 2020.
+    </p>
+
+    <p>
+      [7] Lu Zhou, Cogan Shimizu, Pascal Hitzler, Alicia M. Sheill, Seila Gonzalez Estrecha, Catherine Foley, Duncan Tarr, Dean Rehberger. The Enslaved Dataset: A Real-world Complex Ontology Alignment Benchmark using Wikibase. In: Conference on Information and Knowledge Management, ACM, 2020.
+    </p>
+
+
     <div class="address">
       <div class="footer">
-        <a href="http://oaei.ontologymatching.org/2019/complex/index.html"
-          >http://oaei.ontologymatching.org/2019/complex</a
+        <a href="http://oaei.ontologymatching.org/2020/complex/index.html"
+          >http://oaei.ontologymatching.org/2020/complex</a
         >
       </div>
       <!--$Id$-->

@@ -1,0 +1,197 @@
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+
+<html><head><title>Ontology Alignment Evaluation Initiative::Complex track</title>
+
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="../style.css"></head><body>
+
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2020/">Ontology
+  Alignment Evaluation Initiative - OAEI-2020
+  Campaign</a><a href="http://oaei.ontologymatching.org/"><img src="../../../oaeismall.jpg" alt="OAEI" style="border-style: none; float: right; margin-left: 5pt;"></a>
+  <a href="http://www.seals-project.eu/">
+  <img  width="200px" src="../../../seals-logo.jpg" alt="OAEI" style="clear:right;float:right; margin-left: 5pt; border-style:none;"/></a>
+</div>
+
+<h1>Complex track - Populated Enslaved subtrack - Evaluation</h1>
+
+<p>There are three alignment systems enrolled in the complex track, which are AMLC, AROA, and CANARD. Besides these three systems, we also evaluated other alignment systems. The systems were run on the Populated Enslaved dataset [1], and output alignments were evaluated as described below.</p>
+
+<h2>Evaluation Methodology</h2>
+
+<p>In this subtrack, the alignments are automatically evaluated over the populated enslaved dataset which contains around 74k instance data from real-world datasets. In order to assess the quality of a mapping, there are two dimensions that we can look into. We can first evaluate if a mapping contains the correct entities that should be involved based on the reference alignment. Another dimension is the relationship between these entities, e.g., equivalence and subsumption. Based on this, we break the evaluation procedure down into three subtasks, which are entity identification, relationship identification, and full complex identification.</p>
+
+<ol>
+<li><b>Entity Identification</b> 
+<p>For each entity in the source ontology, the alignment system is asked to list all of the entities in the target ontologies that are related to it in some way.</p>
+<p>For example:
+<p>owl:equivalentClasses(ont1:A1 owl:intersectionOf(ont2:B1 owl:someValuesFrom(ont2:B2 ont2:B3)) </p>
+<p>The goal in this task is to find the most relevant entities in the ont2 to the class <i>ont1:A1</i>. In this case, the best output would be <i>ont2:B1</i>, <i>ont2:B2</i>, and <i>ont2:B3</i>.</p>
+<p>The result is evaluated based on precision, recall, and f-measure.</p>
+</li>
+
+<li><b>Relationship Identification</b>
+<p>For each alignmnet, the system should then endeavor to find the concrete relationships, such as equivalence, subsumption, intersection, value restriction, and so on, that hold between the entities. In terms of the example above, an alignment system needs to eventually determine that the relationship between the two sides is equivalence. Table 1 shows the different similarity that we used in the evaluation for different situations. We do not penalize the incorrect relationship by giving a ZERO value because that would completely neglect the entity identification outputs without considering whether it is a reaonable result or a completely incorrect one.  
+</p>
+
+<div align="center">
+<p>Table 1. Similarity for Relationship Identification</p>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-cmwg{background-color:#ffccc9;text-align:center;vertical-align:top}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-7geq{background-color:#ffffc7;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+  <tr>
+    <th class="tg-baqh">Found Relation</th>
+    <th class="tg-baqh">Correct Relation</th>
+    <th class="tg-baqh">Similarity</th>
+    <th class="tg-baqh">Comment</th>
+  </tr>
+  <tr>
+    <th class="tg-baqh">=</th>
+    <th class="tg-baqh">=</th>
+    <th class="tg-baqh">1.0</th>
+    <th class="tg-baqh">correct relation</th>
+  </tr>
+  <tr>
+    <th class="tg-baqh">&#8834;</th>
+    <th class="tg-baqh">&#8834;</th>
+    <th class="tg-baqh">1.0</th>
+    <th class="tg-baqh">correct relation</th>
+  </tr>
+  <tr>
+    <th class="tg-baqh">&#8835;</th>
+    <th class="tg-baqh">&#8835;</th>
+    <th class="tg-baqh">1.0</th>
+    <th class="tg-baqh">correct relation</th>
+  </tr>
+  <tr>
+    <th class="tg-baqh">&#8834;</th>
+    <th class="tg-baqh">=</th>
+    <th class="tg-baqh">0.8</th>
+    <th class="tg-baqh">return less information, but correct</th>
+  </tr>
+  <tr>
+    <th class="tg-baqh">=</th>
+    <th class="tg-baqh">&#8835;</th>
+    <th class="tg-baqh">0.8</th>
+    <th class="tg-baqh">return less information, but correct</th>
+  </tr>
+  <tr>
+    <th class="tg-baqh">&#8835;</th>
+    <th class="tg-baqh">=</th>
+    <th class="tg-baqh">0.6</th>
+    <th class="tg-baqh">return more information, but incorrect</th>
+  </tr>
+  <tr>
+    <th class="tg-baqh">=</th>
+    <th class="tg-baqh">&#8834;</th>
+    <th class="tg-baqh">0.6</th>
+    <th class="tg-baqh">return more information, but incorrect</th>
+  </tr>
+  <tr>
+    <th class="tg-baqh">&#8834;</th>
+    <th class="tg-baqh">&#8835;</th>
+    <th class="tg-baqh">0.3</th>
+    <th class="tg-baqh">incorrect relation</th>
+  </tr>
+  <tr>
+    <th class="tg-baqh">&#8835;</th>
+    <th class="tg-baqh">&#8834;</th>
+    <th class="tg-baqh">0.3</th>
+    <th class="tg-baqh">incorrect relation</th>
+  </tr>
+</table>
+</div>
+<li><b>Full Complex Alignment Identification</b> 
+<p>This task is a combination of the former two steps. We multiply the results from the entity identification by the similarity of the relationship as the relaxed precision, recall, and f-measure. To be accurate, it could also have been better aggregated with other aggregation functions rather than multiplication. [2]</p>
+<p>relaxed_precision = entity_precision * similarity of relationship</p>
+<p>relaxed_recall = entity_recall * similarity of relationship</p>
+<p>relaxed_f-measure = 2 * relaxed_precision * relaxed_recall/ (relaxed_precision + relaxed_recall)</p>
+</li>
+</ol>
+
+<a name="original"><h2>Results</h2></a>
+<p>The output alignments as well as the detailed results of the systems over the Populated enslaved dataset are downloadable <a href="./popenslaved_results_2020.zip">here</a>.</p>
+
+<ul>
+<li> AMLC, AROA, CANARD, LogMap, LopMapBio, LogMapKG, and LogMapLt can generate alignment on the populated enslaved dataset. Therein, AMLC, AROA, and CANARD were the only systems can generate the complex alignment on this benchmark. AROA and CANARD both utilized the instance data while AMLC focused on lexical and terminological techniques. Table 2 shows the final performance of each system, including the number of correct simple and complex correspondences found by each system. </li>
+</ul>
+</p>
+
+<div align="center">
+<p>Tabel 2. The Performance of All Alignment Systems on the Populated Enslaved Benchmark</p>
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-cmwg{background-color:#ffccc9;text-align:center;vertical-align:top}
+.tg .tg-baqh{text-align:center;vertical-align:top}
+.tg .tg-7geq{background-color:#ffffc7;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
+<tr>
+    <th class="tg-baqh">Systems</th>
+    <th class="tg-baqh">(1:1)</th>
+    <th class="tg-baqh">(1:n)</th>
+    <th class="tg-baqh">(m:n)</th>
+    <th class="tg-baqh">relaxed precision</th>
+    <th class="tg-baqh">relaxed recall</th>
+    <th class="tg-baqh">relaxed f-measure</th>
+  </tr>
+  <tr>
+    <td class="tg-baqh">reference alignment</td>
+    <td class="tg-baqh">15</td>
+    <td class="tg-baqh">0</td>
+    <td class="tg-baqh">83</td>
+    <td class="tg-baqh">-</td>
+    <td class="tg-baqh">-</td>
+    <td class="tg-baqh">-</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">AMLC</td>
+    <td class="tg-baqh">12</td>
+    <td class="tg-baqh">0</td>
+    <td class="tg-baqh">18</td>
+    <td class="tg-baqh">0.73</td>
+    <td class="tg-baqh">0.28</td>
+    <td class="tg-baqh">0.40</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">AROA</td>
+    <td class="tg-baqh"><b>5</td>
+    <td class="tg-baqh"><b>0</td>
+    <td class="tg-baqh"><b>32</td>
+    <td class="tg-baqh"><b>0.80</td>
+    <td class="tg-baqh"><b>0.38</td>
+    <td class="tg-baqh"><b>0.51</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh">CANARD</td>
+    <td class="tg-baqh">3</td>
+    <td class="tg-baqh">0</td>
+    <td class="tg-baqh">16</td>
+    <td class="tg-baqh">0.42</td>
+    <td class="tg-baqh">0.13</td>
+    <td class="tg-baqh">0.19</td>
+  </tr>
+</table>
+</div>
+
+<h2>Discussion</h2>
+There are seven systems can produce the complex alignment on Populated Enslaved dataset. Among these found alignments, all correspondences from LogMap, LopMapBio, LogMapKG, and LogMapLt between Enslaved Ontology and Enslaved Wikibase repository are 1-to-1 equivalence. Since the results of these system only contain small number of simple alignment, we do not report the results of these systems this year. Instead, AMLC, AROA, and CANARD can produce complex alignments. The relaxed precision of AMLC and AROA looks fair, while CANARD reports a lower relaxed precision. AROA detected the largest number of the complex correspondences among three systems, while the AMLC outputs the largest number of the simple correspondences. But, it is not surprising that the low recall reflects that the current ontology alignment systems are not capable of identifying more complex relations, which we hope that it will be improved in the next future years.
+
+<h2>References</h2>
+<p>[1] Lu Zhou, Cogan Shimizu, Pascal Hitzler, Alicia M. Sheill, Seila Gonzalez Estrecha, Catherine Foley, Duncan Tarr, Dean Rehberger. The Enslaved Dataset: A Real-world Complex Ontology Alignment Benchmark using Wikibase. In: Conference on Information and Knowledge Management, ACM, 2020.</p>
+<p>[2] Marc Ehrig, and Jérôme Euzenat. "Relaxed precision and recall for ontology matching." K-CAP 2005 Workshop on Integrating Ontologies, Banff, Canada, 2005.</p>
+
+</body></html>
