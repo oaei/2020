@@ -1,0 +1,273 @@
+<html><head><title>Ontology Alignment Evaluation Initiative::Biodiv track|evaluation</title>
+
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+</head><body>
+
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2020/">Ontology
+  Alignment Evaluation Initiative - OAEI-2020
+  Campaign</a><a href="http://oaei.ontologymatching.org/"><img src="oaeismall.jpg" alt="OAEI" style="border-style: none; float: right; margin-left: 5pt;"></a>
+  <img src="Seals-logo-5.png" alt="OAEI" style="clear:right;float:right; margin-left: 5pt; border-style:none;" width="200px">
+</div>
+
+<!-- todo sepsat list of participants? -->
+
+<h1>Evaluation results for the Biodiv track at OAEI 2020</h1>
+
+<h2><a name="participants">Participants</a></h2><a name="participants">
+<p>
+This year we have 7 track participants out of the 19 OAEI 2020 participating systems. The 7 systems (AML, LogMap, LogMapBio, LogMapLite, ATBox, ALOD2Vec and Wiktionary) managed to generate an output for at least one of the track tasks. 
+</p>
+
+
+<h2>Generated alignments</h2>
+
+<p>
+We have collected all generated alignments and made them available in a zip-file via the following link.
+These alignments are the raw results that the following report is based on.
+</p>
+
+</a><p><a name="participants"></a><a href="http://oaei.ontologymatching.org/2020/biodiv/evaluation/biodiv-mappings.zip">&gt;&gt;&gt; download raw results</a></p>
+
+
+
+<h2>Experimental setting</h2>
+
+<p>
+We conducted experiments by executing each system in its standard 
+settings and we calculated precision, recall and f-measure. Systems have been ordered in terms of f-measure. This year, we did consider the whole process pipeline for the calculation of execution times, starting from ontologies upload and environment preparation. 
+</p><p>
+We have run the evaluation in on Windows 10 (64-bit) desktop with an Intel Core i7-4770 CPU @ 3.40GHz x 4 and allocating 16GB of RAM.
+</p>
+
+
+
+
+<h2>Results</h2>
+
+<h3><p>1. Results for the FLOPO-PTO matching task</p></h3>
+
+<p>
+Table shows that all participating systems could achieve this task with an acceptable f-measure. ALOD2Vec and Wiktionary generated a similar huge set of non meaningful mappings with a very low measure.
+AML generated a large number of mappings (significantly bigger than the size of the reference alignment), those alignments were mostly subsumption ones. In order to evaluate the precision in a more significant manner, we had to
+calculate an approximation by manually assessing a subset of around 100 mappings, that were not present in the reference alignment. LogmapLt and ATBox achieved a high precision but the lowest recall.
+</p>
+
+<table cellpadding="4" cellspacing="0">
+
+<tr class="header">
+<td  class="header" rowspan="2"> System </td>
+<td  class="header" rowspan="2" colspan="1"> Time (s) </td>
+<td  class="header" rowspan="2" colspan="1"> # Mappings </td> </td>
+<td  class="header" rowspan="2" colspan="1"> # Unique </td> </td>
+<td  class="header" colspan="3"> Scores </td>
+</tr>
+<tr class="header">
+<td  class="header"> Precision </td><td  class="header"> &nbsp;Recall&nbsp; </td> <td  class="header"> F-measure </td>
+</tr>
+
+<tr class="odd">
+<td class="text">logMap</td>
+<td> 25,30 </td><td> 235 </td>
+<td> 0 </td>
+<td> 0,817 </td> <td> 0,787 </td> <td class="bold"> 0,802 </td>
+
+
+<tr class="even">
+<td class="text">logMapBio</td>
+<td> 450,71 </td><td> 236 </td>
+<td> 1 </td>
+<td> 0,814 </td> <td> 0,787 </td> <td class="bold"> 0,800 </td>
+
+<tr class="odd">
+<td class="text">AML</td>
+<td> 53,74 </td><td> 510 </td>
+<td> 54 </td>
+<td> 0,766 </td> <td> 0,820 </td> <td class="bold"> 0,792 </td>
+
+<tr class="odd">
+<td class="text">logMapLt</td>
+<td> 17,02 </td><td> 151 </td>
+<td> 0 </td>
+<td> 0,987 </td> <td> 0,611 </td> <td class="bold"> 0,755 </td>
+
+
+<tr class="even">
+<td class="text">ATBox</td>
+<td> 24,78 </td><td> 148 </td>
+<td> 5 </td>
+<td> 0,946 </td> <td> 0,574 </td> <td class="bold"> 0,714 </td>
+
+
+<tr class="even">
+<td class="text">Wiktionary</td>
+<td> 1935 </td><td> 121.632 </td>
+<td> 0 </td>
+<td> 0,001 </td> <td> 0,619 </td> <td class="bold"> 0,002 </td>
+
+
+<tr class="odd">
+<td class="text">ALOD2Vec</td>
+<td> 246,37 </td><td> 121.633 </td>
+<td> 1 </td>
+<td> 0,001 </td> <td> 0,619 </td> <td class="bold"> 0,002 </td>
+
+
+
+<caption><b>Table 1:</b> Results for FLOPO-PTO.</caption>
+</table>
+
+
+<p> 
+
+</p><h3><p>2. Results for the ENVO-SWEET matching task</p></h3>
+
+<p>AML, the LogMap family systems and ATBox could handle this task. Again the systems with the highest precision (LogMap and LogMapBio) achieve the lowest recall. AML generates a bigger set with a high number of subsumption mappings, it still achieved the best F-Measure for the task. It is worth nothing that due the specific structure of the SWEET ontology, a lot of the false positives come from homonyms.</p>
+
+<table cellpadding="4" cellspacing="0">
+
+<tr class="header">
+<td  class="header" rowspan="2"> System </td>
+<td  class="header" rowspan="2" colspan="1"> Time (s) </td>
+<td  class="header" rowspan="2" colspan="1"> # Mappings </td> </td>
+<td  class="header" rowspan="2" colspan="1"> # Unique </td> </td>
+<td  class="header" colspan="3"> Scores </td>
+</tr>
+<tr class="header">
+<td  class="header"> Precision </td><td  class="header"> &nbsp;Recall&nbsp; </td> <td  class="header"> F-measure </td>
+</tr>
+
+<tr class="odd">
+<td class="text">AML</td>
+<td> 38,83 </td><td> 940 </td>
+<td> 229 </td>
+<td> 0,810 </td> <td> 0,927 </td> <td class="bold"> 0,865 </td>
+
+
+<tr class="even">
+<td class="text">LogMapLt</td>
+<td> 32,70 </td><td> 617 </td>
+<td> 41 </td>
+<td> 0,904 </td> <td> 0,680 </td> <td class="bold"> 0,776 </td>
+
+
+<tr class="odd">
+<td class="text">ATBox</td>
+<td> 13.63 </td><td> 544 </td>
+<td> 45 </td>
+<td> 0,871 </td> <td> 0,577 </td> <td class="bold"> 0,694 </td>
+
+
+<tr class="even">
+<td class="text">LogMap</td>
+<td> 35,15 </td><td> 440 </td>
+<td> 0 </td>
+<td> 0,964 </td> <td> 0,516 </td> <td class="bold"> 0,672 </td>
+
+
+<tr class="odd">
+<td class="text">LogMapBio</td>
+<td> 50,25 </td><td> 432 </td>
+<td> 1 </td>
+<td> 0,961 </td> <td> 0,505 </td> <td class="bold"> 0,662 </td>
+
+
+<caption><b>Table 2:</b> Results for ENVO-SWEET.</caption>
+</table>
+
+<p> 
+
+</p><h3><p>3. Results for the ANAEETHES-GEMET matching task</p></h3>
+
+<p></p>
+This task and the next one have been introduced to the track this year, with the particularity of being developped in SKOS. Only AML could handle the files in their original format. LogMap and its variants could generate mappings based on the files after being transformed into OWL.
+LogMap and LogMapBio achieve the best results with LogMap processing the task in a shorter time. LogMapBio took a much longer time due to downloading 10 mediating ontologies from BioPortal, still the gain is not significant in terms of performance.
+<p> 
+
+<table cellpadding="4" cellspacing="0">
+
+<tr class="header">
+<td  class="header" rowspan="2"> System </td>
+<td  class="header" rowspan="2" colspan="1"> Time (s) </td>
+<td  class="header" rowspan="2" colspan="1"> # Mappings </td> </td>
+<td  class="header" rowspan="2" colspan="1"> # Unique </td> </td>
+<td  class="header" colspan="3"> Scores </td>
+</tr>
+<tr class="header">
+<td  class="header"> Precision </td><td  class="header"> &nbsp;Recall&nbsp; </td> <td  class="header"> F-measure </td>
+</tr>
+
+<tr class="odd">
+<td class="text">LogMapBio</td>
+<td> 1243.15 </td><td> 397 </td>
+<td> 0 </td>
+<td> 0,924 </td> <td> 0,876 </td> <td class="bold"> 0,899 </td>
+
+
+<tr class="even">
+<td class="text">LogMap</td>
+<td> 17.30 </td><td> 396 </td>
+<td> 0 </td>
+<td> 0,924 </td> <td> 0,874 </td> <td class="bold"> 0,898 </td>
+
+
+<tr class="odd">
+<td class="text">AML</td>
+<td> 4.17 </td><td> 328 </td>
+<td> 24 </td>
+<td> 0,976 </td> <td> 0,764 </td> <td class="bold"> 0,857 </td>
+
+
+<tr class="even">
+<td class="text">LogMapLt</td>
+<td> 10.31 </td><td> 151 </td>
+<td> 8 </td>
+<td> 0,940 </td> <td> 0,339 </td> <td class="bold"> 0,498 </td>
+
+
+<caption><b>Table 3:</b> Results for ANAEETHES-GEMET.</caption>
+</table>
+
+
+</p><h3><p>4. Results for the AGROVOC-NALT matching task</p></h3>
+
+<p>
+This task has been managed only by AML. All other systems failed in generating mappings on both the SKOS and OWL versions of the thesauri. AML achieves good results and a very high precicion. It generated a higher number of mappings (around 1000 more) than the curated reference alignment. We performed a manual assessment of a subset of those mappings to reevaluate the precision and f-measure. 
+</p>
+
+<table cellpadding="4" cellspacing="0">
+
+<tr class="header">
+<td  class="header" rowspan="2"> System </td>
+<td  class="header" rowspan="2" colspan="1"> Time (s) </td>
+<td  class="header" rowspan="2" colspan="1"> # Mappings </td> </td>
+<td  class="header" rowspan="2" colspan="1"> # Unique </td> </td>
+<td  class="header" colspan="3"> Scores </td>
+</tr>
+<tr class="header">
+<td  class="header"> Precision </td><td  class="header"> &nbsp;Recall&nbsp; </td> <td  class="header"> F-measure </td>
+</tr>
+
+<tr class="odd">
+<td class="text">AML</td>
+<td> 139,50 </td><td> 17.748 </td>
+<td> 17.748 </td>
+<td> 0,955 </td> <td> 0,835 </td> <td class="bold"> 0,890 </td>
+
+
+
+<caption><b>Table 4:</b> Results for AGROVOC-NALT.</caption>
+</table>
+
+<h3>Contact</h3>
+
+<p>This evaluation has been run by Naouel Karam, Alsayed Algergawy and Amir Laadhar.
+ If you have any problems working with the ontologies, any questions 
+related to tool wrapping, or any suggestions related to the Biodiv 
+track, feel free to write an email to: naouel [.] karam [at] fokus [.] fraunhofer [.] de</p>
+
+
+
+</body></html>
