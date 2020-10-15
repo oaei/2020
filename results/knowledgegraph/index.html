@@ -1,0 +1,894 @@
+
+<html>
+<head>
+<title>Ontology Alignment Evaluation Initiative::KG track | evaluation</title>
+<link rel="stylesheet" type="text/css" href="http://oaei.ontologymatching.org/2020/style.css" />
+</head>
+
+<body>
+
+
+<div class="header">
+    <a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2020/">Ontology Alignment Evaluation Initiative - OAEI-2020 Campaign</a>
+    <a href="http://oaei.ontologymatching.org/"><img src="http://oaei.ontologymatching.org/oaeismall.jpg" alt="OAEI" style="border-style: none; float: right; margin-left: 5pt;"></a>
+    <a href="http://www.seals-project.eu/"><img  width="200px" src="http://oaei.ontologymatching.org/seals-logo.jpg" alt="OAEI" style="clear:right;float:right; margin-left: 5pt; border-style:none;"/></a>
+    <a href="http://dbkwik.webdatacommons.org"><img width="170px" src="http://dbkwik.webdatacommons.org/kwik_statics/images/icon.png" style="clear:right;float:right; margin-left: 5pt; border-style:none;margin-top: 15pt;"></a>
+</div>
+
+<h1>Results for OAEI 2020 - Knowledge Graph Track</h1>
+
+<h2>Matching systems</h2>
+
+As a pre-test, we executed all systems submitted as SEALS packages to OAEI (even if they are not registered for the track) on a very small matching example (<a href="http://oaei.ontologymatching.org/2019/results/knowledgegraph/small_test.zip">dataset</a>) 
+with a similar structure and shape like the real knowledge graphs (in fact, they are a small subset of them).
+
+It showed that not all matching systems are able to complete this small task due to exceptions or other failures.
+The following matching systems produced an exception:
+<ul>
+    <li>ALIN</li>
+    <li>Lily</li>
+    <li>VeeAlign</li>
+</ul>
+
+We wrote an email to the respective system developers to give them the possibility to modify the system configuration to complete this task.
+However, none of them were ultimately capable of producing results on the test task of the Knowledge Graph track.
+
+Thus, we executed the following systems:
+<ul>
+    <li>ALOD2Vec</li>
+    <li>AML</li>
+    <li>ATBox</li>
+    <li>baselineAltLabel (<a href="baselineAltLabel.zip">seals package</a>)</li>
+    <li>baselineLabel (<a href="baselineLabel.zip">seals package</a>)</li>
+    <li>DESKMatcher</li>
+    <li>LogMap</li>
+    <li>LogMapBio</li>
+    <li>LogMapIM</li>
+    <li>LogMapKG</li>
+    <li>LogMapLt</li>
+    <li>Wiktionary</li>
+</ul>
+
+The <a href="http://oaei.ontologymatching.org/2019/results/knowledgegraph/kgBaselineMatchers.zip">source code for the baseline matchers</a> is available.
+The <i>baselineLabel</i> matcher matches all resources which share the same <i>rdfs:label</i>. (in case multiple resources share the same label, all of them are matched).
+<i>BaselineAltLabel</i> is additionally using <i>skos:altLabel</i>. Again, in cases where multiple resources share a common label, all those resources are matched in a cross product manner.
+
+<h2>Experimental setting</h2>
+
+The evaluation is executed on a virtual machine(VM) with 32GB of RAM and 16 vCPUs (2.4 GHz).
+The operating system is debian 9 with <a href="https://packages.debian.org/stretch/openjdk-8-jre">openjdk version "1.8.0_265"</a>.
+</br></br>
+We used the <a href="https://github.com/DanFaria/OAEI_SealsClient/blob/master/SealsClientTutorial.pdf">"-o" option in SEALS</a> (version 7.0.5) to provide the two knowledge graphs which should be matched.
+The two given URLs are file URLs and not HTTP URLs because downloading the knowledge graphs from another server would be a huge time overhead 
+(downloading 500 MB multiple times for different tasks).
+Thus the call of the SEALS client looks like the following:
+</br></br>
+<code>
+java -Xmx25g -Xms15g -jar ../seals-omt-client.jar ${MATCHER_DIR} -z -o file:///data/ont1.xml file:///data/ont2.xml -f out.xml
+</code>
+</br></br>
+This also means that the reported time also includes the environment preparation of SEALS 
+(copying the configuration folder of each matcher at the start of the matching task) as well as copying the resulting alignment to the output file.
+We could not use the "-x" option of SEALS because we had to modify the evaluation routine based on two reasons.
+The first one is to differentiate between class, property and instance mappings.
+The second reason is to deal with the partial gold standard of this track.
+</br></br>
+The alignments were evaluated based on Precision, Recall and F-Measure for classes, properties and instances (each in isolation).
+Our partial gold standard consist of 1:1 mappings extracted from links contained in wiki pages (cross wiki links).
+The schema was matched by ontology experts.
+We assume that in each knowledge graph, only one representation of one concept exists.
+This means if we have the mapping <i><A, B, %, 1.0></i> in our gold standard we can count the mapping <i><A, B', %, 1.0></i> as a false positive 
+(the assumption here is that in the seconds knowledge graph no similar concept to B exists).
+The value of false negatives is only increased if we have a 1:1 mapping and it is not found by a matcher.
+The <a href="matching-eval-trackspecific.zip">source code for generating the evaluation</a> results is also available.
+
+<p>
+We imposed a maximum execution time of 24h per task, however, that time limit was never exceeded.
+
+<h2>Generated dashboard / CSV file</h2>
+We also generated an online dashboard with the help of the <a href="https://github.com/dwslab/melt">MELT framework</a>.
+Have a look at the <a href="knowledge_graph_dashboard.html">knowledge graph results here</a> (it may take some seconds to load due to 200 000 correspondences).
+</br>
+Moreover, we also generated a <a href="alignmentCube.zip">CSV file</a> which allows to analyze each matcher on a correspondence level.
+This should help matcher developers to increase the matcher performance.
+
+<h2>Alignment results</h2>
+The <a href="oaei2020-knowledgegraph-alignments.zip">generated alignment files are also available</a>.
+
+
+<h2>Results overview</h2>
+
+<table border="2" frame="sides" rules="groups" align="center">
+<colgroup align="center"/>
+<colgroup align="center"/>
+<colgroup align="center"/>
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<thead valign="top">
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th colspan="4">class</th>
+      <th colspan="4">property</th>
+      <th colspan="4">instance</th>
+      <th colspan="4">overall</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr class="header">
+        <th>System</td><th>Time</td><th>#testcases</td>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+    </tr>
+    <tr class="odd">
+        <td>ALOD2Vec</td><td align="right">0:13:24</td><td>5</td>
+<td>20.0</td><td>1.00 (1.00)</td><td>0.80 (0.80)</td><td>0.67 (0.67)</td>
+<td>76.8</td><td>0.94 (0.94)</td><td>0.95 (0.95)</td><td>0.97 (0.97)</td>
+<td>4893.8</td><td>0.91 (0.91)</td><td>0.87 (0.87)</td><td>0.83 (0.83)</td>
+<td>4990.6</td><td>0.91 (0.91)</td><td>0.87 (0.87)</td><td>0.83 (0.83)</td>
+    </tr>
+    <tr class="even">
+        <td>AML</td><td align="right">0:50:55</td><td>5</td>
+<td>23.6</td><td>0.98 (0.98)</td><td>0.89 (0.89)</td><td>0.81 (0.81)</td>
+<td>48.4</td><td>0.92 (0.92)</td><td>0.70 (0.70)</td><td>0.57 (0.57)</td>
+<td>6802.8</td><td>0.90 (0.90)</td><td>0.85 (0.85)</td><td>0.80 (0.80)</td>
+<td>6874.8</td><td>0.90 (0.90)</td><td>0.85 (0.85)</td><td>0.80 (0.80)</td>
+    </tr>
+    <tr class="odd">
+        <td>ATBox</td><td align="right">0:16:22</td><td>5</td>
+<td>25.6</td><td>0.97 (0.97)</td><td>0.87 (0.87)</td><td>0.79 (0.79)</td>
+<td>78.8</td><td>0.97 (0.97)</td><td>0.96 (0.96)</td><td>0.95 (0.95)</td>
+<td>4858.8</td><td>0.89 (0.89)</td><td>0.84 (0.84)</td><td>0.80 (0.80)</td>
+<td>4963.2</td><td>0.89 (0.89)</td><td>0.85 (0.85)</td><td>0.81 (0.81)</td>
+    </tr>
+    <tr class="even">
+        <td>baselineAltLabel</td><td align="right">0:10:57</td><td>5</td>
+<td>16.4</td><td>1.00 (1.00)</td><td>0.74 (0.74)</td><td>0.59 (0.59)</td>
+<td>47.8</td><td>0.99 (0.99)</td><td>0.79 (0.79)</td><td>0.66 (0.66)</td>
+<td>4674.8</td><td>0.89 (0.89)</td><td>0.84 (0.84)</td><td>0.80 (0.80)</td>
+<td>4739.0</td><td>0.89 (0.89)</td><td>0.84 (0.84)</td><td>0.80 (0.80)</td>
+    </tr>
+    <tr class="odd">
+        <td>baselineLabel</td><td align="right">0:10:44</td><td>5</td>
+<td>16.4</td><td>1.00 (1.00)</td><td>0.74 (0.74)</td><td>0.59 (0.59)</td>
+<td>47.8</td><td>0.99 (0.99)</td><td>0.79 (0.79)</td><td>0.66 (0.66)</td>
+<td>3641.8</td><td>0.95 (0.95)</td><td>0.81 (0.81)</td><td>0.71 (0.71)</td>
+<td>3706.0</td><td>0.95 (0.95)</td><td>0.81 (0.81)</td><td>0.71 (0.71)</td>
+    </tr>
+    <tr class="even">
+        <td>DESKMatcher</td><td align="right">0:13:54</td><td>5</td>
+<td>91.4</td><td>0.76 (0.76)</td><td>0.71 (0.71)</td><td>0.66 (0.66)</td>
+<td>0.0</td><td>0.00 (0.00)</td><td>0.00 (0.00)</td><td>0.00 (0.00)</td>
+<td>3820.6</td><td>0.94 (0.94)</td><td>0.82 (0.82)</td><td>0.74 (0.74)</td>
+<td>3912.0</td><td>0.93 (0.93)</td><td>0.81 (0.81)</td><td>0.72 (0.72)</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMap</td><td align="right">2:55:14</td><td>5</td>
+<td>24.0</td><td>0.95 (0.95)</td><td>0.84 (0.84)</td><td>0.76 (0.76)</td>
+<td>0.0</td><td>0.00 (0.00)</td><td>0.00 (0.00)</td><td>0.00 (0.00)</td>
+<td>29190.4</td><td>0.40 (0.40)</td><td>0.54 (0.54)</td><td>0.86 (0.86)</td>
+<td>29214.4</td><td>0.40 (0.40)</td><td>0.54 (0.54)</td><td>0.84 (0.84)</td>
+    </tr>
+    <tr class="even">
+        <td>LogMapBio</td><td align="right">4:35:29</td><td>5</td>
+<td>24.0</td><td>0.95 (0.95)</td><td>0.84 (0.84)</td><td>0.76 (0.76)</td>
+<td>0.0</td><td>0.00 (0.00)</td><td>0.00 (0.00)</td><td>0.00 (0.00)</td>
+<td>0.0</td><td>0.00 (0.00)</td><td>0.00 (0.00)</td><td>0.00 (0.00)</td>
+<td>24.0</td><td>0.95 (0.95)</td><td>0.01 (0.01)</td><td>0.00 (0.00)</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMapIM</td><td align="right">2:49:34</td><td>5</td>
+<td>0.0</td><td>0.00 (0.00)</td><td>0.00 (0.00)</td><td>0.00 (0.00)</td>
+<td>0.0</td><td>0.00 (0.00)</td><td>0.00 (0.00)</td><td>0.00 (0.00)</td>
+<td>29190.4</td><td>0.40 (0.40)</td><td>0.54 (0.54)</td><td>0.86 (0.86)</td>
+<td>29190.4</td><td>0.40 (0.40)</td><td>0.54 (0.54)</td><td>0.84 (0.84)</td>
+    </tr>
+    <tr class="even">
+        <td>LogMapKG</td><td align="right">2:47:51</td><td>5</td>
+<td>24.0</td><td>0.95 (0.95)</td><td>0.84 (0.84)</td><td>0.76 (0.76)</td>
+<td>0.0</td><td>0.00 (0.00)</td><td>0.00 (0.00)</td><td>0.00 (0.00)</td>
+<td>29190.4</td><td>0.40 (0.40)</td><td>0.54 (0.54)</td><td>0.86 (0.86)</td>
+<td>29214.4</td><td>0.40 (0.40)</td><td>0.54 (0.54)</td><td>0.84 (0.84)</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMapLt</td><td align="right">0:07:19</td><td>4</td>
+<td>23.0</td><td>0.80 (1.00)</td><td>0.56 (0.70)</td><td>0.43 (0.54)</td>
+<td>0.0</td><td>0.00 (0.00)</td><td>0.00 (0.00)</td><td>0.00 (0.00)</td>
+<td>6653.8</td><td>0.73 (0.91)</td><td>0.67 (0.84)</td><td>0.62 (0.78)</td>
+<td>6676.8</td><td>0.73 (0.92)</td><td>0.66 (0.83)</td><td>0.61 (0.76)</td>
+    </tr>
+    <tr class="even">
+        <td>Wiktionary</td><td align="right">0:30:12</td><td>5</td>
+<td>22.4</td><td>1.00 (1.00)</td><td>0.80 (0.80)</td><td>0.67 (0.67)</td>
+<td>80.0</td><td>0.94 (0.94)</td><td>0.95 (0.95)</td><td>0.97 (0.97)</td>
+<td>4893.8</td><td>0.91 (0.91)</td><td>0.87 (0.87)</td><td>0.83 (0.83)</td>
+<td>4996.2</td><td>0.91 (0.91)</td><td>0.87 (0.87)</td><td>0.83 (0.83)</td>
+    </tr>
+</tbody>
+<caption>
+Aggregated results per matcher, divided into class, property, instance, and overall alignments. 
+Time is displayed as HH:MM:SS. Column <i>#testcases</i> indicates the number of testcases where the tool is able to generate (non empty) alignments.
+Column <i>size</i> indicates the averaged number of system correspondences.
+Two kinds of results are reported: (1) those not distinguishing empty and erroneous (or not generated) alignments,
+and (2) those considering only non empty alignments (value between parenthesis).
+</caption>
+</table>
+
+All matchers except LogMapLt can produce an alignment for all test cases (LogMapLt generates a multi GB alignment file for test case marvelcinematicuniverse-marvel).
+The longest runtime was observed for the LogMap family with more than 2 hours for all 5 test cases.
+
+<h2>Test case specific results</h2>
+
+
+<h3>Overall results</h3>
+This result table shows the overall performance (without dividing into class, property or instance) of the matchers.
+
+<table border="2" frame="sides" rules="groups" align="center">
+<colgroup align="center"/>
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<thead valign="top">
+    <tr>
+        <th></th>
+        <th colspan="4">marvelcinematicuniverse-marvel</th>
+        <th colspan="4">memoryalpha-memorybeta</th>
+        <th colspan="4">memoryalpha-stexpanded</th>
+        <th colspan="4">starwars-swg</th>
+        <th colspan="4">starwars-swtor</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr class="header">
+        <th></th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+    </tr>
+    <tr class="odd">
+        <td>ALOD2Vec</td>
+        <td>3093</td><td>0.86</td><td>0.76</td><td>0.68</td>
+        <td>13457</td><td>0.92</td><td>0.91</td><td>0.90</td>
+        <td>3402</td><td>0.92</td><td>0.92</td><td>0.93</td>
+        <td>2185</td><td>0.92</td><td>0.83</td><td>0.75</td>
+        <td>2816</td><td>0.93</td><td>0.92</td><td>0.92</td>
+    </tr>
+    <tr class="even">
+        <td>AML</td>
+        <td>4687</td><td>0.85</td><td>0.68</td><td>0.56</td>
+        <td>18439</td><td>0.91</td><td>0.89</td><td>0.87</td>
+        <td>3795</td><td>0.93</td><td>0.93</td><td>0.92</td>
+        <td>3515</td><td>0.90</td><td>0.81</td><td>0.74</td>
+        <td>3938</td><td>0.93</td><td>0.91</td><td>0.90</td>
+    </tr>
+    <tr class="odd">
+        <td>ATBox</td>
+        <td>3518</td><td>0.67</td><td>0.59</td><td>0.52</td>
+        <td>13002</td><td>0.96</td><td>0.93</td><td>0.91</td>
+        <td>3281</td><td>0.96</td><td>0.94</td><td>0.92</td>
+        <td>2244</td><td>0.93</td><td>0.84</td><td>0.76</td>
+        <td>2771</td><td>0.95</td><td>0.93</td><td>0.91</td>
+    </tr>
+    <tr class="even">
+        <td>baselineAltLabel</td>
+        <td>2574</td><td>0.86</td><td>0.76</td><td>0.68</td>
+        <td>13514</td><td>0.88</td><td>0.89</td><td>0.89</td>
+        <td>3230</td><td>0.88</td><td>0.90</td><td>0.92</td>
+        <td>1712</td><td>0.92</td><td>0.74</td><td>0.63</td>
+        <td>2665</td><td>0.92</td><td>0.91</td><td>0.90</td>
+    </tr>
+    <tr class="odd">
+        <td>baselineLabel</td>
+        <td>1879</td><td>0.90</td><td>0.69</td><td>0.56</td>
+        <td>10552</td><td>0.95</td><td>0.85</td><td>0.77</td>
+        <td>2582</td><td>0.98</td><td>0.90</td><td>0.83</td>
+        <td>1245</td><td>0.96</td><td>0.68</td><td>0.53</td>
+        <td>2272</td><td>0.95</td><td>0.89</td><td>0.84</td>
+    </tr>
+    <tr class="even">
+        <td>DESKMatcher</td>
+        <td>1938</td><td>0.89</td><td>0.69</td><td>0.56</td>
+        <td>10946</td><td>0.94</td><td>0.85</td><td>0.77</td>
+        <td>2677</td><td>0.97</td><td>0.89</td><td>0.82</td>
+        <td>1638</td><td>0.93</td><td>0.75</td><td>0.63</td>
+        <td>2361</td><td>0.94</td><td>0.88</td><td>0.83</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMap</td>
+        <td>41080</td><td>0.24</td><td>0.35</td><td>0.71</td>
+        <td>54537</td><td>0.43</td><td>0.58</td><td>0.86</td>
+        <td>15560</td><td>0.47</td><td>0.63</td><td>0.92</td>
+        <td>15335</td><td>0.58</td><td>0.67</td><td>0.80</td>
+        <td>19560</td><td>0.27</td><td>0.42</td><td>0.92</td>
+    </tr>
+    <tr class="even">
+        <td>LogMapBio</td>
+        <td>10</td><td>1.00</td><td>0.00</td><td>0.00</td>
+        <td>38</td><td>0.75</td><td>0.00</td><td>0.00</td>
+        <td>31</td><td>1.00</td><td>0.01</td><td>0.00</td>
+        <td>12</td><td>1.00</td><td>0.01</td><td>0.00</td>
+        <td>29</td><td>1.00</td><td>0.02</td><td>0.01</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMapIM</td>
+        <td>41070</td><td>0.24</td><td>0.35</td><td>0.71</td>
+        <td>54499</td><td>0.43</td><td>0.58</td><td>0.86</td>
+        <td>15529</td><td>0.47</td><td>0.62</td><td>0.91</td>
+        <td>15323</td><td>0.58</td><td>0.67</td><td>0.80</td>
+        <td>19531</td><td>0.27</td><td>0.42</td><td>0.91</td>
+    </tr>
+    <tr class="even">
+        <td>LogMapKG</td>
+        <td>41080</td><td>0.24</td><td>0.35</td><td>0.71</td>
+        <td>54537</td><td>0.43</td><td>0.58</td><td>0.86</td>
+        <td>15560</td><td>0.47</td><td>0.63</td><td>0.92</td>
+        <td>15335</td><td>0.58</td><td>0.67</td><td>0.80</td>
+        <td>19560</td><td>0.27</td><td>0.42</td><td>0.92</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMapLt</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>16688</td><td>0.90</td><td>0.83</td><td>0.77</td>
+        <td>3577</td><td>0.94</td><td>0.88</td><td>0.82</td>
+        <td>2807</td><td>0.91</td><td>0.74</td><td>0.62</td>
+        <td>3635</td><td>0.91</td><td>0.87</td><td>0.83</td>
+    </tr>
+    <tr class="even">
+        <td>Wiktionary</td>
+        <td>3096</td><td>0.86</td><td>0.76</td><td>0.68</td>
+        <td>13466</td><td>0.92</td><td>0.91</td><td>0.90</td>
+        <td>3405</td><td>0.92</td><td>0.92</td><td>0.93</td>
+        <td>2192</td><td>0.92</td><td>0.83</td><td>0.75</td>
+        <td>2822</td><td>0.93</td><td>0.92</td><td>0.92</td>
+    </tr>
+</tbody>
+</table>
+
+
+
+<h3>Class results</h3>
+
+All matchers except LogMapIM were able to generate class correspondences.
+
+<table border="2" frame="sides" rules="groups" align="center">
+<colgroup align="center"/>
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<thead valign="top">
+    <tr>
+        <th></th>
+        <th colspan="4">marvelcinematicuniverse-marvel</th>
+        <th colspan="4">memoryalpha-memorybeta</th>
+        <th colspan="4">memoryalpha-stexpanded</th>
+        <th colspan="4">starwars-swg</th>
+        <th colspan="4">starwars-swtor</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr class="header">
+        <th></th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+    </tr>
+    <tr class="odd">
+        <td>ALOD2Vec</td>
+        <td>7</td><td>1.00</td><td>1.00</td><td>1.00</td>
+        <td>21</td><td>1.00</td><td>0.44</td><td>0.29</td>
+        <td>29</td><td>1.00</td><td>0.76</td><td>0.62</td>
+        <td>14</td><td>1.00</td><td>0.75</td><td>0.60</td>
+        <td>29</td><td>1.00</td><td>0.93</td><td>0.87</td>
+    </tr>
+    <tr class="even">
+        <td>AML</td>
+        <td>8</td><td>1.00</td><td>1.00</td><td>1.00</td>
+        <td>36</td><td>0.91</td><td>0.80</td><td>0.71</td>
+        <td>32</td><td>1.00</td><td>0.82</td><td>0.69</td>
+        <td>12</td><td>1.00</td><td>0.89</td><td>0.80</td>
+        <td>30</td><td>1.00</td><td>0.93</td><td>0.87</td>
+    </tr>
+    <tr class="odd">
+        <td>ATBox</td>
+        <td>11</td><td>1.00</td><td>1.00</td><td>1.00</td>
+        <td>39</td><td>0.83</td><td>0.77</td><td>0.71</td>
+        <td>34</td><td>1.00</td><td>0.87</td><td>0.77</td>
+        <td>13</td><td>1.00</td><td>0.75</td><td>0.60</td>
+        <td>31</td><td>1.00</td><td>0.93</td><td>0.87</td>
+    </tr>
+    <tr class="even">
+        <td>baselineAltLabel</td>
+        <td>8</td><td>1.00</td><td>1.00</td><td>1.00</td>
+        <td>19</td><td>1.00</td><td>0.44</td><td>0.29</td>
+        <td>19</td><td>1.00</td><td>0.63</td><td>0.46</td>
+        <td>9</td><td>1.00</td><td>0.57</td><td>0.40</td>
+        <td>27</td><td>1.00</td><td>0.89</td><td>0.80</td>
+    </tr>
+    <tr class="odd">
+        <td>baselineLabel</td>
+        <td>8</td><td>1.00</td><td>1.00</td><td>1.00</td>
+        <td>19</td><td>1.00</td><td>0.44</td><td>0.29</td>
+        <td>19</td><td>1.00</td><td>0.63</td><td>0.46</td>
+        <td>9</td><td>1.00</td><td>0.57</td><td>0.40</td>
+        <td>27</td><td>1.00</td><td>0.89</td><td>0.80</td>
+    </tr>
+    <tr class="even">
+        <td>DESKMatcher</td>
+        <td>40</td><td>1.00</td><td>1.00</td><td>1.00</td>
+        <td>115</td><td>0.33</td><td>0.31</td><td>0.29</td>
+        <td>120</td><td>0.62</td><td>0.62</td><td>0.62</td>
+        <td>116</td><td>1.00</td><td>0.75</td><td>0.60</td>
+        <td>66</td><td>0.86</td><td>0.83</td><td>0.80</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMap</td>
+        <td>10</td><td>1.00</td><td>1.00</td><td>1.00</td>
+        <td>38</td><td>0.75</td><td>0.69</td><td>0.64</td>
+        <td>31</td><td>1.00</td><td>0.70</td><td>0.54</td>
+        <td>12</td><td>1.00</td><td>0.89</td><td>0.80</td>
+        <td>29</td><td>1.00</td><td>0.89</td><td>0.80</td>
+    </tr>
+    <tr class="even">
+        <td>LogMapBio</td>
+        <td>10</td><td>1.00</td><td>1.00</td><td>1.00</td>
+        <td>38</td><td>0.75</td><td>0.69</td><td>0.64</td>
+        <td>31</td><td>1.00</td><td>0.70</td><td>0.54</td>
+        <td>12</td><td>1.00</td><td>0.89</td><td>0.80</td>
+        <td>29</td><td>1.00</td><td>0.89</td><td>0.80</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMapIM</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+    </tr>
+    <tr class="even">
+        <td>LogMapKG</td>
+        <td>10</td><td>1.00</td><td>1.00</td><td>1.00</td>
+        <td>38</td><td>0.75</td><td>0.69</td><td>0.64</td>
+        <td>31</td><td>1.00</td><td>0.70</td><td>0.54</td>
+        <td>12</td><td>1.00</td><td>0.89</td><td>0.80</td>
+        <td>29</td><td>1.00</td><td>0.89</td><td>0.80</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMapLt</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>23</td><td>1.00</td><td>0.44</td><td>0.29</td>
+        <td>27</td><td>1.00</td><td>0.70</td><td>0.54</td>
+        <td>12</td><td>1.00</td><td>0.75</td><td>0.60</td>
+        <td>30</td><td>1.00</td><td>0.85</td><td>0.73</td>
+    </tr>
+    <tr class="even">
+        <td>Wiktionary</td>
+        <td>9</td><td>1.00</td><td>1.00</td><td>1.00</td>
+        <td>27</td><td>1.00</td><td>0.44</td><td>0.29</td>
+        <td>33</td><td>1.00</td><td>0.76</td><td>0.62</td>
+        <td>14</td><td>1.00</td><td>0.75</td><td>0.60</td>
+        <td>29</td><td>1.00</td><td>0.93</td><td>0.87</td>
+    </tr>
+</tbody>
+</table>
+
+
+
+<h3>Property results</h3>
+While last year, most matchers struggled on creating mappings typed as <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"><code>rdf:Property</code></a> (instead of <a href="http://www.w3.org/2002/07/owl#ObjectProperty"><code>owl:ObjectProperty</code></a> or <a href="http://www.w3.org/2002/07/owl#DatatypeProperty"><code>owl:DatatypeProperty</code></a>, many matchers were able to produce property mappings also in that case.
+
+<table border="2" frame="sides" rules="groups" align="center">
+<colgroup align="center"/>
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<thead valign="top">
+    <tr>
+        <th></th>
+        <th colspan="4">marvelcinematicuniverse-marvel</th>
+        <th colspan="4">memoryalpha-memorybeta</th>
+        <th colspan="4">memoryalpha-stexpanded</th>
+        <th colspan="4">starwars-swg</th>
+        <th colspan="4">starwars-swtor</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr class="header">
+        <th></th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+    </tr>
+    <tr class="odd">
+        <td>ALOD2Vec</td>
+        <td>21</td><td>1.00</td><td>1.00</td><td>1.00</td>
+        <td>111</td><td>0.84</td><td>0.88</td><td>0.92</td>
+        <td>88</td><td>0.87</td><td>0.91</td><td>0.95</td>
+        <td>53</td><td>1.00</td><td>1.00</td><td>1.00</td>
+        <td>111</td><td>0.98</td><td>0.98</td><td>0.98</td>
+    </tr>
+    <tr class="even">
+        <td>AML</td>
+        <td>9</td><td>1.00</td><td>0.53</td><td>0.36</td>
+        <td>84</td><td>0.76</td><td>0.73</td><td>0.70</td>
+        <td>64</td><td>0.89</td><td>0.85</td><td>0.80</td>
+        <td>12</td><td>1.00</td><td>0.40</td><td>0.25</td>
+        <td>73</td><td>0.98</td><td>0.82</td><td>0.71</td>
+    </tr>
+    <tr class="odd">
+        <td>ATBox</td>
+        <td>24</td><td>0.91</td><td>0.91</td><td>0.91</td>
+        <td>103</td><td>0.98</td><td>0.95</td><td>0.92</td>
+        <td>85</td><td>0.95</td><td>0.95</td><td>0.95</td>
+        <td>61</td><td>1.00</td><td>1.00</td><td>1.00</td>
+        <td>121</td><td>1.00</td><td>0.99</td><td>0.98</td>
+    </tr>
+    <tr class="even">
+        <td>baselineAltLabel</td>
+        <td>7</td><td>1.00</td><td>0.53</td><td>0.36</td>
+        <td>41</td><td>1.00</td><td>0.51</td><td>0.34</td>
+        <td>46</td><td>0.97</td><td>0.80</td><td>0.68</td>
+        <td>42</td><td>1.00</td><td>1.00</td><td>1.00</td>
+        <td>103</td><td>1.00</td><td>0.94</td><td>0.89</td>
+    </tr>
+    <tr class="odd">
+        <td>baselineLabel</td>
+        <td>7</td><td>1.00</td><td>0.53</td><td>0.36</td>
+        <td>41</td><td>1.00</td><td>0.51</td><td>0.34</td>
+        <td>46</td><td>0.97</td><td>0.80</td><td>0.68</td>
+        <td>42</td><td>1.00</td><td>1.00</td><td>1.00</td>
+        <td>103</td><td>1.00</td><td>0.94</td><td>0.89</td>
+    </tr>
+    <tr class="even">
+        <td>DESKMatcher</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMap</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+    </tr>
+    <tr class="even">
+        <td>LogMapBio</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMapIM</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+    </tr>
+    <tr class="even">
+        <td>LogMapKG</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMapLt</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+    </tr>
+    <tr class="even">
+        <td>Wiktionary</td>
+        <td>22</td><td>1.00</td><td>1.00</td><td>1.00</td>
+        <td>112</td><td>0.84</td><td>0.88</td><td>0.92</td>
+        <td>89</td><td>0.87</td><td>0.91</td><td>0.95</td>
+        <td>60</td><td>1.00</td><td>1.00</td><td>1.00</td>
+        <td>117</td><td>0.98</td><td>0.98</td><td>0.98</td>
+    </tr>
+</tbody>
+</table>
+
+
+
+
+
+<h3>Instance results</h3>
+Only LogMapBio did not return any instance matches.
+
+<table border="2" frame="sides" rules="groups" align="center">
+<colgroup align="center"/>
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<colgroup align="center" span="4" />
+<thead valign="top">
+    <tr>
+        <th></th>
+        <th colspan="4">marvelcinematicuniverse-marvel</th>
+        <th colspan="4">memoryalpha-memorybeta</th>
+        <th colspan="4">memoryalpha-stexpanded</th>
+        <th colspan="4">starwars-swg</th>
+        <th colspan="4">starwars-swtor</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr class="header">
+        <th></th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+        <th>Size</th><th>Prec.</th><th>F-m.</th><th>Rec.</th>
+    </tr>
+    <tr class="odd">
+        <td>ALOD2Vec</td>
+        <td>3065</td><td>0.86</td><td>0.76</td><td>0.68</td>
+        <td>13325</td><td>0.92</td><td>0.91</td><td>0.90</td>
+        <td>3285</td><td>0.92</td><td>0.93</td><td>0.93</td>
+        <td>2118</td><td>0.92</td><td>0.82</td><td>0.75</td>
+        <td>2676</td><td>0.92</td><td>0.92</td><td>0.91</td>
+    </tr>
+    <tr class="even">
+        <td>AML</td>
+        <td>4670</td><td>0.85</td><td>0.68</td><td>0.56</td>
+        <td>18319</td><td>0.91</td><td>0.89</td><td>0.87</td>
+        <td>3699</td><td>0.93</td><td>0.93</td><td>0.93</td>
+        <td>3491</td><td>0.90</td><td>0.81</td><td>0.75</td>
+        <td>3835</td><td>0.93</td><td>0.92</td><td>0.90</td>
+    </tr>
+    <tr class="odd">
+        <td>ATBox</td>
+        <td>3483</td><td>0.66</td><td>0.58</td><td>0.52</td>
+        <td>12860</td><td>0.96</td><td>0.93</td><td>0.91</td>
+        <td>3162</td><td>0.96</td><td>0.94</td><td>0.92</td>
+        <td>2170</td><td>0.93</td><td>0.83</td><td>0.76</td>
+        <td>2619</td><td>0.94</td><td>0.92</td><td>0.91</td>
+    </tr>
+    <tr class="even">
+        <td>baselineAltLabel</td>
+        <td>2559</td><td>0.86</td><td>0.76</td><td>0.68</td>
+        <td>13454</td><td>0.88</td><td>0.89</td><td>0.89</td>
+        <td>3165</td><td>0.88</td><td>0.90</td><td>0.93</td>
+        <td>1661</td><td>0.92</td><td>0.74</td><td>0.62</td>
+        <td>2535</td><td>0.92</td><td>0.91</td><td>0.90</td>
+    </tr>
+    <tr class="odd">
+        <td>baselineLabel</td>
+        <td>1864</td><td>0.90</td><td>0.69</td><td>0.56</td>
+        <td>10492</td><td>0.95</td><td>0.85</td><td>0.77</td>
+        <td>2517</td><td>0.98</td><td>0.91</td><td>0.84</td>
+        <td>1194</td><td>0.95</td><td>0.67</td><td>0.52</td>
+        <td>2142</td><td>0.95</td><td>0.89</td><td>0.84</td>
+    </tr>
+    <tr class="even">
+        <td>DESKMatcher</td>
+        <td>1898</td><td>0.89</td><td>0.69</td><td>0.56</td>
+        <td>10831</td><td>0.94</td><td>0.85</td><td>0.78</td>
+        <td>2557</td><td>0.98</td><td>0.91</td><td>0.84</td>
+        <td>1522</td><td>0.93</td><td>0.76</td><td>0.64</td>
+        <td>2295</td><td>0.94</td><td>0.90</td><td>0.86</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMap</td>
+        <td>41070</td><td>0.24</td><td>0.35</td><td>0.71</td>
+        <td>54499</td><td>0.43</td><td>0.58</td><td>0.87</td>
+        <td>15529</td><td>0.47</td><td>0.63</td><td>0.94</td>
+        <td>15323</td><td>0.58</td><td>0.68</td><td>0.82</td>
+        <td>19531</td><td>0.27</td><td>0.42</td><td>0.96</td>
+    </tr>
+    <tr class="even">
+        <td>LogMapBio</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMapIM</td>
+        <td>41070</td><td>0.24</td><td>0.35</td><td>0.71</td>
+        <td>54499</td><td>0.43</td><td>0.58</td><td>0.87</td>
+        <td>15529</td><td>0.47</td><td>0.63</td><td>0.94</td>
+        <td>15323</td><td>0.58</td><td>0.68</td><td>0.82</td>
+        <td>19531</td><td>0.27</td><td>0.42</td><td>0.96</td>
+    </tr>
+    <tr class="even">
+        <td>LogMapKG</td>
+        <td>41070</td><td>0.24</td><td>0.35</td><td>0.71</td>
+        <td>54499</td><td>0.43</td><td>0.58</td><td>0.87</td>
+        <td>15529</td><td>0.47</td><td>0.63</td><td>0.94</td>
+        <td>15323</td><td>0.58</td><td>0.68</td><td>0.82</td>
+        <td>19531</td><td>0.27</td><td>0.42</td><td>0.96</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMapLt</td>
+        <td>0</td><td>0.00</td><td>0.00</td><td>0.00</td>
+        <td>16665</td><td>0.90</td><td>0.83</td><td>0.77</td>
+        <td>3550</td><td>0.94</td><td>0.89</td><td>0.84</td>
+        <td>2795</td><td>0.91</td><td>0.75</td><td>0.63</td>
+        <td>3605</td><td>0.91</td><td>0.89</td><td>0.87</td>
+    </tr>
+    <tr class="even">
+        <td>Wiktionary</td>
+        <td>3065</td><td>0.86</td><td>0.76</td><td>0.68</td>
+        <td>13327</td><td>0.92</td><td>0.91</td><td>0.90</td>
+        <td>3283</td><td>0.92</td><td>0.92</td><td>0.93</td>
+        <td>2118</td><td>0.92</td><td>0.82</td><td>0.75</td>
+        <td>2676</td><td>0.92</td><td>0.92</td><td>0.91</td>
+    </tr>
+</tbody>
+</table>
+
+
+<h3>Runtime</h3>
+
+Most matchers have a very low runtime which shows that they scale to huge KGs.
+Except the LogMap family, all matchers solve each task in less than 30 minutes.
+
+<table border="2" frame="sides" rules="groups" align="center">
+
+<thead valign="top">
+    <tr>
+        <th></th>
+        <th>marvelcinematicuniverse-marvel</th>
+        <th>memoryalpha-memorybeta</th>
+        <th>memoryalpha-stexpanded</th>
+        <th>starwars-swg</th>
+        <th>starwars-swtor</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr class="odd">
+        <td>ALOD2Vec</td>
+        <td>0:03:05</td>
+        <td>0:02:10</td>
+        <td>0:01:20</td>
+        <td>0:03:22</td>
+        <td>0:03:27</td>
+    </tr>
+    <tr class="even">
+        <td>AML</td>
+        <td>0:12:34</td>
+        <td>0:22:17</td>
+        <td>0:04:43</td>
+        <td>0:05:30</td>
+        <td>0:05:51</td>
+    </tr>
+    <tr class="odd">
+        <td>ATBox</td>
+        <td>0:03:54</td>
+        <td>0:03:26</td>
+        <td>0:01:49</td>
+        <td>0:03:28</td>
+        <td>0:03:45</td>
+    </tr>
+    <tr class="even">
+        <td>baselineAltLabel</td>
+        <td>0:02:35</td>
+        <td>0:01:49</td>
+        <td>0:01:09</td>
+        <td>0:02:35</td>
+        <td>0:02:49</td>
+    </tr>
+    <tr class="odd">
+        <td>baselineLabel</td>
+        <td>0:02:30</td>
+        <td>0:01:43</td>
+        <td>0:01:17</td>
+        <td>0:02:38</td>
+        <td>0:02:36</td>
+    </tr>
+    <tr class="even">
+        <td>DESKMatcher</td>
+        <td>0:03:08</td>
+        <td>0:02:28</td>
+        <td>0:01:41</td>
+        <td>0:03:20</td>
+        <td>0:03:17</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMap</td>
+        <td>1:40:56</td>
+        <td>0:18:09</td>
+        <td>0:12:14</td>
+        <td>0:30:31</td>
+        <td>0:13:24</td>
+    </tr>
+    <tr class="even">
+        <td>LogMapBio</td>
+        <td>0:37:37</td>
+        <td>1:24:45</td>
+        <td>0:59:48</td>
+        <td>0:26:18</td>
+        <td>1:07:01</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMapIM</td>
+        <td>1:33:33</td>
+        <td>0:19:48</td>
+        <td>0:11:47</td>
+        <td>0:30:51</td>
+        <td>0:13:35</td>
+    </tr>
+    <tr class="even">
+        <td>LogMapKG</td>
+        <td>1:33:40</td>
+        <td>0:17:58</td>
+        <td>0:12:00</td>
+        <td>0:31:08</td>
+        <td>0:13:05</td>
+    </tr>
+    <tr class="odd">
+        <td>LogMapLt</td>
+        <td>0:00:00</td>
+        <td>0:01:27</td>
+        <td>0:00:54</td>
+        <td>0:02:27</td>
+        <td>0:02:31</td>
+    </tr>
+    <tr class="even">
+        <td>Wiktionary</td>
+        <td>0:06:46</td>
+        <td>0:05:50</td>
+        <td>0:03:57</td>
+        <td>0:06:49</td>
+        <td>0:06:50</td>
+    </tr>
+</tbody>
+</table>
+
+
+
+
+
+<h2>Organizers</h2>
+<ul>
+<li><a href="http://dws.informatik.uni-mannheim.de/en/people/researchers/sven-hertling/">Sven Hertling</a> (University of Mannheim, Germany), main contact for the track, sven at informatik dot uni-mannheim dot de</li>
+<li><a href="http://www.heikopaulheim.com/">Heiko Paulheim</a> (University of Mannheim, Germany)</li>
+</ul>
+
+<h2><a name="references">References</a></h2>
+<p>[1] Sven Hertling, Heiko Paulheim: The knowledge graph track at OAEI : Gold standards, baselines, and the golden hammer bias. ESWC 2020. [<a href="https://madoc.bib.uni-mannheim.de/54181/1/main.pdf">pdf</a>]</p>
+<p>[2] Sven Hertling, Heiko Paulheim: DBkWik: A Consolidated Knowledge Graph from Thousands of Wikis. International Conference on Big Knowledge 2018. [<a href="http://data.dws.informatik.uni-mannheim.de/dbkwik/ICBK2018_dbkwik.pdf">pdf</a>]</p>
+<p>[3] Alexandra Hofmann, Samresh Perchani, Jan Portisch, Sven Hertling, and Heiko Paulheim. DBkWik: Towards Knowledge Graph Creation from Thousands of Wikis. International Semantic Web Conference (Posters & Demos) 2017. [<a href="http://data.dws.informatik.uni-mannheim.de/dbkwik/iswc2017_poster_dbkwik.pdf">pdf</a>]</p>
+
+
+<div class="address">
+    <div class="footer"><a href="http://oaei.ontologymatching.org/2020/knowledgegraph/index.html">http://oaei.ontologymatching.org/2020/knowledgegraph/index.html</a></div>
+</div>
+
+</body>
+</html>
