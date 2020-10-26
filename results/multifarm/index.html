@@ -1,0 +1,198 @@
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Ontology Alignment Evaluation Initiative::MultiFarm</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2018/">
+Ontology Alignment Evaluation Initiative - OAEI 2020 Campaign</a>
+<a href="http://oaei.ontologymatching.org/">
+        <img width="120px" src="../../../oaeismall.jpg" 
+                           style="float:right; margin-left: 15pt; border-style:none;">
+</a>
+
+<a href="http://www.seals-project.eu/">
+        <img width="120px" src="../../../seals-logo.jpg" 
+             style="clear:right;float:right; margin-left: 15pt; border-style:none;">
+</a>
+
+<a href="http://web.informatik.uni-mannheim.de/multifarm/">
+        <img width="120px" src="../../multifarm/images/mf-logo.jpg" 
+             style="clear:right;float:right; margin-left: 15pt; border-style:none;">
+</a>
+ 
+</div>
+
+<h1>MultiFarm Results for OAEI 2020</h1>
+
+<p>
+<i>In this page, we report the results of the OAEI 2020 campaign for the MultiFarm track. 
+The details on this data set can be found at the <a href="http://web.informatik.uni-mannheim.de/multifarm/">MultiFarm web page</a>.
+<p>
+
+<p>
+<font color="red">If you notice any kind of error (wrong numbers, incorrect information on a matching system, etc.)
+do not hesitate to contact us (for the mail see below in the last paragraph on this page).</font> </i>
+</p>
+
+<h2>Experimental setting</h2>
+
+<p>
+We have conducted an evaluation based on the blind data set. This data set includes the matching tasks involving the edas and ekaw ontologies (resulting in 55 x 24 tasks). Participants were able to test their systems on the open subset of tasks, available via the SEALS repository. The open subset counts on 45 x 25 tasks and it does not include Italian translations. 
+</p>
+
+<p>We distinguish two types of matching tasks : </p>
+<ol type="i">
+  <li> those tasks where two different ontologies (edas-ekaw, for instance) have been translated into two different languages;</li>
+  <li> those tasks where the same ontology (edas-edas) has been translated into two different languages.</li>
+</ol>
+
+<p>As we could observe in previous evaluations, for the tasks of type (ii), good results are not directly related to the use of specific techniques for dealing with cross-lingual ontologies, but on the ability to exploit the fact that both ontologies have an identical structure.
+</p>
+
+<h2>Participants</h2>
+
+<p>This year, 6 systems have registered to participate in the MultiFarm track: AML, Lily, LogMap, LogMapLt, VeeAlign and Wiktionary. This number slightly increases with respect to the last campaign (5 in 2019, 6 in 2018, 8 in 2017, 7 in 2016, 5 in 2015, 3 in 2014, 7 in 2013, and 7 in 2012). The reader can refer to the OAEI papers for a detailed description of the strategies adopted by each system.</p>
+
+<p>For this track, we observe that Lily has generated mostly empty alignments. </p> 
+
+<h2>Evaluation results</h2>
+
+<h4>Execution setting and runtime</h4>
+
+<p>The systems have been executed on a Ubuntu Linux machine configured with 8GB of RAM running under a Intel Core CPU 2.00GHz x4 processors. All measurements are based on a single run. As for each campaign, we observed large differences in the time required for a system to complete the 55 x 24 matching tasks: AML (170 minutes), Lily (453 minutes), LogMap (43 minutes) and Wiktionary (1290 minutes). These number are not comparable to those from last year given the fact that the SEALS repositories have moved to another server (with a different configuration). Furthermore, the concurrent access to the SEALS repositories during the evaluation period may have an impact in the time required for completing the tasks. These measurements are only indicative of the time the systems require for finishing the task in a common environment. </p>
+
+<h3>Overall results</h3>
+
+<p>The table below presents the aggregated results for the matching tasks. They have been computed using the Alignment API 4.6 and can slightly differ from those computed with the SEALS client. We haven't applied any threshold on the results. They are measured in terms of classical precision and recall. We do not report the results of non-specific systems here, as we could observe in the last campaigns that they can have intermediate results in tests of type ii) and poor performance in tests i). </p>
+
+<p>AML outperforms all other systems in terms of F-measure for task i) (same behaviour in the last campaigns). In terms of precision, Wiktionary is the system that generates the most precise alignments, followed by LogMap and AML. With respect to the task ii) LogMap has the overall best performance.</p>
+
+<table border='2' frame='sides' rules='groups' align='center'">
+<colgroup align='center'/>
+<colgroup align='center'/>
+<colgroup align='center'/>
+<colgroup align='center' span='4' />
+<colgroup align='center' span='4' />
+<thead valign='top'>
+
+<tr>
+  <th></th> 
+  <th></th> 
+  <th></th> 
+  <th colspan="4">Different ontologies (i)</th>
+  <th colspan="4">Same ontologies (ii)</th>
+</tr>
+<tbody>
+<tr class="header"><th>System</td>
+    <th>Time</td>
+    <th>#pairs</td>
+    <th>Size</td>
+    <th>Prec.</td>
+    <th>F-m.</td>
+    <th>Rec.</td>
+    <th>Size</td>
+    <th>Prec.</td>
+    <th>F-m.</td>
+    <th>Rec.</td>
+</tr>
+
+<!-- ****************************** -->
+<tr class="even">
+<td>AML</td>
+<td>170</td>   <!--time-->
+<td>55</td>    <!--pairs-->
+
+<td>8.25</td> <!--size-->
+<td>.72 (.72)</td> <!--p-->
+<td>.47 (.47)</td> <!--f-->
+<td>.35 (.35)</td> <!--r-->
+
+<td>33.65</td> <!--size-->
+<td>.94 (.96)</td> <!--p-->
+<td>.28 (.28)</td> <!--f-->
+<td>.17 (.17)</td> <!--r-->
+</tr>
+
+<!-- ****************************** -->
+<tr class="odd">
+<td>LogMap</td>
+<td>43</td>   <!--time-->
+<td>55</td>    <!--pairs-->
+
+<td>6.64</td> <!--size-->
+<td>.73 (.72)</td> <!--p-->
+<td>.37 (.37)</td> <!--f-->
+<td>.25 (.25)</td> <!--r-->
+
+<td>46.62</td> <!--size-->
+<td>.95 (.97)</td> <!--p-->
+<td>.41 (.43)</td> <!--f-->
+<td>.28 (.28)</td> <!--r-->
+</tr>
+
+<!-- ****************************** -->
+<tr class="even">
+<td>LogMapLt</td>
+<td>17</td>   <!--time-->
+<td>23</td>    <!--pairs-->
+
+<td>1.15</td> <!--size-->
+<td>.34 (.35)</td> <!--p-->
+<td>.04 (.09)</td> <!--f-->
+<td>.02 (.02)</td> <!--r-->
+
+<td>95.17</td> <!--size-->
+<td>.02 (.02)</td> <!--p-->
+<td>.01 (.03)</td> <!--f-->
+<td>.01 (.01)</td> <!--r-->
+</tr>
+
+<!-- ****************************** -->
+<tr class="odd">
+<td>Wiktionary</td>
+<td>1290</td> <!--time-->
+<td>53</td> <!--pairs-->
+
+<td>4.92</td> <!--size-->
+<td>.77 (.80)</td> <!--p-->
+<td>.32 (.33)</td> <!--f-->
+<td>.21 (.21)</td> <!--r-->
+
+<td>9.38</td> <!--size-->
+<td>.94 (.96)</td> <!--p-->
+<td>.12 (.13)</td> <!--f-->
+<td>.07 (.07) </td> <!--r-->
+</tr>
+</tbody>
+<caption>MultiFarm aggregated results per matcher, for each type of matching task -- different ontologies (i) and same ontologies (ii). Time is measured in minutes. #pairs indicates the number of pairs of languages the tool is able to generated (non empty) alignments. Size indicates the average of the number of generated correspondences for the tests where an (non empty) alignment has been generated. Two kinds of results are reported : those do not distinguishing empty and erroneous (or not generated) alignments and those -- indicated between parenthesis -- considering only non empty generated alignments for a pair of languages. </caption>
+<table>
+
+<p>AML, LogMap and Wiktionary have participated last year. Unfortunately, we lose some ones on the way (EVOCROS). Comparing the results from last year, in terms F-measure (cases of type i), AML maintains its overall performance (.45 in 2019, .46 in 2018, .46 in 2017, .45 in 2016 and .47 in 2015). The same could be observed for LogMap (.37 in 2019, .37 in 2018, .36 in 2017, and .37 in 2016). The performance in terms of f-measure of Wiktionary also remains stable (.31 in 2019).</p>
+
+
+<h4>Language specific results (type i) </h4>
+
+<p>Table below presents the results per pair of language, involving matching different ontologies (test cases of type i).</p>
+
+<p>TO BE DONE VERY SOON</p>
+
+<h2>Conclusions</h2>
+
+<p>Unforntunetly, this track does not attract to many participants. In terms of performance, the F-measure for blind tests remains relatively stable across campaigns. As observed in several campaigns, still, all systems privilege precision in detriment to recall and the results are below the ones obtained for the Conference original dataset.  </p>
+
+<h3>References</h3>
+
+<p>[1] Christian Meilicke, Raul Garcia-Castro, Fred Freitas, Willem Robert van Hage, Elena Montiel-Ponsoda, Ryan Ribeiro de Azevedo, Heiner Stuckenschmidt, Ondrej Svab-Zamazal, Vojtech Svatek, Andrei Tamilin, Cassia Trojahn, Shenghui Wang. MultiFarm: A Benchmark for Multilingual Ontology Matching. Accepted for publication at the Journal of Web Semantics. </p>
+
+<p>An authors version of the paper can be found at the <a href="http://www.irit.fr/recherches/MELODI/multifarm/">MultiFarm homepage</a>, where the data set is described in details.</p>
+
+</p><h3>Contact</h3>
+
+<p>This track is organized by Beyza Yaman and Cassia Trojahn dos Santos. If you have any problems working with the ontologies, any questions or suggestions,
+feel free to write an email to beyza [_] yaman [at] hotmail [.] com and cassia [.] trojahn [at] irit [.] fr.</p>
+
+</body></html>
+
