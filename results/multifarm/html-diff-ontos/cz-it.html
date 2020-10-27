@@ -1,165 +1,3 @@
-09:48:02.527 [main] WARN fr.inrialpes.exmo.align.cli.CommonCLI - debug command-line switch DEPRECATED, use logging
-09:48:02.836 [main] DEBUG fr.inrialpes.exmo.align.parser.AlignmentParser - XMLParser failed to parse alignment (INFO)
-09:48:02.836 [main] DEBUG fr.inrialpes.exmo.align.parser.AlignmentParser - Using RDFParser instead (log=TRACE to see exception)
-09:48:02.930 [main] DEBUG Jena - Jena initialization
-09:48:02.999 [main] WARN org.apache.jena.riot.RDFLanguages - java-jsonld classes not on the classpath - JSON-LD input-output not available.
-09:48:03.000 [main] WARN org.apache.jena.riot.RDFLanguages - Minimum jarfiles are jsonld-java, jackson-core, jackson-annotations
-09:48:03.000 [main] WARN org.apache.jena.riot.RDFLanguages - If using a Jena distribution, put all jars in the lib/ directory on the classpath
-09:48:03.085 [main] DEBUG org.apache.jena.util.FileManager - Add location: LocatorFile
-09:48:03.086 [main] DEBUG org.apache.jena.util.FileManager - Add location: ClassLoaderLocator
-09:48:03.087 [main] DEBUG org.apache.jena.util.LocationMapper - Failed to find configuration: file:location-mapping.rdf;file:location-mapping.n3;file:location-mapping.ttl;file:etc/location-mapping.rdf;file:etc/location-mapping.n3;file:etc/location-mapping.ttl
-09:48:03.087 [main] DEBUG org.apache.jena.util.FileManager - Add location: LocatorFile
-09:48:03.088 [main] DEBUG org.apache.jena.util.FileManager - Add location: LocatorURL
-09:48:03.088 [main] DEBUG org.apache.jena.util.FileManager - Add location: ClassLoaderLocator
-09:48:03.093 [main] DEBUG org.apache.jena.riot.system.stream.JenaIOEnvironment - Failed to find configuration: location-mapping.ttl;location-mapping.rdf;location-mapping.n3;etc/location-mapping.rdf;etc/location-mapping.n3;etc/location-mapping.ttl
-09:48:03.350 [main] DEBUG org.apache.jena.riot.system.stream.StreamManager - open(file:/home/trojahn/Documents/OAEI/OAEI2020/interpretations-cases-blind/cz-it/diff-ontos/cmt-edas-it-cz//LogMap.rdf)
-09:48:03.351 [main] DEBUG org.apache.jena.riot.system.stream.StreamManager - Not mapped: file:/home/trojahn/Documents/OAEI/OAEI2020/interpretations-cases-blind/cz-it/diff-ontos/cmt-edas-it-cz//LogMap.rdf
-09:48:03.352 [main] DEBUG org.apache.jena.riot.system.stream.StreamManager - Found: file:/home/trojahn/Documents/OAEI/OAEI2020/interpretations-cases-blind/cz-it/diff-ontos/cmt-edas-it-cz//LogMap.rdf (LocatorFile)
-09:48:03.426 [main] WARN org.apache.jena.riot - [line: 18, col: 37] {W107} Bad URI: <xsd:float> Code: 44/UNREGISTERED_IANA_SCHEME in SCHEME: The scheme name does not have a "-" in it, but is not in the IANA registry. (Last updated from the registry January 2006)
-09:48:03.429 [main] WARN org.apache.jena.riot - [line: 26, col: 37] {W107} Bad URI: <xsd:float> Code: 44/UNREGISTERED_IANA_SCHEME in SCHEME: The scheme name does not have a "-" in it, but is not in the IANA registry. (Last updated from the registry January 2006)
-09:48:03.430 [main] WARN org.apache.jena.riot - [line: 34, col: 37] {W107} Bad URI: <xsd:float> Code: 44/UNREGISTERED_IANA_SCHEME in SCHEME: The scheme name does not have a "-" in it, but is not in the IANA registry. (Last updated from the registry January 2006)
-09:48:03.432 [main] WARN org.apache.jena.riot - [line: 42, col: 37] {W107} Bad URI: <xsd:float> Code: 44/UNREGISTERED_IANA_SCHEME in SCHEME: The scheme name does not have a "-" in it, but is not in the IANA registry. (Last updated from the registry January 2006)
-09:48:03.433 [main] WARN org.apache.jena.riot - [line: 50, col: 37] {W107} Bad URI: <xsd:float> Code: 44/UNREGISTERED_IANA_SCHEME in SCHEME: The scheme name does not have a "-" in it, but is not in the IANA registry. (Last updated from the registry January 2006)
-09:48:03.439 [main] DEBUG fr.inrialpes.exmo.align.parser.AlignmentParser - XMLParser throw exception
-org.semanticweb.owl.align.AlignmentException: Parsing error
-	at fr.inrialpes.exmo.align.parser.XMLParser.parse(XMLParser.java:228)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.callParser(AlignmentParser.java:166)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.callParser(AlignmentParser.java:134)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.parse(AlignmentParser.java:217)
-	at fr.inrialpes.exmo.align.cli.GroupEval.eval(GroupEval.java:238)
-	at fr.inrialpes.exmo.align.cli.GroupEval.iterateAlignments(GroupEval.java:215)
-	at fr.inrialpes.exmo.align.cli.GroupEval.iterateDirectories(GroupEval.java:192)
-	at fr.inrialpes.exmo.align.cli.GroupEval.run(GroupEval.java:167)
-	at fr.inrialpes.exmo.align.cli.GroupEval.main(GroupEval.java:135)
-Caused by: org.xml.sax.SAXException: [XMLParser] Exception raised
-	at fr.inrialpes.exmo.align.parser.XMLParser.endElement(XMLParser.java:547)
-	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
-	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
-	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
-	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
-	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
-	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
-	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
-	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source)
-	at javax.xml.parsers.SAXParser.parse(SAXParser.java:195)
-	at fr.inrialpes.exmo.align.parser.XMLParser.parse(XMLParser.java:226)
-	... 8 common frames omitted
-Caused by: org.semanticweb.owl.align.AlignmentException: Confidence 1.04 out of bounds [0.0, 1.0]
-	at fr.inrialpes.exmo.align.impl.BasicCell.<init>(BasicCell.java:80)
-	at fr.inrialpes.exmo.align.impl.URICell.<init>(URICell.java:67)
-	at fr.inrialpes.exmo.align.impl.URIAlignment.createCell(URIAlignment.java:106)
-	at fr.inrialpes.exmo.align.impl.URIAlignment.createCell(URIAlignment.java:53)
-	at fr.inrialpes.exmo.align.impl.BasicAlignment.addAlignCell(BasicAlignment.java:392)
-	at fr.inrialpes.exmo.align.impl.URIAlignment.addAlignCell(URIAlignment.java:91)
-	at fr.inrialpes.exmo.align.impl.BasicAlignment.addAlignCell(BasicAlignment.java:346)
-	at fr.inrialpes.exmo.align.impl.BasicAlignment.addAlignCell(BasicAlignment.java:342)
-	at fr.inrialpes.exmo.align.impl.URIAlignment.addAlignCell(URIAlignment.java:98)
-	at fr.inrialpes.exmo.align.parser.XMLParser.endElement(XMLParser.java:466)
-	... 20 common frames omitted
-09:48:03.440 [main] DEBUG fr.inrialpes.exmo.align.parser.AlignmentParser - RDFParser throw exception
-org.semanticweb.owl.align.AlignmentException: There is no alignment in the RDF document
-	at fr.inrialpes.exmo.align.parser.RDFParser.parse(RDFParser.java:178)
-	at fr.inrialpes.exmo.align.parser.RDFParser.parse(RDFParser.java:224)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.callParser(AlignmentParser.java:174)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.callParser(AlignmentParser.java:141)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.parse(AlignmentParser.java:217)
-	at fr.inrialpes.exmo.align.cli.GroupEval.eval(GroupEval.java:238)
-	at fr.inrialpes.exmo.align.cli.GroupEval.iterateAlignments(GroupEval.java:215)
-	at fr.inrialpes.exmo.align.cli.GroupEval.iterateDirectories(GroupEval.java:192)
-	at fr.inrialpes.exmo.align.cli.GroupEval.run(GroupEval.java:167)
-	at fr.inrialpes.exmo.align.cli.GroupEval.main(GroupEval.java:135)
-09:48:03.440 [main] DEBUG fr.inrialpes.exmo.align.cli.GroupEval - IGNORED Exception
-org.semanticweb.owl.align.AlignmentException: Cannot parse file:/home/trojahn/Documents/OAEI/OAEI2020/interpretations-cases-blind/cz-it/diff-ontos/cmt-edas-it-cz//LogMap.rdf
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.callParser(AlignmentParser.java:150)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.parse(AlignmentParser.java:217)
-	at fr.inrialpes.exmo.align.cli.GroupEval.eval(GroupEval.java:238)
-	at fr.inrialpes.exmo.align.cli.GroupEval.iterateAlignments(GroupEval.java:215)
-	at fr.inrialpes.exmo.align.cli.GroupEval.iterateDirectories(GroupEval.java:192)
-	at fr.inrialpes.exmo.align.cli.GroupEval.run(GroupEval.java:167)
-	at fr.inrialpes.exmo.align.cli.GroupEval.main(GroupEval.java:135)
-Caused by: org.semanticweb.owl.align.AlignmentException: There is no alignment in the RDF document
-	at fr.inrialpes.exmo.align.parser.RDFParser.parse(RDFParser.java:178)
-	at fr.inrialpes.exmo.align.parser.RDFParser.parse(RDFParser.java:224)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.callParser(AlignmentParser.java:174)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.callParser(AlignmentParser.java:141)
-	... 6 common frames omitted
-09:48:04.418 [main] DEBUG fr.inrialpes.exmo.align.parser.AlignmentParser - XMLParser failed to parse alignment (INFO)
-09:48:04.418 [main] DEBUG fr.inrialpes.exmo.align.parser.AlignmentParser - Using RDFParser instead (log=TRACE to see exception)
-09:48:04.418 [main] DEBUG org.apache.jena.riot.system.stream.StreamManager - open(file:/home/trojahn/Documents/OAEI/OAEI2020/interpretations-cases-blind/cz-it/diff-ontos/ekaw-sigkdd-cz-it//LogMap.rdf)
-09:48:04.418 [main] DEBUG org.apache.jena.riot.system.stream.StreamManager - Not mapped: file:/home/trojahn/Documents/OAEI/OAEI2020/interpretations-cases-blind/cz-it/diff-ontos/ekaw-sigkdd-cz-it//LogMap.rdf
-09:48:04.418 [main] DEBUG org.apache.jena.riot.system.stream.StreamManager - Found: file:/home/trojahn/Documents/OAEI/OAEI2020/interpretations-cases-blind/cz-it/diff-ontos/ekaw-sigkdd-cz-it//LogMap.rdf (LocatorFile)
-09:48:04.423 [main] WARN org.apache.jena.riot - [line: 18, col: 37] {W107} Bad URI: <xsd:float> Code: 44/UNREGISTERED_IANA_SCHEME in SCHEME: The scheme name does not have a "-" in it, but is not in the IANA registry. (Last updated from the registry January 2006)
-09:48:04.424 [main] WARN org.apache.jena.riot - [line: 26, col: 37] {W107} Bad URI: <xsd:float> Code: 44/UNREGISTERED_IANA_SCHEME in SCHEME: The scheme name does not have a "-" in it, but is not in the IANA registry. (Last updated from the registry January 2006)
-09:48:04.425 [main] WARN org.apache.jena.riot - [line: 34, col: 37] {W107} Bad URI: <xsd:float> Code: 44/UNREGISTERED_IANA_SCHEME in SCHEME: The scheme name does not have a "-" in it, but is not in the IANA registry. (Last updated from the registry January 2006)
-09:48:04.440 [main] WARN org.apache.jena.riot - [line: 42, col: 37] {W107} Bad URI: <xsd:float> Code: 44/UNREGISTERED_IANA_SCHEME in SCHEME: The scheme name does not have a "-" in it, but is not in the IANA registry. (Last updated from the registry January 2006)
-09:48:04.441 [main] WARN org.apache.jena.riot - [line: 50, col: 37] {W107} Bad URI: <xsd:float> Code: 44/UNREGISTERED_IANA_SCHEME in SCHEME: The scheme name does not have a "-" in it, but is not in the IANA registry. (Last updated from the registry January 2006)
-09:48:04.442 [main] DEBUG fr.inrialpes.exmo.align.parser.AlignmentParser - XMLParser throw exception
-org.semanticweb.owl.align.AlignmentException: Parsing error
-	at fr.inrialpes.exmo.align.parser.XMLParser.parse(XMLParser.java:228)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.callParser(AlignmentParser.java:166)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.callParser(AlignmentParser.java:134)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.parse(AlignmentParser.java:217)
-	at fr.inrialpes.exmo.align.cli.GroupEval.eval(GroupEval.java:238)
-	at fr.inrialpes.exmo.align.cli.GroupEval.iterateAlignments(GroupEval.java:215)
-	at fr.inrialpes.exmo.align.cli.GroupEval.iterateDirectories(GroupEval.java:192)
-	at fr.inrialpes.exmo.align.cli.GroupEval.run(GroupEval.java:167)
-	at fr.inrialpes.exmo.align.cli.GroupEval.main(GroupEval.java:135)
-Caused by: org.xml.sax.SAXException: [XMLParser] Exception raised
-	at fr.inrialpes.exmo.align.parser.XMLParser.endElement(XMLParser.java:547)
-	at org.apache.xerces.parsers.AbstractSAXParser.endElement(Unknown Source)
-	at org.apache.xerces.impl.XMLNSDocumentScannerImpl.scanEndElement(Unknown Source)
-	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl$FragmentContentDispatcher.dispatch(Unknown Source)
-	at org.apache.xerces.impl.XMLDocumentFragmentScannerImpl.scanDocument(Unknown Source)
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
-	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
-	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
-	at org.apache.xerces.parsers.AbstractSAXParser.parse(Unknown Source)
-	at org.apache.xerces.jaxp.SAXParserImpl$JAXPSAXParser.parse(Unknown Source)
-	at org.apache.xerces.jaxp.SAXParserImpl.parse(Unknown Source)
-	at javax.xml.parsers.SAXParser.parse(SAXParser.java:195)
-	at fr.inrialpes.exmo.align.parser.XMLParser.parse(XMLParser.java:226)
-	... 8 common frames omitted
-Caused by: org.semanticweb.owl.align.AlignmentException: Confidence 1.06 out of bounds [0.0, 1.0]
-	at fr.inrialpes.exmo.align.impl.BasicCell.<init>(BasicCell.java:80)
-	at fr.inrialpes.exmo.align.impl.URICell.<init>(URICell.java:67)
-	at fr.inrialpes.exmo.align.impl.URIAlignment.createCell(URIAlignment.java:106)
-	at fr.inrialpes.exmo.align.impl.URIAlignment.createCell(URIAlignment.java:53)
-	at fr.inrialpes.exmo.align.impl.BasicAlignment.addAlignCell(BasicAlignment.java:392)
-	at fr.inrialpes.exmo.align.impl.URIAlignment.addAlignCell(URIAlignment.java:91)
-	at fr.inrialpes.exmo.align.impl.BasicAlignment.addAlignCell(BasicAlignment.java:346)
-	at fr.inrialpes.exmo.align.impl.BasicAlignment.addAlignCell(BasicAlignment.java:342)
-	at fr.inrialpes.exmo.align.impl.URIAlignment.addAlignCell(URIAlignment.java:98)
-	at fr.inrialpes.exmo.align.parser.XMLParser.endElement(XMLParser.java:466)
-	... 20 common frames omitted
-09:48:04.442 [main] DEBUG fr.inrialpes.exmo.align.parser.AlignmentParser - RDFParser throw exception
-org.semanticweb.owl.align.AlignmentException: There is no alignment in the RDF document
-	at fr.inrialpes.exmo.align.parser.RDFParser.parse(RDFParser.java:178)
-	at fr.inrialpes.exmo.align.parser.RDFParser.parse(RDFParser.java:224)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.callParser(AlignmentParser.java:174)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.callParser(AlignmentParser.java:141)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.parse(AlignmentParser.java:217)
-	at fr.inrialpes.exmo.align.cli.GroupEval.eval(GroupEval.java:238)
-	at fr.inrialpes.exmo.align.cli.GroupEval.iterateAlignments(GroupEval.java:215)
-	at fr.inrialpes.exmo.align.cli.GroupEval.iterateDirectories(GroupEval.java:192)
-	at fr.inrialpes.exmo.align.cli.GroupEval.run(GroupEval.java:167)
-	at fr.inrialpes.exmo.align.cli.GroupEval.main(GroupEval.java:135)
-09:48:04.442 [main] DEBUG fr.inrialpes.exmo.align.cli.GroupEval - IGNORED Exception
-org.semanticweb.owl.align.AlignmentException: Cannot parse file:/home/trojahn/Documents/OAEI/OAEI2020/interpretations-cases-blind/cz-it/diff-ontos/ekaw-sigkdd-cz-it//LogMap.rdf
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.callParser(AlignmentParser.java:150)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.parse(AlignmentParser.java:217)
-	at fr.inrialpes.exmo.align.cli.GroupEval.eval(GroupEval.java:238)
-	at fr.inrialpes.exmo.align.cli.GroupEval.iterateAlignments(GroupEval.java:215)
-	at fr.inrialpes.exmo.align.cli.GroupEval.iterateDirectories(GroupEval.java:192)
-	at fr.inrialpes.exmo.align.cli.GroupEval.run(GroupEval.java:167)
-	at fr.inrialpes.exmo.align.cli.GroupEval.main(GroupEval.java:135)
-Caused by: org.semanticweb.owl.align.AlignmentException: There is no alignment in the RDF document
-	at fr.inrialpes.exmo.align.parser.RDFParser.parse(RDFParser.java:178)
-	at fr.inrialpes.exmo.align.parser.RDFParser.parse(RDFParser.java:224)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.callParser(AlignmentParser.java:174)
-	at fr.inrialpes.exmo.align.parser.AlignmentParser.callParser(AlignmentParser.java:141)
-	... 6 common frames omitted
 <html><head></head><body>
 <table border='2' frame='sides' rules='groups'>
 <colgroup align='center' />
@@ -168,14 +6,10 @@ Caused by: org.semanticweb.owl.align.AlignmentException: There is no alignment i
 <colgroup align='center' span='3' />
 <colgroup align='center' span='3' />
 <colgroup align='center' span='3' />
-<colgroup align='center' span='3' />
-<colgroup align='center' span='3' />
 <thead valign='top'><tr><th>algo</th>
 <th colspan='3'>AML</th>
-<th colspan='3'>Lily</th>
 <th colspan='3'>LogMap</th>
 <th colspan='3'>LogMapLt</th>
-<th colspan='3'>VeeAlign</th>
 <th colspan='3'>VeeAlign</th>
 <th colspan='3'>Wiktionary</th>
 </tr></thead><tbody><tr><td>test</td>
@@ -194,94 +28,82 @@ Caused by: org.semanticweb.owl.align.AlignmentException: There is no alignment i
 <td>Prec.</td>
 <td>FMeas.</td>
 <td>Rec.</td>
-<td>Prec.</td>
-<td>FMeas.</td>
-<td>Rec.</td>
-<td>Prec.</td>
-<td>FMeas.</td>
-<td>Rec.</td>
 </tr></tbody><tbody>
 <tr>
 <td>cmt-edas-cz-it</td>
-<td>0,80</td><td>0,70</td><td>0,62</td><td>1,00</td><td>0,00</td><td>0,00</td><td>0,67</td><td>0,42</td><td>0,31</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,14</td><td>0,08</td><td>1,00</td><td>0,14</td><td>0,08</td><td>0,83</td><td>0,53</td><td>0,38</td></tr>
+<td>0,80</td><td>0,70</td><td>0,62</td><td>0,67</td><td>0,42</td><td>0,31</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,14</td><td>0,08</td><td>0,83</td><td>0,53</td><td>0,38</td></tr>
 <tr>
 <td>cmt-edas-it-cz</td>
-<td>0,88</td><td>0,67</td><td>0,54</td><td>1,00</td><td>0,00</td><td>0,00</td><td>n/a</td><td>n/a</td><td>n/a</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,27</td><td>0,15</td><td>1,00</td><td>0,27</td><td>0,15</td><td>0,71</td><td>0,50</td><td>0,38</td></tr>
+<td>0,88</td><td>0,67</td><td>0,54</td><td>n/a</td><td>n/a</td><td>n/a</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,27</td><td>0,15</td><td>0,71</td><td>0,50</td><td>0,38</td></tr>
 <tr>
 <td>cmt-ekaw-cz-it</td>
-<td>0,67</td><td>0,47</td><td>0,36</td><td>1,00</td><td>0,00</td><td>0,00</td><td>0,75</td><td>0,40</td><td>0,27</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,17</td><td>0,09</td><td>1,00</td><td>0,17</td><td>0,09</td><td>1,00</td><td>0,53</td><td>0,36</td></tr>
+<td>0,67</td><td>0,47</td><td>0,36</td><td>0,75</td><td>0,40</td><td>0,27</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,17</td><td>0,09</td><td>1,00</td><td>0,53</td><td>0,36</td></tr>
 <tr>
 <td>cmt-ekaw-it-cz</td>
-<td>0,50</td><td>0,27</td><td>0,18</td><td>1,00</td><td>0,00</td><td>0,00</td><td>0,75</td><td>0,40</td><td>0,27</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,31</td><td>0,18</td><td>1,00</td><td>0,31</td><td>0,18</td><td>1,00</td><td>0,63</td><td>0,45</td></tr>
+<td>0,50</td><td>0,27</td><td>0,18</td><td>0,75</td><td>0,40</td><td>0,27</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,31</td><td>0,18</td><td>1,00</td><td>0,63</td><td>0,45</td></tr>
 <tr>
 <td>confOf-edas-cz-it</td>
-<td>0,91</td><td>0,67</td><td>0,53</td><td>1,00</td><td>0,00</td><td>0,00</td><td>0,78</td><td>0,50</td><td>0,37</td><td>1,00</td><td>0,10</td><td>0,05</td><td>1,00</td><td>0,19</td><td>0,11</td><td>1,00</td><td>0,19</td><td>0,11</td><td>0,88</td><td>0,52</td><td>0,37</td></tr>
+<td>0,91</td><td>0,67</td><td>0,53</td><td>0,78</td><td>0,50</td><td>0,37</td><td>1,00</td><td>0,10</td><td>0,05</td><td>1,00</td><td>0,19</td><td>0,11</td><td>0,88</td><td>0,52</td><td>0,37</td></tr>
 <tr>
 <td>confOf-edas-it-cz</td>
-<td>0,86</td><td>0,73</td><td>0,63</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,64</td><td>0,47</td><td>1,00</td><td>0,10</td><td>0,05</td><td>1,00</td><td>0,19</td><td>0,11</td><td>1,00</td><td>0,19</td><td>0,11</td><td>0,75</td><td>0,44</td><td>0,32</td></tr>
+<td>0,86</td><td>0,73</td><td>0,63</td><td>1,00</td><td>0,64</td><td>0,47</td><td>1,00</td><td>0,10</td><td>0,05</td><td>1,00</td><td>0,19</td><td>0,11</td><td>0,75</td><td>0,44</td><td>0,32</td></tr>
 <tr>
 <td>confOf-ekaw-cz-it</td>
-<td>0,93</td><td>0,80</td><td>0,70</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,62</td><td>0,45</td><td>1,00</td><td>0,10</td><td>0,05</td><td>1,00</td><td>0,26</td><td>0,15</td><td>1,00</td><td>0,26</td><td>0,15</td><td>0,83</td><td>0,38</td><td>0,25</td></tr>
+<td>0,93</td><td>0,80</td><td>0,70</td><td>1,00</td><td>0,62</td><td>0,45</td><td>1,00</td><td>0,10</td><td>0,05</td><td>1,00</td><td>0,26</td><td>0,15</td><td>0,83</td><td>0,38</td><td>0,25</td></tr>
 <tr>
 <td>confOf-ekaw-it-cz</td>
-<td>1,00</td><td>0,79</td><td>0,65</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,52</td><td>0,35</td><td>1,00</td><td>0,10</td><td>0,05</td><td>0,60</td><td>0,24</td><td>0,15</td><td>0,60</td><td>0,24</td><td>0,15</td><td>0,83</td><td>0,38</td><td>0,25</td></tr>
+<td>1,00</td><td>0,79</td><td>0,65</td><td>1,00</td><td>0,52</td><td>0,35</td><td>1,00</td><td>0,10</td><td>0,05</td><td>0,60</td><td>0,24</td><td>0,15</td><td>0,83</td><td>0,38</td><td>0,25</td></tr>
 <tr>
 <td>conference-edas-cz-it</td>
-<td>0,82</td><td>0,64</td><td>0,53</td><td>1,00</td><td>0,00</td><td>0,00</td><td>0,67</td><td>0,35</td><td>0,24</td><td>1,00</td><td>0,11</td><td>0,06</td><td>1,00</td><td>0,11</td><td>0,06</td><td>1,00</td><td>0,11</td><td>0,06</td><td>1,00</td><td>0,45</td><td>0,29</td></tr>
+<td>0,82</td><td>0,64</td><td>0,53</td><td>0,67</td><td>0,35</td><td>0,24</td><td>1,00</td><td>0,11</td><td>0,06</td><td>1,00</td><td>0,11</td><td>0,06</td><td>1,00</td><td>0,45</td><td>0,29</td></tr>
 <tr>
 <td>conference-edas-it-cz</td>
-<td>0,70</td><td>0,52</td><td>0,41</td><td>1,00</td><td>0,00</td><td>0,00</td><td>0,60</td><td>0,27</td><td>0,18</td><td>1,00</td><td>0,11</td><td>0,06</td><td>1,00</td><td>0,21</td><td>0,12</td><td>1,00</td><td>0,21</td><td>0,12</td><td>0,60</td><td>0,27</td><td>0,18</td></tr>
+<td>0,70</td><td>0,52</td><td>0,41</td><td>0,60</td><td>0,27</td><td>0,18</td><td>1,00</td><td>0,11</td><td>0,06</td><td>1,00</td><td>0,21</td><td>0,12</td><td>0,60</td><td>0,27</td><td>0,18</td></tr>
 <tr>
 <td>conference-ekaw-cz-it</td>
-<td>0,58</td><td>0,38</td><td>0,28</td><td>1,00</td><td>0,00</td><td>0,00</td><td>0,75</td><td>0,21</td><td>0,12</td><td>1,00</td><td>0,08</td><td>0,04</td><td>1,00</td><td>0,08</td><td>0,04</td><td>1,00</td><td>0,08</td><td>0,04</td><td>0,75</td><td>0,21</td><td>0,12</td></tr>
+<td>0,58</td><td>0,38</td><td>0,28</td><td>0,75</td><td>0,21</td><td>0,12</td><td>1,00</td><td>0,08</td><td>0,04</td><td>1,00</td><td>0,08</td><td>0,04</td><td>0,75</td><td>0,21</td><td>0,12</td></tr>
 <tr>
 <td>conference-ekaw-it-cz</td>
-<td>0,65</td><td>0,52</td><td>0,44</td><td>1,00</td><td>0,00</td><td>0,00</td><td>0,80</td><td>0,27</td><td>0,16</td><td>1,00</td><td>0,08</td><td>0,04</td><td>0,50</td><td>0,14</td><td>0,08</td><td>0,50</td><td>0,14</td><td>0,08</td><td>0,60</td><td>0,20</td><td>0,12</td></tr>
+<td>0,65</td><td>0,52</td><td>0,44</td><td>0,80</td><td>0,27</td><td>0,16</td><td>1,00</td><td>0,08</td><td>0,04</td><td>0,50</td><td>0,14</td><td>0,08</td><td>0,60</td><td>0,20</td><td>0,12</td></tr>
 <tr>
 <td>edas-ekaw-cz-it</td>
-<td>0,71</td><td>0,33</td><td>0,22</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,30</td><td>0,17</td><td>1,00</td><td>0,08</td><td>0,04</td><td>1,00</td><td>0,23</td><td>0,13</td><td>1,00</td><td>0,23</td><td>0,13</td><td>0,75</td><td>0,22</td><td>0,13</td></tr>
+<td>0,71</td><td>0,33</td><td>0,22</td><td>1,00</td><td>0,30</td><td>0,17</td><td>1,00</td><td>0,08</td><td>0,04</td><td>1,00</td><td>0,23</td><td>0,13</td><td>0,75</td><td>0,22</td><td>0,13</td></tr>
 <tr>
 <td>edas-ekaw-it-cz</td>
-<td>0,71</td><td>0,33</td><td>0,22</td><td>1,00</td><td>0,00</td><td>0,00</td><td>0,67</td><td>0,28</td><td>0,17</td><td>1,00</td><td>0,08</td><td>0,04</td><td>0,75</td><td>0,22</td><td>0,13</td><td>0,75</td><td>0,22</td><td>0,13</td><td>0,80</td><td>0,29</td><td>0,17</td></tr>
+<td>0,71</td><td>0,33</td><td>0,22</td><td>0,67</td><td>0,28</td><td>0,17</td><td>1,00</td><td>0,08</td><td>0,04</td><td>0,75</td><td>0,22</td><td>0,13</td><td>0,80</td><td>0,29</td><td>0,17</td></tr>
 <tr>
 <td>edas-iasted-cz-it</td>
-<td>0,50</td><td>0,24</td><td>0,16</td><td>1,00</td><td>0,00</td><td>0,00</td><td>0,60</td><td>0,25</td><td>0,16</td><td>0,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,10</td><td>0,05</td><td>1,00</td><td>0,10</td><td>0,05</td><td>0,60</td><td>0,25</td><td>0,16</td></tr>
+<td>0,50</td><td>0,24</td><td>0,16</td><td>0,60</td><td>0,25</td><td>0,16</td><td>0,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,10</td><td>0,05</td><td>0,60</td><td>0,25</td><td>0,16</td></tr>
 <tr>
 <td>edas-iasted-it-cz</td>
-<td>0,70</td><td>0,48</td><td>0,37</td><td>1,00</td><td>0,00</td><td>0,00</td><td>0,71</td><td>0,38</td><td>0,26</td><td>0,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,10</td><td>0,05</td><td>1,00</td><td>0,10</td><td>0,05</td><td>0,83</td><td>0,40</td><td>0,26</td></tr>
+<td>0,70</td><td>0,48</td><td>0,37</td><td>0,71</td><td>0,38</td><td>0,26</td><td>0,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,10</td><td>0,05</td><td>0,83</td><td>0,40</td><td>0,26</td></tr>
 <tr>
 <td>edas-sigkdd-cz-it</td>
-<td>0,56</td><td>0,42</td><td>0,33</td><td>1,00</td><td>0,00</td><td>0,00</td><td>0,67</td><td>0,38</td><td>0,27</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,24</td><td>0,13</td><td>1,00</td><td>0,24</td><td>0,13</td><td>1,00</td><td>0,50</td><td>0,33</td></tr>
+<td>0,56</td><td>0,42</td><td>0,33</td><td>0,67</td><td>0,38</td><td>0,27</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,24</td><td>0,13</td><td>1,00</td><td>0,50</td><td>0,33</td></tr>
 <tr>
 <td>edas-sigkdd-it-cz</td>
-<td>0,60</td><td>0,48</td><td>0,40</td><td>1,00</td><td>0,00</td><td>0,00</td><td>0,57</td><td>0,36</td><td>0,27</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,13</td><td>0,07</td><td>1,00</td><td>0,13</td><td>0,07</td><td>1,00</td><td>0,50</td><td>0,33</td></tr>
+<td>0,60</td><td>0,48</td><td>0,40</td><td>0,57</td><td>0,36</td><td>0,27</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,13</td><td>0,07</td><td>1,00</td><td>0,50</td><td>0,33</td></tr>
 <tr>
 <td>ekaw-iasted-cz-it</td>
-<td>0,50</td><td>0,44</td><td>0,40</td><td>1,00</td><td>0,00</td><td>0,00</td><td>0,67</td><td>0,31</td><td>0,20</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,18</td><td>0,10</td><td>1,00</td><td>0,18</td><td>0,10</td><td>0,50</td><td>0,29</td><td>0,20</td></tr>
+<td>0,50</td><td>0,44</td><td>0,40</td><td>0,67</td><td>0,31</td><td>0,20</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,18</td><td>0,10</td><td>0,50</td><td>0,29</td><td>0,20</td></tr>
 <tr>
 <td>ekaw-iasted-it-cz</td>
-<td>0,33</td><td>0,25</td><td>0,20</td><td>1,00</td><td>0,00</td><td>0,00</td><td>0,60</td><td>0,40</td><td>0,30</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,18</td><td>0,10</td><td>1,00</td><td>0,18</td><td>0,10</td><td>0,50</td><td>0,29</td><td>0,20</td></tr>
+<td>0,33</td><td>0,25</td><td>0,20</td><td>0,60</td><td>0,40</td><td>0,30</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,18</td><td>0,10</td><td>0,50</td><td>0,29</td><td>0,20</td></tr>
 <tr>
 <td>ekaw-sigkdd-cz-it</td>
-<td>0,83</td><td>0,59</td><td>0,45</td><td>1,00</td><td>0,00</td><td>0,00</td><td>n/a</td><td>n/a</td><td>n/a</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,31</td><td>0,18</td><td>1,00</td><td>0,31</td><td>0,18</td><td>0,83</td><td>0,59</td><td>0,45</td></tr>
+<td>0,83</td><td>0,59</td><td>0,45</td><td>n/a</td><td>n/a</td><td>n/a</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,31</td><td>0,18</td><td>0,83</td><td>0,59</td><td>0,45</td></tr>
 <tr>
 <td>ekaw-sigkdd-it-cz</td>
-<td>0,67</td><td>0,60</td><td>0,55</td><td>1,00</td><td>0,00</td><td>0,00</td><td>0,80</td><td>0,50</td><td>0,36</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,17</td><td>0,09</td><td>1,00</td><td>0,17</td><td>0,09</td><td>1,00</td><td>0,53</td><td>0,36</td></tr>
+<td>0,67</td><td>0,60</td><td>0,55</td><td>0,80</td><td>0,50</td><td>0,36</td><td>1,00</td><td>0,00</td><td>0,00</td><td>1,00</td><td>0,17</td><td>0,09</td><td>1,00</td><td>0,53</td><td>0,36</td></tr>
 <tr bgcolor="yellow"><td>H-mean</td><td>0,73</td>
 <td>0,53</td>
 <td>0,42</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>0,00</td>
 <td>0,77</td>
 <td>0,37</td>
 <td>0,24</td>
 <td>0,83</td>
 <td>0,05</td>
 <td>0,03</td>
-<td>0,88</td>
-<td>0,19</td>
-<td>0,10</td>
 <td>0,88</td>
 <td>0,19</td>
 <td>0,10</td>
