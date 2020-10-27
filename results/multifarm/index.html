@@ -56,17 +56,16 @@ We have conducted an evaluation based on the blind data set. This data set inclu
 
 <p>This year, 6 systems have registered to participate in the MultiFarm track: AML, Lily, LogMap, LogMapLt, VeeAlign and Wiktionary. This number slightly increases with respect to the last campaign (5 in 2019, 6 in 2018, 8 in 2017, 7 in 2016, 5 in 2015, 3 in 2014, 7 in 2013, and 7 in 2012). The reader can refer to the OAEI papers for a detailed description of the strategies adopted by each system.</p>
 
-<p>For this track, we observe that Lily has generated mostly empty alignments. </p> 
-
 <h2>Evaluation results</h2>
 
 <h4>Execution setting and runtime</h4>
 
-<p>The systems have been executed on a Ubuntu Linux machine configured with 8GB of RAM running under a Intel Core CPU 2.00GHz x4 processors. All measurements are based on a single run. As for each campaign, we observed large differences in the time required for a system to complete the 55 x 24 matching tasks: AML (170 minutes), Lily (453 minutes), LogMap (43 minutes) and Wiktionary (1290 minutes). These number are not comparable to those from last year given the fact that the SEALS repositories have moved to another server (with a different configuration). Furthermore, the concurrent access to the SEALS repositories during the evaluation period may have an impact in the time required for completing the tasks. These measurements are only indicative of the time the systems require for finishing the task in a common environment. </p>
+<p>The systems have been executed on a Ubuntu Linux machine configured with 8GB of RAM running under a Intel Core CPU 2.00GHz x4 processors. All measurements are based on a single run. As for each campaign, we observed large differences in the time required for a system to complete the 55 x 24 matching tasks: AML (170 minutes), Lily (453 minutes), LogMap (43 minutes) and Wiktionary (1290 minutes). These number are not comparable to those from last year given the fact that the SEALS repositories have moved to another server (with a different configuration). Furthermore, the concurrent access to the SEALS repositories during the evaluation period may have an impact in the time required for completing the tasks. These measurements are only indicative of the time the systems require for finishing the task in a common environment.
+Note a well that VeeAlign run in a different environment so runtime is not reported. </p>
 
 <h3>Overall results</h3>
 
-<p>The table below presents the aggregated results for the matching tasks. They have been computed using the Alignment API 4.6 and can slightly differ from those computed with the SEALS client. We haven't applied any threshold on the results. They are measured in terms of classical precision and recall. We do not report the results of non-specific systems here, as we could observe in the last campaigns that they can have intermediate results in tests of type ii) and poor performance in tests i). </p>
+<p>The table below presents the aggregated results for the matching tasks. They have been computed using the Alignment API 4.6 and can slightly differ from those computed with the SEALS client. We haven't applied any threshold on the results. They are measured in terms of classical precision and recall. We do not report the results of non-specific systems here, as we could observe in the last campaigns that they can have intermediate results in tests of type ii) and poor performance in tests i). Lily has generated empty alignments so there are no results to be reported. </p>  
 
 <p>AML outperforms all other systems in terms of F-measure for task i) (same behaviour in the last campaigns). In terms of precision, Wiktionary is the system that generates the most precise alignments, followed by LogMap and AML. With respect to the task ii) LogMap has the overall best performance.</p>
 
@@ -150,8 +149,26 @@ We have conducted an evaluation based on the blind data set. This data set inclu
 <td>.01 (.01)</td> <!--r-->
 </tr>
 
+
 <!-- ****************************** -->
 <tr class="odd">
+<td>VeeAlign</td>
+<td>**</td> <!--time-->
+<td>52</td> <!--pairs-->
+
+<td>2.53</td> <!--size-->
+<td>.73 (.77)</td> <!--p-->
+<td>.15 (.15)</td> <!--f-->
+<td>.09 (.09)</td> <!--r-->
+
+<td>11.98</td> <!--size-->
+<td>.91 (.93)</td> <!--p-->
+<td>.14 (.14)</td> <!--f-->
+<td>.08 (.08) </td> <!--r-->
+</tr>
+
+<!-- ****************************** -->
+<tr class="even">
 <td>Wiktionary</td>
 <td>1290</td> <!--time-->
 <td>53</td> <!--pairs-->
@@ -167,17 +184,101 @@ We have conducted an evaluation based on the blind data set. This data set inclu
 <td>.07 (.07) </td> <!--r-->
 </tr>
 </tbody>
-<caption>MultiFarm aggregated results per matcher, for each type of matching task -- different ontologies (i) and same ontologies (ii). Time is measured in minutes. #pairs indicates the number of pairs of languages the tool is able to generated (non empty) alignments. Size indicates the average of the number of generated correspondences for the tests where an (non empty) alignment has been generated. Two kinds of results are reported : those do not distinguishing empty and erroneous (or not generated) alignments and those -- indicated between parenthesis -- considering only non empty generated alignments for a pair of languages. </caption>
+<caption>MultiFarm aggregated results per matcher, for each type of matching task -- different ontologies (i) and same ontologies (ii). Time is measured in minutes (for completing the 55x24 matching tasks), ** tool run in a different environment so runtime is not reported. #pairs indicates the number of pairs of languages the tool is able to generated (non empty) alignments. Size indicates the average of the number of generated correspondences for the tests where an (non empty) alignment has been generated. Two kinds of results are reported : those do not distinguishing empty and erroneous (or not generated) alignments and those -- indicated between parenthesis -- considering only non empty generated alignments for a pair of languages. </caption>
 <table>
 
-<p>AML, LogMap and Wiktionary have participated last year. Unfortunately, we lose some ones on the way (EVOCROS). Comparing the results from last year, in terms F-measure (cases of type i), AML maintains its overall performance (.45 in 2019, .46 in 2018, .46 in 2017, .45 in 2016 and .47 in 2015). The same could be observed for LogMap (.37 in 2019, .37 in 2018, .36 in 2017, and .37 in 2016). The performance in terms of f-measure of Wiktionary also remains stable (.31 in 2019).</p>
+<p>AML, LogMap and Wiktionary have participated last year. Unfortunately, we lose some one on the way (EVOCROS) but we compensate it with a newcomer (VeeAlign). Comparing the results from last year, in terms F-measure (cases of type i), AML maintains its overall performance (.45 in 2019, .46 in 2018, .46 in 2017, .45 in 2016 and .47 in 2015). The same could be observed for LogMap (.37 in 2019, .37 in 2018, .36 in 2017, and .37 in 2016). The performance in terms of f-measure of Wiktionary also remains stable (.31 in 2019).</p>
 
 
 <h4>Language specific results (type i) </h4>
 
 <p>Table below presents the results per pair of language, involving matching different ontologies (test cases of type i).</p>
 
-<p>TO BE DONE VERY SOON</p>
+
+<table border='2' frame='sides' rules='groups' align='center'">
+<caption>MultiFarm results per pair of languages (55 pairs), for the test cases of type (i)</caption>
+<colgroup align='center'/>
+<colgroup align='center' span='3' />
+<colgroup align='center' span='3' />
+<colgroup align='center' span='3' />
+<colgroup align='center' span='3' />
+<colgroup align='center' span='3' />
+<colgroup align='center' span='3' />
+<thead valign='top'>
+<tr class="header">
+  <th></th> 
+  <th colspan="30"></th>
+</tr>
+
+<tr class="header">
+<th></th>
+<th colspan='3'>AML</th>
+<th colspan='3'>LogMap</th>
+<th colspan='3'>LogMapLt</th>
+<th colspan='3'>VeeAlign</th>
+<th colspan='3'>Wiktionary</th>
+</tr>
+<tbody>
+
+<tr class="even"><td class="text"><a href='html-diff-ontos/ar-cn.html'>ar-cn  </td><td> 0,59 </td><td> 0,26 </td><td> 0,16 </td><td> 0,62 </td><td> 0,19 </td><td> 0,11 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,60 </td><td> 0,05 </td><td> 0,02 </td><td> NaN </td><td> NaN </td><td> 0,00</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/ar-cz.html'>ar-cz  </td><td> 0,70 </td><td> 0,40 </td><td> 0,28 </td><td> 0,72 </td><td> 0,40 </td><td> 0,28 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,86 </td><td> 0,12 </td><td> 0,07 </td><td> 0,92 </td><td> 0,12 </td><td> 0,07</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/ar-de.html'>ar-de  </td><td> 0,69 </td><td> 0,39 </td><td> 0,28 </td><td> 0,73 </td><td> 0,37 </td><td> 0,25 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,63 </td><td> 0,24 </td><td> 0,14 </td><td> 1,00 </td><td> 0,11 </td><td> 0,06</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/ar-en.html'>ar-en  </td><td> 0,77 </td><td> 0,38 </td><td> 0,25 </td><td> 0,73 </td><td> 0,41 </td><td> 0,28 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,82 </td><td> 0,27 </td><td> 0,16 </td><td> 0,95 </td><td> 0,11 </td><td> 0,06</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/ar-es.html'>ar-es  </td><td> 0,67 </td><td> 0,45 </td><td> 0,34 </td><td> 0,69 </td><td> 0,36 </td><td> 0,25 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,51 </td><td> 0,18 </td><td> 0,11 </td><td> 0,94 </td><td> 0,09 </td><td> 0,05</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/ar-fr.html'>ar-fr  </td><td> 0,65 </td><td> 0,36 </td><td> 0,25 </td><td> 0,64 </td><td> 0,29 </td><td> 0,19 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,41 </td><td> 0,08 </td><td> 0,04 </td><td> 1,00 </td><td> 0,02 </td><td> 0,01</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/ar-it.html'>ar-it  </td><td> 0,74 </td><td> 0,48 </td><td> 0,36 </td><td> 0,69 </td><td> 0,22 </td><td> 0,13 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 1,00 </td><td> 0,11 </td><td> 0,06 </td><td> 0,93 </td><td> 0,07 </td><td> 0,04</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/ar-nl.html'>ar-nl  </td><td> 0,68 </td><td> 0,38 </td><td> 0,27 </td><td> 0,74 </td><td> 0,41 </td><td> 0,28 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,87 </td><td> 0,16 </td><td> 0,09 </td><td> 0,93 </td><td> 0,13 </td><td> 0,07</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/ar-pt.html'>ar-pt  </td><td> 0,71 </td><td> 0,48 </td><td> 0,37 </td><td> 0,72 </td><td> 0,38 </td><td> 0,25 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,75 </td><td> 0,20 </td><td> 0,12 </td><td> 0,91 </td><td> 0,10 </td><td> 0,05</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/ar-ru.html'>ar-ru  </td><td> 0,66 </td><td> 0,30 </td><td> 0,19 </td><td> 0,77 </td><td> 0,41 </td><td> 0,28 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,33 </td><td> 0,06 </td><td> 0,04 </td><td> 0,88 </td><td> 0,08 </td><td> 0,04</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/cn-cz.html'>cn-cz  </td><td> 0,63 </td><td> 0,32 </td><td> 0,22 </td><td> 0,72 </td><td> 0,27 </td><td> 0,17 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 1,00 </td><td> 0,04 </td><td> 0,02 </td><td> 0,81 </td><td> 0,33 </td><td> 0,21</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/cn-de.html'>cn-de  </td><td> 0,64 </td><td> 0,35 </td><td> 0,24 </td><td> 0,71 </td><td> 0,23 </td><td> 0,13 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,54 </td><td> 0,09 </td><td> 0,05 </td><td> 0,70 </td><td> 0,31 </td><td> 0,20</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/cn-en.html'>cn-en  </td><td> 0,67 </td><td> 0,32 </td><td> 0,21 </td><td> 0,85 </td><td> 0,22 </td><td> 0,13 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,88 </td><td> 0,08 </td><td> 0,04 </td><td> 0,81 </td><td> 0,38 </td><td> 0,25</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/cn-es.html'>cn-es  </td><td> 0,69 </td><td> 0,41 </td><td> 0,29 </td><td> 0,66 </td><td> 0,25 </td><td> 0,15 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 1,00 </td><td> 0,09 </td><td> 0,05 </td><td> 0,72 </td><td> 0,39 </td><td> 0,27</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/cn-fr.html'>cn-fr  </td><td> 0,68 </td><td> 0,41 </td><td> 0,29 </td><td> 0,69 </td><td> 0,23 </td><td> 0,14 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,75 </td><td> 0,02 </td><td> 0,01 </td><td> 1,00 </td><td> 0,01 </td><td> 0,00</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/cn-it.html'>cn-it  </td><td> 0,73 </td><td> 0,39 </td><td> 0,27 </td><td> 0,79 </td><td> 0,12 </td><td> 0,06 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 1,00 </td><td> 0,08 </td><td> 0,04 </td><td> 0,75 </td><td> 0,35 </td><td> 0,23</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/cn-nl.html'>cn-nl  </td><td> 0,67 </td><td> 0,34 </td><td> 0,23 </td><td> 0,70 </td><td> 0,21 </td><td> 0,12 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,84 </td><td> 0,08 </td><td> 0,04 </td><td> 0,72 </td><td> 0,38 </td><td> 0,26</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/cn-pt.html'>cn-pt  </td><td> 0,65 </td><td> 0,41 </td><td> 0,30 </td><td> 0,77 </td><td> 0,25 </td><td> 0,15 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 1,00 </td><td> 0,06 </td><td> 0,03 </td><td> 0,77 </td><td> 0,35 </td><td> 0,22</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/cn-ru.html'>cn-ru  </td><td> 0,65 </td><td> 0,39 </td><td> 0,28 </td><td> 0,73 </td><td> 0,31 </td><td> 0,19 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,70 </td><td> 0,04 </td><td> 0,02 </td><td> NaN </td><td> NaN </td><td> 0,00</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/cz-de.html'>cz-de  </td><td> 0,68 </td><td> 0,47 </td><td> 0,36 </td><td> 0,70 </td><td> 0,39 </td><td> 0,27 </td><td> 0,93 </td><td> 0,13 </td><td> 0,07 </td><td> 0,89 </td><td> 0,04 </td><td> 0,02 </td><td> 0,80 </td><td> 0,36 </td><td> 0,23</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/cz-en.html'>cz-en  </td><td> 0,81 </td><td> 0,49 </td><td> 0,35 </td><td> 0,79 </td><td> 0,50 </td><td> 0,37 </td><td> 0,65 </td><td> 0,07 </td><td> 0,04 </td><td> 0,80 </td><td> 0,26 </td><td> 0,15 </td><td> 0,85 </td><td> 0,47 </td><td> 0,32</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/cz-es.html'>cz-es  </td><td> 0,77 </td><td> 0,57 </td><td> 0,45 </td><td> 0,68 </td><td> 0,39 </td><td> 0,27 </td><td> 0,82 </td><td> 0,05 </td><td> 0,02 </td><td> 0,83 </td><td> 0,23 </td><td> 0,14 </td><td> 0,77 </td><td> 0,45 </td><td> 0,32</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/cz-fr.html'>cz-fr  </td><td> 0,78 </td><td> 0,54 </td><td> 0,42 </td><td> 0,66 </td><td> 0,39 </td><td> 0,28 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,78 </td><td> 0,04 </td><td> 0,02 </td><td> 0,90 </td><td> 0,33 </td><td> 0,20</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/cz-it.html'>cz-it  </td><td> 0,73 </td><td> 0,53 </td><td> 0,42 </td><td> 0,77 </td><td> 0,37 </td><td> 0,24 </td><td> 0,83 </td><td> 0,05 </td><td> 0,03 </td><td> 0,88 </td><td> 0,19 </td><td> 0,10 </td><td> 0,80 </td><td> 0,39 </td><td> 0,26</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/cz-nl.html'>cz-nl  </td><td> 0,78 </td><td> 0,56 </td><td> 0,44 </td><td> 0,72 </td><td> 0,45 </td><td> 0,33 </td><td> 0,80 </td><td> 0,08 </td><td> 0,04 </td><td> 0,84 </td><td> 0,27 </td><td> 0,16 </td><td> 0,78 </td><td> 0,42 </td><td> 0,28</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/cz-pt.html'>cz-pt  </td><td> 0,72 </td><td> 0,55 </td><td> 0,45 </td><td> 0,72 </td><td> 0,44 </td><td> 0,32 </td><td> NaN </td><td> NaN </td><td> 0,00 </td><td> NaN </td><td> NaN </td><td> 0,00 </td><td> 0,81 </td><td> 0,45 </td><td> 0,32</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/cz-ru.html'>cz-ru  </td><td> 0,75 </td><td> 0,52 </td><td> 0,39 </td><td> 0,75 </td><td> 0,46 </td><td> 0,33 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> NaN </td><td> NaN </td><td> 0,00 </td><td> 0,83 </td><td> 0,36 </td><td> 0,23</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/de-en.html'>de-en  </td><td> 0,78 </td><td> 0,46 </td><td> 0,33 </td><td> 0,78 </td><td> 0,44 </td><td> 0,31 </td><td> 0,89 </td><td> 0,20 </td><td> 0,11 </td><td> 0,95 </td><td> 0,10 </td><td> 0,05 </td><td> 0,63 </td><td> 0,39 </td><td> 0,28</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/de-es.html'>de-es  </td><td> 0,67 </td><td> 0,48 </td><td> 0,37 </td><td> 0,73 </td><td> 0,39 </td><td> 0,26 </td><td> 0,50 </td><td> 0,01 </td><td> 0,01 </td><td> 0,93 </td><td> 0,07 </td><td> 0,04 </td><td> 0,72 </td><td> 0,40 </td><td> 0,28</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/de-fr.html'>de-fr  </td><td> 0,73 </td><td> 0,50 </td><td> 0,38 </td><td> 0,75 </td><td> 0,43 </td><td> 0,30 </td><td> 0,75 </td><td> 0,05 </td><td> 0,02 </td><td> 0,72 </td><td> 0,19 </td><td> 0,11 </td><td> 0,78 </td><td> 0,37 </td><td> 0,24</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/de-it.html'>de-it  </td><td> 0,74 </td><td> 0,53 </td><td> 0,42 </td><td> 0,70 </td><td> 0,34 </td><td> 0,22 </td><td> 0,83 </td><td> 0,05 </td><td> 0,03 </td><td> 1,00 </td><td> 0,07 </td><td> 0,04 </td><td> 0,74 </td><td> 0,34 </td><td> 0,22</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/de-nl.html'>de-nl  </td><td> 0,73 </td><td> 0,48 </td><td> 0,36 </td><td> 0,78 </td><td> 0,45 </td><td> 0,32 </td><td> 0,90 </td><td> 0,10 </td><td> 0,05 </td><td> 0,86 </td><td> 0,09 </td><td> 0,05 </td><td> 0,78 </td><td> 0,41 </td><td> 0,28</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/de-pt.html'>de-pt  </td><td> 0,70 </td><td> 0,49 </td><td> 0,37 </td><td> 0,70 </td><td> 0,38 </td><td> 0,26 </td><td> 0,87 </td><td> 0,07 </td><td> 0,04 </td><td> 1,00 </td><td> 0,09 </td><td> 0,05 </td><td> 0,73 </td><td> 0,37 </td><td> 0,25</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/de-ru.html'>de-ru  </td><td> 0,67 </td><td> 0,42 </td><td> 0,30 </td><td> 0,78 </td><td> 0,44 </td><td> 0,31 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,70 </td><td> 0,16 </td><td> 0,09 </td><td> 0,85 </td><td> 0,35 </td><td> 0,22</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/en-es.html'>en-es  </td><td> 0,77 </td><td> 0,45 </td><td> 0,32 </td><td> 0,72 </td><td> 0,45 </td><td> 0,33 </td><td> 0,75 </td><td> 0,03 </td><td> 0,02 </td><td> 0,63 </td><td> 0,30 </td><td> 0,19 </td><td> 0,76 </td><td> 0,48 </td><td> 0,36</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/en-fr.html'>en-fr  </td><td> 0,81 </td><td> 0,46 </td><td> 0,32 </td><td> 0,70 </td><td> 0,43 </td><td> 0,31 </td><td> 0,79 </td><td> 0,10 </td><td> 0,05 </td><td> 0,75 </td><td> 0,05 </td><td> 0,02 </td><td> 0,63 </td><td> 0,44 </td><td> 0,33</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/en-it.html'>en-it  </td><td> 0,78 </td><td> 0,44 </td><td> 0,30 </td><td> 0,71 </td><td> 0,41 </td><td> 0,29 </td><td> 0,86 </td><td> 0,09 </td><td> 0,05 </td><td> 0,90 </td><td> 0,29 </td><td> 0,17 </td><td> 0,79 </td><td> 0,44 </td><td> 0,30</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/en-nl.html'>en-nl  </td><td> 0,80 </td><td> 0,48 </td><td> 0,34 </td><td> 0,80 </td><td> 0,54 </td><td> 0,40 </td><td> 0,86 </td><td> 0,13 </td><td> 0,07 </td><td> 0,72 </td><td> 0,42 </td><td> 0,30 </td><td> 0,73 </td><td> 0,47 </td><td> 0,35</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/>en-pt.html'>en-pt  </td><td> 0,78 </td><td> 0,49 </td><td> 0,36 </td><td> 0,76 </td><td> 0,52 </td><td> 0,39 </td><td> 0,86 </td><td> 0,09 </td><td> 0,05 </td><td> 0,81 </td><td> 0,36 </td><td> 0,23 </td><td> 0,86 </td><td> 0,52 </td><td> 0,38</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/en-ru.html'>en-ru  </td><td> 0,74 </td><td> 0,38 </td><td> 0,26 </td><td> 0,90 </td><td> 0,48 </td><td> 0,33 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,50 </td><td> 0,06 </td><td> 0,03 </td><td> 0,65 </td><td> 0,31 </td><td> 0,21</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/es-fr.html'>es-fr  </td><td> 0,76 </td><td> 0,56 </td><td> 0,44 </td><td> 0,69 </td><td> 0,40 </td><td> 0,28 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,65 </td><td> 0,08 </td><td> 0,04 </td><td> 0,77 </td><td> 0,44 </td><td> 0,30</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/es-it.html'>es-it  </td><td> 0,75 </td><td> 0,60 </td><td> 0,50 </td><td> 0,63 </td><td> 0,27 </td><td> 0,17 </td><td> 0,94 </td><td> 0,16 </td><td> 0,09 </td><td> 0,78 </td><td> 0,35 </td><td> 0,23 </td><td> 0,71 </td><td> 0,43 </td><td> 0,31</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/es-nl.html'>es-nl  </td><td> 0,74 </td><td> 0,58 </td><td> 0,48 </td><td> 0,71 </td><td> 0,40 </td><td> 0,28 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,70 </td><td> 0,27 </td><td> 0,17 </td><td> 0,69 </td><td> 0,43 </td><td> 0,31</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/>es-pt.html'>es-pt  </td><td> 0,73 </td><td> 0,58 </td><td> 0,49 </td><td> 0,70 </td><td> 0,45 </td><td> 0,33 </td><td> 0,82 </td><td> 0,20 </td><td> 0,11 </td><td> 0,74 </td><td> 0,42 </td><td> 0,29 </td><td> 0,71 </td><td> 0,41 </td><td> 0,28</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/es-ru.html'>es-ru  </td><td> 0,72 </td><td> 0,51 </td><td> 0,39 </td><td> 0,76 </td><td> 0,41 </td><td> 0,28 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,53 </td><td> 0,04 </td><td> 0,02 </td><td> 0,71 </td><td> 0,31 </td><td> 0,20</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/fr-it.html'>fr-it  </td><td> 0,75 </td><td> 0,57 </td><td> 0,46 </td><td> 0,67 </td><td> 0,35 </td><td> 0,24 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,93 </td><td> 0,07 </td><td> 0,04 </td><td> 0,77 </td><td> 0,31 </td><td> 0,19</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/fr-nl.html'>fr-nl  </td><td> 0,74 </td><td> 0,55 </td><td> 0,43 </td><td> 0,71 </td><td> 0,42 </td><td> 0,30 </td><td> 0,90 </td><td> 0,09 </td><td> 0,05 </td><td> 0,56 </td><td> 0,08 </td><td> 0,04 </td><td> 0,84 </td><td> 0,34 </td><td> 0,21</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/fr-pt.html'>fr-pt  </td><td> 0,74 </td><td> 0,55 </td><td> 0,44 </td><td> 0,67 </td><td> 0,39 </td><td> 0,28 </td><td> 0,50 </td><td> 0,01 </td><td> 0,01 </td><td> 0,77 </td><td> 0,05 </td><td> 0,03 </td><td> 0,77 </td><td> 0,41 </td><td> 0,28</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/fr-ru.html'>fr-ru  </td><td> 0,74 </td><td> 0,49 </td><td> 0,37 </td><td> 0,74 </td><td> 0,36 </td><td> 0,24 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,64 </td><td> 0,18 </td><td> 0,10 </td><td> 0,78 </td><td> 0,39 </td><td> 0,26</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/it-nl.html'>it-nl  </td><td> 0,72 </td><td> 0,54 </td><td> 0,43 </td><td> 0,75 </td><td> 0,36 </td><td> 0,24 </td><td> 0,85 </td><td> 0,06 </td><td> 0,03 </td><td> 0,75 </td><td> 0,29 </td><td> 0,18 </td><td> 0,68 </td><td> 0,38 </td><td> 0,26</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/it-pt.html'>it-pt  </td><td> 0,76 </td><td> 0,62 </td><td> 0,52 </td><td> 0,64 </td><td> 0,33 </td><td> 0,23 </td><td> 0,92 </td><td> 0,17 </td><td> 0,09 </td><td> 0,88 </td><td> 0,42 </td><td> 0,28 </td><td> 0,78 </td><td> 0,46 </td><td> 0,33</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/it-ru.html'>it-ru  </td><td> 0,69 </td><td> 0,44 </td><td> 0,32 </td><td> 0,84 </td><td> 0,28 </td><td> 0,17 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> NaN </td><td> NaN </td><td> 0,00 </td><td> 0,80 </td><td> 0,25 </td><td> 0,15</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/nl-pt.html'>nl-pt  </td><td> 0,76 </td><td> 0,59 </td><td> 0,48 </td><td> 0,70 </td><td> 0,45 </td><td> 0,33 </td><td> 0,86 </td><td> 0,06 </td><td> 0,03 </td><td> 0,71 </td><td> 0,35 </td><td> 0,23 </td><td> 0,72 </td><td> 0,43 </td><td> 0,30</td></tr>
+<tr class="odd"><td class="text"><a href='html-diff-ontos/nl-ru.html'>nl-ru  </td><td> 0,74 </td><td> 0,51 </td><td> 0,39 </td><td> 0,79 </td><td> 0,46 </td><td> 0,33 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,83 </td><td> 0,03 </td><td> 0,01 </td><td> 0,81 </td><td> 0,31 </td><td> 0,19</td></tr>
+<tr class="even"><td class="text"><a href='html-diff-ontos/pt-ru.html'>pt-ru  </td><td> 0,71 </td><td> 0,49 </td><td> 0,37 </td><td> 0,75 </td><td> 0,47 </td><td> 0,34 </td><td> 0,00 </td><td> NaN </td><td> 0,00 </td><td> 0,64 </td><td> 0,08 </td><td> 0,04 </td><td> 0,84 </td><td> 0,33 </td><td> 0,20</td></tr>
+</tbody>
+</table>
+<p><small>NaN: division per zero, likely due to empty alignment.</small>
+
 
 <h2>Conclusions</h2>
 
