@@ -1,0 +1,2 @@
+biodiv/data/agrovoc.rdf filter=lfs diff=lfs merge=lfs -text
+biodiv/data/biodiv.zip filter=lfs diff=lfs merge=lfs -text
